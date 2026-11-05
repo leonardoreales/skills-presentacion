@@ -1,0 +1,13 @@
+{
+  "name": "motor-video-presentacion-viva",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Animaciones «sistema vivo» de flujos de un proyecto, renderizadas fotograma a fotograma (HTML + Playwright + ffmpeg).",
+  "scripts": {
+    "render": "node render.js"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "playwright-core": "1.63.0"
+  }
+}

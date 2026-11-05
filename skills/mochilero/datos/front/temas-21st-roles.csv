@@ -1,0 +1,2133 @@
+tema_id,modo,rol,token,token_shadcn,valor,pareja,contraste,umbral,cumple_aa
+TEM-001,claro,fondo,--color-fondo,--background,oklch(0.99 0.005 50),,,,n.a.
+TEM-001,claro,tinta,--color-tinta,--foreground,oklch(0.15 0.02 50),fondo,19.13,4.5,sí
+TEM-001,claro,superficie,--color-superficie,--card,oklch(1 0 0),,,,n.a.
+TEM-001,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,oklch(0.15 0.02 50),superficie,19.71,4.5,sí
+TEM-001,claro,primario,--color-primario,--primary,oklch(0.65 0.2 50),fondo,3.36,3,sí
+TEM-001,claro,sobre-primario,--color-sobre-primario,--primary-foreground,oklch(0.99 0 0),primario,3.36,4.5,no
+TEM-001,claro,secundario,--color-secundario,--secondary,oklch(0.96 0.01 50),,,,n.a.
+TEM-001,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,oklch(0.2 0.02 50),secundario,16.13,4.5,sí
+TEM-001,claro,apagado,--color-apagado,--muted,oklch(0.96 0.01 50),,,,n.a.
+TEM-001,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,oklch(0.5 0.02 50),fondo,5.86,4.5,sí
+TEM-001,claro,acento,--color-acento,--accent,oklch(0.94 0.015 50),,,,n.a.
+TEM-001,claro,sobre-acento,--color-sobre-acento,--accent-foreground,oklch(0.2 0.02 50),acento,15.18,4.5,sí
+TEM-001,claro,borde,--color-borde,--border,oklch(0.9 0.01 50),fondo,1.31,3,condicional
+TEM-001,claro,borde-campo,--color-borde-campo,--input,oklch(0.9 0.01 50),,,,n.a.
+TEM-001,claro,anillo-foco,--color-anillo-foco,--ring,oklch(0.65 0.2 50),fondo,3.36,3,sí
+TEM-001,oscuro,fondo,--color-fondo,--background,oklch(0.16 0.02 50),,,,n.a.
+TEM-001,oscuro,tinta,--color-tinta,--foreground,oklch(0.97 0.005 50),fondo,17.82,4.5,sí
+TEM-001,oscuro,superficie,--color-superficie,--card,oklch(0.21 0.02 50),,,,n.a.
+TEM-001,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,oklch(0.97 0.005 50),superficie,16.28,4.5,sí
+TEM-001,oscuro,primario,--color-primario,--primary,oklch(0.75 0.18 50),fondo,8.04,3,sí
+TEM-001,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,oklch(0.16 0.02 50),primario,8.04,4.5,sí
+TEM-001,oscuro,secundario,--color-secundario,--secondary,oklch(0.25 0.02 50),,,,n.a.
+TEM-001,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,oklch(0.97 0.005 50),secundario,14.72,4.5,sí
+TEM-001,oscuro,apagado,--color-apagado,--muted,oklch(0.25 0.02 50),,,,n.a.
+TEM-001,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,oklch(0.7 0.01 50),fondo,7.26,4.5,sí
+TEM-001,oscuro,acento,--color-acento,--accent,oklch(0.3 0.025 50),,,,n.a.
+TEM-001,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,oklch(0.97 0.005 50),acento,12.57,4.5,sí
+TEM-001,oscuro,borde,--color-borde,--border,oklch(0.3 0.02 50),fondo,1.42,3,condicional
+TEM-001,oscuro,borde-campo,--color-borde-campo,--input,oklch(0.3 0.02 50),,,,n.a.
+TEM-001,oscuro,anillo-foco,--color-anillo-foco,--ring,oklch(0.75 0.18 50),fondo,8.04,3,sí
+TEM-002,claro,fondo,--color-fondo,--background,#fbfcf5,,,,n.a.
+TEM-002,claro,tinta,--color-tinta,--foreground,#1c2a29,fondo,14.40,4.5,sí
+TEM-002,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-002,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#1c2a29,superficie,14.87,4.5,sí
+TEM-002,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-002,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#1c2a29,emergente,14.87,4.5,sí
+TEM-002,claro,primario,--color-primario,--primary,#4e7d7a,fondo,4.48,3,sí
+TEM-002,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#fbfcf5,primario,4.48,4.5,no
+TEM-002,claro,secundario,--color-secundario,--secondary,#e6e5d9,,,,n.a.
+TEM-002,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#1c2a29,secundario,11.73,4.5,sí
+TEM-002,claro,apagado,--color-apagado,--muted,#f0f0e7,,,,n.a.
+TEM-002,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#6b7c7b,fondo,4.24,4.5,no
+TEM-002,claro,acento,--color-acento,--accent,#cdd6d2,,,,n.a.
+TEM-002,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#1c2a29,acento,10.01,4.5,sí
+TEM-002,claro,destructivo,--color-destructivo,--destructive,#d04f5e,fondo,4.10,3,sí
+TEM-002,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,4.23,4.5,no
+TEM-002,claro,borde,--color-borde,--border,#e3e3dc,fondo,1.25,3,condicional
+TEM-002,claro,borde-campo,--color-borde-campo,--input,#ffffff,,,,n.a.
+TEM-002,claro,anillo-foco,--color-anillo-foco,--ring,#4e7d7a,fondo,4.48,3,sí
+TEM-002,claro,grafica-1,--color-grafica-1,--chart-1,#4e7d7a,,,,n.a.
+TEM-002,claro,grafica-2,--color-grafica-2,--chart-2,#8ea69c,,,,n.a.
+TEM-002,claro,grafica-3,--color-grafica-3,--chart-3,#cdd6d2,,,,n.a.
+TEM-002,claro,grafica-4,--color-grafica-4,--chart-4,#a47963,,,,n.a.
+TEM-002,claro,grafica-5,--color-grafica-5,--chart-5,#e6e5d9,,,,n.a.
+TEM-002,oscuro,fondo,--color-fondo,--background,#0e1312,,,,n.a.
+TEM-002,oscuro,tinta,--color-tinta,--foreground,#e9ecec,fondo,15.77,4.5,sí
+TEM-002,oscuro,superficie,--color-superficie,--card,#151b1a,,,,n.a.
+TEM-002,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#e9ecec,superficie,14.68,4.5,sí
+TEM-002,oscuro,emergente,--color-emergente,--popover,#151b1a,,,,n.a.
+TEM-002,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e9ecec,emergente,14.68,4.5,sí
+TEM-002,oscuro,primario,--color-primario,--primary,#6ea8a3,fondo,6.95,3,sí
+TEM-002,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,7.79,4.5,sí
+TEM-002,oscuro,secundario,--color-secundario,--secondary,#212d2b,,,,n.a.
+TEM-002,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#e9ecec,secundario,11.98,4.5,sí
+TEM-002,oscuro,apagado,--color-apagado,--muted,#1a2524,,,,n.a.
+TEM-002,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#93a5a4,fondo,7.28,4.5,sí
+TEM-002,oscuro,acento,--color-acento,--accent,#4a5d5a,,,,n.a.
+TEM-002,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#e9ecec,acento,5.88,4.5,sí
+TEM-002,oscuro,destructivo,--color-destructivo,--destructive,#f27984,fondo,7.00,3,sí
+TEM-002,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#0e1312,destructivo,7.00,4.5,sí
+TEM-002,oscuro,borde,--color-borde,--border,#2c3b3a,fondo,1.60,3,condicional
+TEM-002,oscuro,borde-campo,--color-borde-campo,--input,#151b1a,,,,n.a.
+TEM-002,oscuro,anillo-foco,--color-anillo-foco,--ring,#6ea8a3,fondo,6.95,3,sí
+TEM-002,oscuro,grafica-1,--color-grafica-1,--chart-1,#6ea8a3,,,,n.a.
+TEM-002,oscuro,grafica-2,--color-grafica-2,--chart-2,#a6c7b9,,,,n.a.
+TEM-002,oscuro,grafica-3,--color-grafica-3,--chart-3,#8c9f9e,,,,n.a.
+TEM-002,oscuro,grafica-4,--color-grafica-4,--chart-4,#c2a99c,,,,n.a.
+TEM-002,oscuro,grafica-5,--color-grafica-5,--chart-5,#4e7d7a,,,,n.a.
+TEM-003,claro,fondo,--color-fondo,--background,#faf9f5,,,,n.a.
+TEM-003,claro,tinta,--color-tinta,--foreground,#3d3929,fondo,10.98,4.5,sí
+TEM-003,claro,superficie,--color-superficie,--card,#f5f4ef,,,,n.a.
+TEM-003,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#141413,superficie,16.74,4.5,sí
+TEM-003,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-003,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#28261b,emergente,15.18,4.5,sí
+TEM-003,claro,primario,--color-primario,--primary,#40c95e,fondo,2.05,3,no
+TEM-003,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,2.16,4.5,no
+TEM-003,claro,secundario,--color-secundario,--secondary,#e9e6dc,,,,n.a.
+TEM-003,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#535146,secundario,6.39,4.5,sí
+TEM-003,claro,apagado,--color-apagado,--muted,#ede9de,,,,n.a.
+TEM-003,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#6e6d68,fondo,4.92,4.5,sí
+TEM-003,claro,acento,--color-acento,--accent,#e9e6dc,,,,n.a.
+TEM-003,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#28261b,acento,12.16,4.5,sí
+TEM-003,claro,destructivo,--color-destructivo,--destructive,#141413,fondo,17.50,3,sí
+TEM-003,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,18.43,4.5,sí
+TEM-003,claro,borde,--color-borde,--border,#dad9d4,fondo,1.34,3,condicional
+TEM-003,claro,borde-campo,--color-borde-campo,--input,#b4b2a7,,,,n.a.
+TEM-003,claro,anillo-foco,--color-anillo-foco,--ring,#c96442,fondo,3.70,3,sí
+TEM-003,claro,grafica-1,--color-grafica-1,--chart-1,#b05730,,,,n.a.
+TEM-003,claro,grafica-2,--color-grafica-2,--chart-2,#9c87f5,,,,n.a.
+TEM-003,claro,grafica-3,--color-grafica-3,--chart-3,#ded8c4,,,,n.a.
+TEM-003,claro,grafica-4,--color-grafica-4,--chart-4,#dbd3f0,,,,n.a.
+TEM-003,claro,grafica-5,--color-grafica-5,--chart-5,#b4552d,,,,n.a.
+TEM-003,oscuro,fondo,--color-fondo,--background,#262624,,,,n.a.
+TEM-003,oscuro,tinta,--color-tinta,--foreground,#f1f1ef,fondo,13.41,4.5,sí
+TEM-003,oscuro,superficie,--color-superficie,--card,#2c2c2b,,,,n.a.
+TEM-003,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#faf9f5,superficie,13.27,4.5,sí
+TEM-003,oscuro,emergente,--color-emergente,--popover,#30302e,,,,n.a.
+TEM-003,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e5e5e2,emergente,10.48,4.5,sí
+TEM-003,oscuro,primario,--color-primario,--primary,#61d959,fondo,8.36,3,sí
+TEM-003,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#141413,primario,10.16,4.5,sí
+TEM-003,oscuro,secundario,--color-secundario,--secondary,#faf9f5,,,,n.a.
+TEM-003,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#30302e,secundario,12.55,4.5,sí
+TEM-003,oscuro,apagado,--color-apagado,--muted,#1b1b19,,,,n.a.
+TEM-003,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#b7b5a9,fondo,7.36,4.5,sí
+TEM-003,oscuro,acento,--color-acento,--accent,#1a1915,,,,n.a.
+TEM-003,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#f5f4ee,acento,15.96,4.5,sí
+TEM-003,oscuro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,4.03,3,sí
+TEM-003,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.76,4.5,no
+TEM-003,oscuro,borde,--color-borde,--border,#3e3e38,fondo,1.41,3,condicional
+TEM-003,oscuro,borde-campo,--color-borde-campo,--input,#52514a,,,,n.a.
+TEM-003,oscuro,anillo-foco,--color-anillo-foco,--ring,#d97757,fondo,4.86,3,sí
+TEM-003,oscuro,grafica-1,--color-grafica-1,--chart-1,#b05730,,,,n.a.
+TEM-003,oscuro,grafica-2,--color-grafica-2,--chart-2,#9c87f5,,,,n.a.
+TEM-003,oscuro,grafica-3,--color-grafica-3,--chart-3,#1a1915,,,,n.a.
+TEM-003,oscuro,grafica-4,--color-grafica-4,--chart-4,#2f2b48,,,,n.a.
+TEM-003,oscuro,grafica-5,--color-grafica-5,--chart-5,#b4552d,,,,n.a.
+TEM-004,claro,fondo,--color-fondo,--background,#ebedf3,,,,n.a.
+TEM-004,claro,tinta,--color-tinta,--foreground,#010101,fondo,17.83,4.5,sí
+TEM-004,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-004,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#010101,superficie,20.87,4.5,sí
+TEM-004,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-004,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#010101,emergente,20.87,4.5,sí
+TEM-004,claro,primario,--color-primario,--primary,#1c3165,fondo,10.70,3,sí
+TEM-004,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#f3f5f9,primario,11.48,4.5,sí
+TEM-004,claro,secundario,--color-secundario,--secondary,#000000,,,,n.a.
+TEM-004,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#f5f7fb,secundario,19.58,4.5,sí
+TEM-004,claro,apagado,--color-apagado,--muted,#dfdfdf,,,,n.a.
+TEM-004,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#454545,fondo,8.19,4.5,sí
+TEM-004,claro,acento,--color-acento,--accent,#1f4196,,,,n.a.
+TEM-004,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#ffffff,acento,9.31,4.5,sí
+TEM-004,claro,destructivo,--color-destructivo,--destructive,#9b0033,fondo,7.35,3,sí
+TEM-004,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,8.60,4.5,sí
+TEM-004,claro,borde,--color-borde,--border,#e3e3e3,fondo,1.10,3,condicional
+TEM-004,claro,borde-campo,--color-borde-campo,--input,#ffffff,,,,n.a.
+TEM-004,claro,anillo-foco,--color-anillo-foco,--ring,#324f9a,fondo,6.59,3,sí
+TEM-004,claro,grafica-1,--color-grafica-1,--chart-1,#0159b7,,,,n.a.
+TEM-004,claro,grafica-2,--color-grafica-2,--chart-2,#13c9aa,,,,n.a.
+TEM-004,claro,grafica-3,--color-grafica-3,--chart-3,#cf3fd9,,,,n.a.
+TEM-004,claro,grafica-4,--color-grafica-4,--chart-4,#8f3c1e,,,,n.a.
+TEM-004,claro,grafica-5,--color-grafica-5,--chart-5,#17ab92,,,,n.a.
+TEM-004,oscuro,fondo,--color-fondo,--background,#050505,,,,n.a.
+TEM-004,oscuro,tinta,--color-tinta,--foreground,#fafafa,fondo,19.53,4.5,sí
+TEM-004,oscuro,superficie,--color-superficie,--card,#0a0a0a,,,,n.a.
+TEM-004,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#fafafa,superficie,18.97,4.5,sí
+TEM-004,oscuro,emergente,--color-emergente,--popover,#171717,,,,n.a.
+TEM-004,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#fafafa,emergente,17.18,4.5,sí
+TEM-004,oscuro,primario,--color-primario,--primary,#6a8dd8,fondo,6.23,3,sí
+TEM-004,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#0a0a0a,primario,6.05,4.5,sí
+TEM-004,oscuro,secundario,--color-secundario,--secondary,#171717,,,,n.a.
+TEM-004,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#fafafa,secundario,17.18,4.5,sí
+TEM-004,oscuro,apagado,--color-apagado,--muted,#262626,,,,n.a.
+TEM-004,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a1a1a1,fondo,7.89,4.5,sí
+TEM-004,oscuro,acento,--color-acento,--accent,#404040,,,,n.a.
+TEM-004,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#fafafa,acento,9.93,4.5,sí
+TEM-004,oscuro,destructivo,--color-destructivo,--destructive,#cd6e7b,fondo,5.93,3,sí
+TEM-004,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#fafafa,destructivo,3.29,4.5,no
+TEM-004,oscuro,borde,--color-borde,--border,#282828,fondo,1.38,3,condicional
+TEM-004,oscuro,borde-campo,--color-borde-campo,--input,#121212,,,,n.a.
+TEM-004,oscuro,anillo-foco,--color-anillo-foco,--ring,#6a8dd8,fondo,6.23,3,sí
+TEM-004,oscuro,grafica-1,--color-grafica-1,--chart-1,#6a8dd8,,,,n.a.
+TEM-004,oscuro,grafica-2,--color-grafica-2,--chart-2,#2062ce,,,,n.a.
+TEM-004,oscuro,grafica-3,--color-grafica-3,--chart-3,#4c5f00,,,,n.a.
+TEM-004,oscuro,grafica-4,--color-grafica-4,--chart-4,#cc7455,,,,n.a.
+TEM-004,oscuro,grafica-5,--color-grafica-5,--chart-5,#4bb3a1,,,,n.a.
+TEM-005,claro,fondo,--color-fondo,--background,#ffffff,,,,n.a.
+TEM-005,claro,tinta,--color-tinta,--foreground,#4e5069,fondo,7.85,4.5,sí
+TEM-005,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-005,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#4e5069,superficie,7.85,4.5,sí
+TEM-005,claro,emergente,--color-emergente,--popover,#ced1d8,,,,n.a.
+TEM-005,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#4e5069,emergente,5.13,4.5,sí
+TEM-005,claro,primario,--color-primario,--primary,#8839ef,fondo,5.41,3,sí
+TEM-005,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,5.41,4.5,sí
+TEM-005,claro,secundario,--color-secundario,--secondary,#ced1d8,,,,n.a.
+TEM-005,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#4e5069,secundario,5.13,4.5,sí
+TEM-005,claro,apagado,--color-apagado,--muted,#dee1e8,,,,n.a.
+TEM-005,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#6d7083,fondo,4.89,4.5,sí
+TEM-005,claro,acento,--color-acento,--accent,#9353d3,,,,n.a.
+TEM-005,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#ffffff,acento,4.75,4.5,sí
+TEM-005,claro,destructivo,--color-destructivo,--destructive,#d20f39,fondo,5.43,3,sí
+TEM-005,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,5.43,4.5,sí
+TEM-005,claro,borde,--color-borde,--border,#bcc1ce,fondo,1.80,3,condicional
+TEM-005,claro,borde-campo,--color-borde-campo,--input,#ced1d8,,,,n.a.
+TEM-005,claro,anillo-foco,--color-anillo-foco,--ring,#8839ef,fondo,5.41,3,sí
+TEM-005,claro,grafica-1,--color-grafica-1,--chart-1,#f54900,,,,n.a.
+TEM-005,claro,grafica-2,--color-grafica-2,--chart-2,#009689,,,,n.a.
+TEM-005,claro,grafica-3,--color-grafica-3,--chart-3,#104e64,,,,n.a.
+TEM-005,claro,grafica-4,--color-grafica-4,--chart-4,#ffb900,,,,n.a.
+TEM-005,claro,grafica-5,--color-grafica-5,--chart-5,#fe9a00,,,,n.a.
+TEM-005,oscuro,fondo,--color-fondo,--background,#11111b,,,,n.a.
+TEM-005,oscuro,tinta,--color-tinta,--foreground,#cdd6f4,fondo,12.97,4.5,sí
+TEM-005,oscuro,superficie,--color-superficie,--card,#11111b,,,,n.a.
+TEM-005,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#cdd6f4,superficie,12.97,4.5,sí
+TEM-005,oscuro,emergente,--color-emergente,--popover,#181825,,,,n.a.
+TEM-005,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#cdd6f4,emergente,12.14,4.5,sí
+TEM-005,oscuro,primario,--color-primario,--primary,#cba6f7,fondo,9.23,3,sí
+TEM-005,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#11111b,primario,9.23,4.5,sí
+TEM-005,oscuro,secundario,--color-secundario,--secondary,#313244,,,,n.a.
+TEM-005,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#cdd6f4,secundario,8.69,4.5,sí
+TEM-005,oscuro,apagado,--color-apagado,--muted,#313244,,,,n.a.
+TEM-005,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a6adc8,fondo,8.42,4.5,sí
+TEM-005,oscuro,acento,--color-acento,--accent,#b4befe,,,,n.a.
+TEM-005,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#11111b,acento,10.48,4.5,sí
+TEM-005,oscuro,destructivo,--color-destructivo,--destructive,#f38ba8,fondo,8.10,3,sí
+TEM-005,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#11111b,destructivo,8.10,4.5,sí
+TEM-005,oscuro,borde,--color-borde,--border,#45475a,fondo,2.06,3,condicional
+TEM-005,oscuro,borde-campo,--color-borde-campo,--input,#313244,,,,n.a.
+TEM-005,oscuro,anillo-foco,--color-anillo-foco,--ring,#cba6f7,fondo,9.23,3,sí
+TEM-005,oscuro,grafica-1,--color-grafica-1,--chart-1,#1447e6,,,,n.a.
+TEM-005,oscuro,grafica-2,--color-grafica-2,--chart-2,#00bc7d,,,,n.a.
+TEM-005,oscuro,grafica-3,--color-grafica-3,--chart-3,#fe9a00,,,,n.a.
+TEM-005,oscuro,grafica-4,--color-grafica-4,--chart-4,#ad46ff,,,,n.a.
+TEM-005,oscuro,grafica-5,--color-grafica-5,--chart-5,#ff2056,,,,n.a.
+TEM-006,claro,fondo,--color-fondo,--background,#ffffff,,,,n.a.
+TEM-006,claro,tinta,--color-tinta,--foreground,#0a0a0b,fondo,19.79,4.5,sí
+TEM-006,claro,superficie,--color-superficie,--card,#f8fafc,,,,n.a.
+TEM-006,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#0a0a0b,superficie,18.91,4.5,sí
+TEM-006,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-006,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#0a0a0b,emergente,19.79,4.5,sí
+TEM-006,claro,primario,--color-primario,--primary,#ff4d4d,fondo,3.27,3,sí
+TEM-006,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.27,4.5,no
+TEM-006,claro,secundario,--color-secundario,--secondary,#2dd4bf,,,,n.a.
+TEM-006,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#0f172a,secundario,9.59,4.5,sí
+TEM-006,claro,apagado,--color-apagado,--muted,#f1f5f9,,,,n.a.
+TEM-006,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#64748b,fondo,4.76,4.5,sí
+TEM-006,claro,acento,--color-acento,--accent,#f1f5f9,,,,n.a.
+TEM-006,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#0f172a,acento,16.30,4.5,sí
+TEM-006,claro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,3.76,3,sí
+TEM-006,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#f8fafc,destructivo,3.60,4.5,no
+TEM-006,claro,borde,--color-borde,--border,#e2e8f0,fondo,1.23,3,condicional
+TEM-006,claro,borde-campo,--color-borde-campo,--input,#e2e8f0,,,,n.a.
+TEM-006,claro,anillo-foco,--color-anillo-foco,--ring,#ff4d4d,fondo,3.27,3,sí
+TEM-006,claro,grafica-1,--color-grafica-1,--chart-1,#ff4d4d,,,,n.a.
+TEM-006,claro,grafica-2,--color-grafica-2,--chart-2,#2dd4bf,,,,n.a.
+TEM-006,claro,grafica-3,--color-grafica-3,--chart-3,#0f172a,,,,n.a.
+TEM-006,claro,grafica-4,--color-grafica-4,--chart-4,#f59e0b,,,,n.a.
+TEM-006,claro,grafica-5,--color-grafica-5,--chart-5,#6366f1,,,,n.a.
+TEM-006,oscuro,fondo,--color-fondo,--background,#030303,,,,n.a.
+TEM-006,oscuro,tinta,--color-tinta,--foreground,#f8fafc,fondo,19.71,4.5,sí
+TEM-006,oscuro,superficie,--color-superficie,--card,#09090b,,,,n.a.
+TEM-006,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#f8fafc,superficie,19.02,4.5,sí
+TEM-006,oscuro,emergente,--color-emergente,--popover,#030303,,,,n.a.
+TEM-006,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#f8fafc,emergente,19.71,4.5,sí
+TEM-006,oscuro,primario,--color-primario,--primary,#ff4d4d,fondo,6.31,3,sí
+TEM-006,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.27,4.5,no
+TEM-006,oscuro,secundario,--color-secundario,--secondary,#2dd4bf,,,,n.a.
+TEM-006,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#030303,secundario,11.08,4.5,sí
+TEM-006,oscuro,apagado,--color-apagado,--muted,#18181b,,,,n.a.
+TEM-006,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a1a1aa,fondo,8.05,4.5,sí
+TEM-006,oscuro,acento,--color-acento,--accent,#18181b,,,,n.a.
+TEM-006,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#f8fafc,acento,16.93,4.5,sí
+TEM-006,oscuro,destructivo,--color-destructivo,--destructive,#991b1b,fondo,2.48,3,no
+TEM-006,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#f8fafc,destructivo,7.94,4.5,sí
+TEM-006,oscuro,borde,--color-borde,--border,#27272a,fondo,1.38,3,condicional
+TEM-006,oscuro,borde-campo,--color-borde-campo,--input,#27272a,,,,n.a.
+TEM-006,oscuro,anillo-foco,--color-anillo-foco,--ring,#ff4d4d,fondo,6.31,3,sí
+TEM-006,oscuro,grafica-1,--color-grafica-1,--chart-1,#ff4d4d,,,,n.a.
+TEM-006,oscuro,grafica-2,--color-grafica-2,--chart-2,#2dd4bf,,,,n.a.
+TEM-006,oscuro,grafica-3,--color-grafica-3,--chart-3,#3b82f6,,,,n.a.
+TEM-006,oscuro,grafica-4,--color-grafica-4,--chart-4,#a855f7,,,,n.a.
+TEM-006,oscuro,grafica-5,--color-grafica-5,--chart-5,#f97316,,,,n.a.
+TEM-007,claro,fondo,--color-fondo,--background,#ffffff,,,,n.a.
+TEM-007,claro,tinta,--color-tinta,--foreground,#0a0a0b,fondo,19.79,4.5,sí
+TEM-007,claro,superficie,--color-superficie,--card,#fffefc,,,,n.a.
+TEM-007,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#464646,superficie,9.36,4.5,sí
+TEM-007,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-007,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#0a0a0b,emergente,19.79,4.5,sí
+TEM-007,claro,primario,--color-primario,--primary,#ffb8c5,fondo,1.63,3,no
+TEM-007,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,12.91,4.5,sí
+TEM-007,claro,secundario,--color-secundario,--secondary,#2e2e2e,,,,n.a.
+TEM-007,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffffff,secundario,13.58,4.5,sí
+TEM-007,claro,apagado,--color-apagado,--muted,#faf5e3,,,,n.a.
+TEM-007,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a9a9a9,fondo,2.35,4.5,no
+TEM-007,claro,acento,--color-acento,--accent,#d0e8ff,,,,n.a.
+TEM-007,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#0f172a,acento,14.17,4.5,sí
+TEM-007,claro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,3.76,3,sí
+TEM-007,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#f8fafc,destructivo,3.60,4.5,no
+TEM-007,claro,borde,--color-borde,--border,#f5f5f5,fondo,1.09,3,condicional
+TEM-007,claro,borde-campo,--color-borde-campo,--input,#fafafa,,,,n.a.
+TEM-007,claro,anillo-foco,--color-anillo-foco,--ring,#ff3dc8,fondo,3.11,3,sí
+TEM-007,claro,grafica-1,--color-grafica-1,--chart-1,#ff4d4d,,,,n.a.
+TEM-007,claro,grafica-2,--color-grafica-2,--chart-2,#2dd4bf,,,,n.a.
+TEM-007,claro,grafica-3,--color-grafica-3,--chart-3,#0f172a,,,,n.a.
+TEM-007,claro,grafica-4,--color-grafica-4,--chart-4,#f59e0b,,,,n.a.
+TEM-007,claro,grafica-5,--color-grafica-5,--chart-5,#6366f1,,,,n.a.
+TEM-007,oscuro,fondo,--color-fondo,--background,#030303,,,,n.a.
+TEM-007,oscuro,tinta,--color-tinta,--foreground,#f8fafc,fondo,19.71,4.5,sí
+TEM-007,oscuro,superficie,--color-superficie,--card,#09090b,,,,n.a.
+TEM-007,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#f8fafc,superficie,19.02,4.5,sí
+TEM-007,oscuro,emergente,--color-emergente,--popover,#030303,,,,n.a.
+TEM-007,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#f8fafc,emergente,19.71,4.5,sí
+TEM-007,oscuro,primario,--color-primario,--primary,#ff4d4d,fondo,6.31,3,sí
+TEM-007,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.27,4.5,no
+TEM-007,oscuro,secundario,--color-secundario,--secondary,#2dd4bf,,,,n.a.
+TEM-007,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#030303,secundario,11.08,4.5,sí
+TEM-007,oscuro,apagado,--color-apagado,--muted,#18181b,,,,n.a.
+TEM-007,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a1a1aa,fondo,8.05,4.5,sí
+TEM-007,oscuro,acento,--color-acento,--accent,#18181b,,,,n.a.
+TEM-007,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#f8fafc,acento,16.93,4.5,sí
+TEM-007,oscuro,destructivo,--color-destructivo,--destructive,#991b1b,fondo,2.48,3,no
+TEM-007,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#f8fafc,destructivo,7.94,4.5,sí
+TEM-007,oscuro,borde,--color-borde,--border,#27272a,fondo,1.38,3,condicional
+TEM-007,oscuro,borde-campo,--color-borde-campo,--input,#27272a,,,,n.a.
+TEM-007,oscuro,anillo-foco,--color-anillo-foco,--ring,#ff4d4d,fondo,6.31,3,sí
+TEM-007,oscuro,grafica-1,--color-grafica-1,--chart-1,#ff4d4d,,,,n.a.
+TEM-007,oscuro,grafica-2,--color-grafica-2,--chart-2,#2dd4bf,,,,n.a.
+TEM-007,oscuro,grafica-3,--color-grafica-3,--chart-3,#3b82f6,,,,n.a.
+TEM-007,oscuro,grafica-4,--color-grafica-4,--chart-4,#a855f7,,,,n.a.
+TEM-007,oscuro,grafica-5,--color-grafica-5,--chart-5,#f97316,,,,n.a.
+TEM-008,claro,fondo,--color-fondo,--background,#e9e4d8,,,,n.a.
+TEM-008,claro,tinta,--color-tinta,--foreground,#1E1E1E,fondo,13.14,4.5,sí
+TEM-008,claro,superficie,--color-superficie,--card,#F4EFE4,,,,n.a.
+TEM-008,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#1E1E1E,superficie,14.54,4.5,sí
+TEM-008,claro,emergente,--color-emergente,--popover,#F4EFE4,,,,n.a.
+TEM-008,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#1E1E1E,emergente,14.54,4.5,sí
+TEM-008,claro,primario,--color-primario,--primary,#1d9f76,fondo,2.64,3,no
+TEM-008,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#8d875e,primario,1.09,4.5,no
+TEM-008,claro,secundario,--color-secundario,--secondary,#0f7058,,,,n.a.
+TEM-008,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffffff,secundario,6.04,4.5,sí
+TEM-008,claro,apagado,--color-apagado,--muted,#CFC8B8,,,,n.a.
+TEM-008,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#5E5A52,fondo,5.41,4.5,sí
+TEM-008,claro,acento,--color-acento,--accent,#efa02a,,,,n.a.
+TEM-008,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#2E2E2E,acento,6.29,4.5,sí
+TEM-008,claro,destructivo,--color-destructivo,--destructive,#DC2626,fondo,3.81,3,sí
+TEM-008,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FFFFFF,destructivo,4.83,4.5,sí
+TEM-008,claro,borde,--color-borde,--border,#D2CBBB,fondo,1.27,3,condicional
+TEM-008,claro,borde-campo,--color-borde-campo,--input,#D2CBBB,,,,n.a.
+TEM-008,claro,anillo-foco,--color-anillo-foco,--ring,#2E2E2E,fondo,10.70,3,sí
+TEM-008,claro,grafica-1,--color-grafica-1,--chart-1,#F26A4B,,,,n.a.
+TEM-008,claro,grafica-2,--color-grafica-2,--chart-2,#1E1E1E,,,,n.a.
+TEM-008,claro,grafica-3,--color-grafica-3,--chart-3,#5E5A52,,,,n.a.
+TEM-008,claro,grafica-4,--color-grafica-4,--chart-4,#A89F8F,,,,n.a.
+TEM-008,claro,grafica-5,--color-grafica-5,--chart-5,#CFC8B8,,,,n.a.
+TEM-008,oscuro,fondo,--color-fondo,--background,#1b1d1c,,,,n.a.
+TEM-008,oscuro,tinta,--color-tinta,--foreground,#E8E3DA,fondo,13.26,4.5,sí
+TEM-008,oscuro,superficie,--color-superficie,--card,#222523,,,,n.a.
+TEM-008,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#E8E3DA,superficie,12.11,4.5,sí
+TEM-008,oscuro,emergente,--color-emergente,--popover,#1C1C1C,,,,n.a.
+TEM-008,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#E8E3DA,emergente,13.33,4.5,sí
+TEM-008,oscuro,primario,--color-primario,--primary,#1d9f76,fondo,5.06,3,sí
+TEM-008,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#363636,primario,3.61,4.5,no
+TEM-008,oscuro,secundario,--color-secundario,--secondary,#0f7058,,,,n.a.
+TEM-008,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#D1CFC0,secundario,3.85,4.5,no
+TEM-008,oscuro,apagado,--color-apagado,--muted,#2A2A2A,,,,n.a.
+TEM-008,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#8E8A83,fondo,4.93,4.5,sí
+TEM-008,oscuro,acento,--color-acento,--accent,#efa02a,,,,n.a.
+TEM-008,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#D1CFC0,acento,1.38,4.5,no
+TEM-008,oscuro,destructivo,--color-destructivo,--destructive,#EF4444,fondo,4.50,3,sí
+TEM-008,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FFFFFF,destructivo,3.76,4.5,no
+TEM-008,oscuro,borde,--color-borde,--border,#2C2C2C,fondo,1.21,3,condicional
+TEM-008,oscuro,borde-campo,--color-borde-campo,--input,#2C2C2C,,,,n.a.
+TEM-008,oscuro,anillo-foco,--color-anillo-foco,--ring,#D1CFC0,fondo,10.81,3,sí
+TEM-008,oscuro,grafica-1,--color-grafica-1,--chart-1,#F26A4B,,,,n.a.
+TEM-008,oscuro,grafica-2,--color-grafica-2,--chart-2,#D9CFC2,,,,n.a.
+TEM-008,oscuro,grafica-3,--color-grafica-3,--chart-3,#8E8A83,,,,n.a.
+TEM-008,oscuro,grafica-4,--color-grafica-4,--chart-4,#5C5A56,,,,n.a.
+TEM-008,oscuro,grafica-5,--color-grafica-5,--chart-5,#3B3B3B,,,,n.a.
+TEM-009,claro,fondo,--color-fondo,--background,#f6f6f6,,,,n.a.
+TEM-009,claro,tinta,--color-tinta,--foreground,#0f172a,fondo,16.52,4.5,sí
+TEM-009,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-009,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#0f172a,superficie,17.85,4.5,sí
+TEM-009,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-009,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#0f172a,emergente,17.85,4.5,sí
+TEM-009,claro,primario,--color-primario,--primary,#aff33e,fondo,1.24,3,no
+TEM-009,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,15.71,4.5,sí
+TEM-009,claro,secundario,--color-secundario,--secondary,#334155,,,,n.a.
+TEM-009,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#f8fafc,secundario,9.90,4.5,sí
+TEM-009,claro,apagado,--color-apagado,--muted,#f1f5f9,,,,n.a.
+TEM-009,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#64748b,fondo,4.40,4.5,no
+TEM-009,claro,acento,--color-acento,--accent,#f0fdf4,,,,n.a.
+TEM-009,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#166534,acento,6.81,4.5,sí
+TEM-009,claro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,3.48,3,sí
+TEM-009,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.76,4.5,no
+TEM-009,claro,borde,--color-borde,--border,#e2e8f0,fondo,1.14,3,condicional
+TEM-009,claro,borde-campo,--color-borde-campo,--input,#e2e8f0,,,,n.a.
+TEM-009,claro,anillo-foco,--color-anillo-foco,--ring,#aff33e,fondo,1.24,3,no
+TEM-009,claro,grafica-1,--color-grafica-1,--chart-1,#aff33e,,,,n.a.
+TEM-009,claro,grafica-2,--color-grafica-2,--chart-2,#334155,,,,n.a.
+TEM-009,claro,grafica-3,--color-grafica-3,--chart-3,#22c55e,,,,n.a.
+TEM-009,claro,grafica-4,--color-grafica-4,--chart-4,#64748b,,,,n.a.
+TEM-009,claro,grafica-5,--color-grafica-5,--chart-5,#94a3b8,,,,n.a.
+TEM-009,oscuro,fondo,--color-fondo,--background,#020617,,,,n.a.
+TEM-009,oscuro,tinta,--color-tinta,--foreground,#f8fafc,fondo,19.28,4.5,sí
+TEM-009,oscuro,superficie,--color-superficie,--card,#0f172a,,,,n.a.
+TEM-009,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#f8fafc,superficie,17.06,4.5,sí
+TEM-009,oscuro,emergente,--color-emergente,--popover,#0f172a,,,,n.a.
+TEM-009,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#f8fafc,emergente,17.06,4.5,sí
+TEM-009,oscuro,primario,--color-primario,--primary,#aff33e,fondo,15.09,3,sí
+TEM-009,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,15.71,4.5,sí
+TEM-009,oscuro,secundario,--color-secundario,--secondary,#1e293b,,,,n.a.
+TEM-009,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#f8fafc,secundario,13.98,4.5,sí
+TEM-009,oscuro,apagado,--color-apagado,--muted,#1e293b,,,,n.a.
+TEM-009,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#94a3b8,fondo,7.87,4.5,sí
+TEM-009,oscuro,acento,--color-acento,--accent,#14532d,,,,n.a.
+TEM-009,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#aff33e,acento,6.82,4.5,sí
+TEM-009,oscuro,destructivo,--color-destructivo,--destructive,#991b1b,fondo,2.43,3,no
+TEM-009,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,8.31,4.5,sí
+TEM-009,oscuro,borde,--color-borde,--border,#1e293b,fondo,1.38,3,condicional
+TEM-009,oscuro,borde-campo,--color-borde-campo,--input,#1e293b,,,,n.a.
+TEM-009,oscuro,anillo-foco,--color-anillo-foco,--ring,#aff33e,fondo,15.09,3,sí
+TEM-009,oscuro,grafica-1,--color-grafica-1,--chart-1,#aff33e,,,,n.a.
+TEM-009,oscuro,grafica-2,--color-grafica-2,--chart-2,#3b82f6,,,,n.a.
+TEM-009,oscuro,grafica-3,--color-grafica-3,--chart-3,#22c55e,,,,n.a.
+TEM-009,oscuro,grafica-4,--color-grafica-4,--chart-4,#a855f7,,,,n.a.
+TEM-009,oscuro,grafica-5,--color-grafica-5,--chart-5,#f59e0b,,,,n.a.
+TEM-010,claro,fondo,--color-fondo,--background,#FFFFFF,,,,n.a.
+TEM-010,claro,tinta,--color-tinta,--foreground,#0F172A,fondo,17.85,4.5,sí
+TEM-010,claro,superficie,--color-superficie,--card,#FFFFFF,,,,n.a.
+TEM-010,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#0F172A,superficie,17.85,4.5,sí
+TEM-010,claro,emergente,--color-emergente,--popover,#FFFFFF,,,,n.a.
+TEM-010,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#0F172A,emergente,17.85,4.5,sí
+TEM-010,claro,primario,--color-primario,--primary,#194391,fondo,9.32,3,sí
+TEM-010,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#FFFFFF,primario,9.32,4.5,sí
+TEM-010,claro,secundario,--color-secundario,--secondary,#DCE6F9,,,,n.a.
+TEM-010,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#194391,secundario,7.43,4.5,sí
+TEM-010,claro,apagado,--color-apagado,--muted,#F1F5F9,,,,n.a.
+TEM-010,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#64748B,fondo,4.76,4.5,sí
+TEM-010,claro,acento,--color-acento,--accent,#F1F5F9,,,,n.a.
+TEM-010,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#194391,acento,8.51,4.5,sí
+TEM-010,claro,destructivo,--color-destructivo,--destructive,#EF4444,fondo,3.76,3,sí
+TEM-010,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FFFFFF,destructivo,3.76,4.5,no
+TEM-010,claro,borde,--color-borde,--border,#E2E8F0,fondo,1.23,3,condicional
+TEM-010,claro,borde-campo,--color-borde-campo,--input,#ffffff,,,,n.a.
+TEM-010,claro,anillo-foco,--color-anillo-foco,--ring,#194391,fondo,9.32,3,sí
+TEM-010,claro,grafica-1,--color-grafica-1,--chart-1,#194391,,,,n.a.
+TEM-010,claro,grafica-2,--color-grafica-2,--chart-2,#4169E1,,,,n.a.
+TEM-010,claro,grafica-3,--color-grafica-3,--chart-3,#7CA3F5,,,,n.a.
+TEM-010,claro,grafica-4,--color-grafica-4,--chart-4,#A5C2F9,,,,n.a.
+TEM-010,claro,grafica-5,--color-grafica-5,--chart-5,#DCE6F9,,,,n.a.
+TEM-010,oscuro,fondo,--color-fondo,--background,#0F172A,,,,n.a.
+TEM-010,oscuro,tinta,--color-tinta,--foreground,#F8FAFC,fondo,17.06,4.5,sí
+TEM-010,oscuro,superficie,--color-superficie,--card,#1E293B,,,,n.a.
+TEM-010,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#F8FAFC,superficie,13.98,4.5,sí
+TEM-010,oscuro,emergente,--color-emergente,--popover,#0F172A,,,,n.a.
+TEM-010,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#F8FAFC,emergente,17.06,4.5,sí
+TEM-010,oscuro,primario,--color-primario,--primary,#194391,fondo,1.92,3,no
+TEM-010,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#FFFFFF,primario,9.32,4.5,sí
+TEM-010,oscuro,secundario,--color-secundario,--secondary,#1E293B,,,,n.a.
+TEM-010,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#DCE6F9,secundario,11.65,4.5,sí
+TEM-010,oscuro,apagado,--color-apagado,--muted,#1E293B,,,,n.a.
+TEM-010,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#94A3B8,fondo,6.96,4.5,sí
+TEM-010,oscuro,acento,--color-acento,--accent,#1E293B,,,,n.a.
+TEM-010,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#DCE6F9,acento,11.65,4.5,sí
+TEM-010,oscuro,destructivo,--color-destructivo,--destructive,#7F1D1D,fondo,1.78,3,no
+TEM-010,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#F8FAFC,destructivo,9.58,4.5,sí
+TEM-010,oscuro,borde,--color-borde,--border,#334155,fondo,1.72,3,condicional
+TEM-010,oscuro,borde-campo,--color-borde-campo,--input,#334155,,,,n.a.
+TEM-010,oscuro,anillo-foco,--color-anillo-foco,--ring,#194391,fondo,1.92,3,no
+TEM-010,oscuro,grafica-1,--color-grafica-1,--chart-1,#194391,,,,n.a.
+TEM-010,oscuro,grafica-2,--color-grafica-2,--chart-2,#3B82F6,,,,n.a.
+TEM-010,oscuro,grafica-3,--color-grafica-3,--chart-3,#60A5FA,,,,n.a.
+TEM-010,oscuro,grafica-4,--color-grafica-4,--chart-4,#93C5FD,,,,n.a.
+TEM-010,oscuro,grafica-5,--color-grafica-5,--chart-5,#BFDBFE,,,,n.a.
+TEM-011,claro,fondo,--color-fondo,--background,#000000,,,,n.a.
+TEM-011,claro,tinta,--color-tinta,--foreground,#00FF41,fondo,15.38,4.5,sí
+TEM-011,claro,superficie,--color-superficie,--card,#050505,,,,n.a.
+TEM-011,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#00FF41,superficie,14.93,4.5,sí
+TEM-011,claro,emergente,--color-emergente,--popover,#000000,,,,n.a.
+TEM-011,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#00FF41,emergente,15.38,4.5,sí
+TEM-011,claro,primario,--color-primario,--primary,#00FF41,fondo,15.38,3,sí
+TEM-011,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,15.38,4.5,sí
+TEM-011,claro,secundario,--color-secundario,--secondary,#003B00,,,,n.a.
+TEM-011,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#00FF41,secundario,9.46,4.5,sí
+TEM-011,claro,apagado,--color-apagado,--muted,#001A00,,,,n.a.
+TEM-011,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#008F11,fondo,4.94,4.5,sí
+TEM-011,claro,acento,--color-acento,--accent,#00FF41,,,,n.a.
+TEM-011,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#000000,acento,15.38,4.5,sí
+TEM-011,claro,destructivo,--color-destructivo,--destructive,#FF0000,fondo,5.25,3,sí
+TEM-011,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FFFFFF,destructivo,4.00,4.5,no
+TEM-011,claro,borde,--color-borde,--border,#003B00,fondo,1.63,3,condicional
+TEM-011,claro,borde-campo,--color-borde-campo,--input,#000000,,,,n.a.
+TEM-011,claro,anillo-foco,--color-anillo-foco,--ring,#00FF41,fondo,15.38,3,sí
+TEM-011,claro,grafica-1,--color-grafica-1,--chart-1,#00FF41,,,,n.a.
+TEM-011,claro,grafica-2,--color-grafica-2,--chart-2,#008F11,,,,n.a.
+TEM-011,claro,grafica-3,--color-grafica-3,--chart-3,#003B00,,,,n.a.
+TEM-011,claro,grafica-4,--color-grafica-4,--chart-4,#0D0208,,,,n.a.
+TEM-011,claro,grafica-5,--color-grafica-5,--chart-5,#00FF41,,,,n.a.
+TEM-011,oscuro,fondo,--color-fondo,--background,#000000,,,,n.a.
+TEM-011,oscuro,tinta,--color-tinta,--foreground,#00FF41,fondo,15.38,4.5,sí
+TEM-011,oscuro,superficie,--color-superficie,--card,#050505,,,,n.a.
+TEM-011,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#00FF41,superficie,14.93,4.5,sí
+TEM-011,oscuro,emergente,--color-emergente,--popover,#000000,,,,n.a.
+TEM-011,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#00FF41,emergente,15.38,4.5,sí
+TEM-011,oscuro,primario,--color-primario,--primary,#00FF41,fondo,15.38,3,sí
+TEM-011,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,15.38,4.5,sí
+TEM-011,oscuro,secundario,--color-secundario,--secondary,#003B00,,,,n.a.
+TEM-011,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#00FF41,secundario,9.46,4.5,sí
+TEM-011,oscuro,apagado,--color-apagado,--muted,#001A00,,,,n.a.
+TEM-011,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#008F11,fondo,4.94,4.5,sí
+TEM-011,oscuro,acento,--color-acento,--accent,#00FF41,,,,n.a.
+TEM-011,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#000000,acento,15.38,4.5,sí
+TEM-011,oscuro,destructivo,--color-destructivo,--destructive,#FF0000,fondo,5.25,3,sí
+TEM-011,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FFFFFF,destructivo,4.00,4.5,no
+TEM-011,oscuro,borde,--color-borde,--border,#003B00,fondo,1.63,3,condicional
+TEM-011,oscuro,borde-campo,--color-borde-campo,--input,#000000,,,,n.a.
+TEM-011,oscuro,anillo-foco,--color-anillo-foco,--ring,#00FF41,fondo,15.38,3,sí
+TEM-011,oscuro,grafica-1,--color-grafica-1,--chart-1,#00FF41,,,,n.a.
+TEM-011,oscuro,grafica-2,--color-grafica-2,--chart-2,#008F11,,,,n.a.
+TEM-011,oscuro,grafica-3,--color-grafica-3,--chart-3,#003B00,,,,n.a.
+TEM-011,oscuro,grafica-4,--color-grafica-4,--chart-4,#0D0208,,,,n.a.
+TEM-011,oscuro,grafica-5,--color-grafica-5,--chart-5,#00FF41,,,,n.a.
+TEM-012,claro,fondo,--color-fondo,--background,#000000,,,,n.a.
+TEM-012,claro,tinta,--color-tinta,--foreground,#00FF41,fondo,15.38,4.5,sí
+TEM-012,claro,superficie,--color-superficie,--card,#050505,,,,n.a.
+TEM-012,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#00FF41,superficie,14.93,4.5,sí
+TEM-012,claro,emergente,--color-emergente,--popover,#000000,,,,n.a.
+TEM-012,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#00FF41,emergente,15.38,4.5,sí
+TEM-012,claro,primario,--color-primario,--primary,#00FF41,fondo,15.38,3,sí
+TEM-012,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,15.38,4.5,sí
+TEM-012,claro,secundario,--color-secundario,--secondary,#003B00,,,,n.a.
+TEM-012,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#00FF41,secundario,9.46,4.5,sí
+TEM-012,claro,apagado,--color-apagado,--muted,#001A00,,,,n.a.
+TEM-012,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#008F11,fondo,4.94,4.5,sí
+TEM-012,claro,acento,--color-acento,--accent,#00FF41,,,,n.a.
+TEM-012,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#000000,acento,15.38,4.5,sí
+TEM-012,claro,destructivo,--color-destructivo,--destructive,#FF0000,fondo,5.25,3,sí
+TEM-012,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FFFFFF,destructivo,4.00,4.5,no
+TEM-012,claro,borde,--color-borde,--border,#003B00,fondo,1.63,3,condicional
+TEM-012,claro,borde-campo,--color-borde-campo,--input,#000000,,,,n.a.
+TEM-012,claro,anillo-foco,--color-anillo-foco,--ring,#00FF41,fondo,15.38,3,sí
+TEM-012,claro,grafica-1,--color-grafica-1,--chart-1,#00FF41,,,,n.a.
+TEM-012,claro,grafica-2,--color-grafica-2,--chart-2,#008F11,,,,n.a.
+TEM-012,claro,grafica-3,--color-grafica-3,--chart-3,#003B00,,,,n.a.
+TEM-012,claro,grafica-4,--color-grafica-4,--chart-4,#0D0208,,,,n.a.
+TEM-012,claro,grafica-5,--color-grafica-5,--chart-5,#00FF41,,,,n.a.
+TEM-012,oscuro,fondo,--color-fondo,--background,#000000,,,,n.a.
+TEM-012,oscuro,tinta,--color-tinta,--foreground,#00FF41,fondo,15.38,4.5,sí
+TEM-012,oscuro,superficie,--color-superficie,--card,#050505,,,,n.a.
+TEM-012,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#00FF41,superficie,14.93,4.5,sí
+TEM-012,oscuro,emergente,--color-emergente,--popover,#000000,,,,n.a.
+TEM-012,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#00FF41,emergente,15.38,4.5,sí
+TEM-012,oscuro,primario,--color-primario,--primary,#008922,fondo,4.60,3,sí
+TEM-012,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,4.60,4.5,sí
+TEM-012,oscuro,secundario,--color-secundario,--secondary,#003a00,,,,n.a.
+TEM-012,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffffff,secundario,13.08,4.5,sí
+TEM-012,oscuro,apagado,--color-apagado,--muted,#001A00,,,,n.a.
+TEM-012,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#008F11,fondo,4.94,4.5,sí
+TEM-012,oscuro,acento,--color-acento,--accent,#00FF41,,,,n.a.
+TEM-012,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#000000,acento,15.38,4.5,sí
+TEM-012,oscuro,destructivo,--color-destructivo,--destructive,#FF0000,fondo,5.25,3,sí
+TEM-012,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FFFFFF,destructivo,4.00,4.5,no
+TEM-012,oscuro,borde,--color-borde,--border,#003B00,fondo,1.63,3,condicional
+TEM-012,oscuro,borde-campo,--color-borde-campo,--input,#000000,,,,n.a.
+TEM-012,oscuro,anillo-foco,--color-anillo-foco,--ring,#00FF41,fondo,15.38,3,sí
+TEM-012,oscuro,grafica-1,--color-grafica-1,--chart-1,#00FF41,,,,n.a.
+TEM-012,oscuro,grafica-2,--color-grafica-2,--chart-2,#008F11,,,,n.a.
+TEM-012,oscuro,grafica-3,--color-grafica-3,--chart-3,#003B00,,,,n.a.
+TEM-012,oscuro,grafica-4,--color-grafica-4,--chart-4,#0D0208,,,,n.a.
+TEM-012,oscuro,grafica-5,--color-grafica-5,--chart-5,#00FF41,,,,n.a.
+TEM-013,claro,fondo,--color-fondo,--background,#eef0f3,,,,n.a.
+TEM-013,claro,tinta,--color-tinta,--foreground,#181b21,fondo,15.11,4.5,sí
+TEM-013,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-013,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#181b21,superficie,17.25,4.5,sí
+TEM-013,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-013,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#181b21,emergente,17.25,4.5,sí
+TEM-013,claro,primario,--color-primario,--primary,#3b608f,fondo,5.65,3,sí
+TEM-013,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,6.45,4.5,sí
+TEM-013,claro,secundario,--color-secundario,--secondary,#b8694a,,,,n.a.
+TEM-013,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffffff,secundario,4.07,4.5,no
+TEM-013,claro,apagado,--color-apagado,--muted,#e8eaee,,,,n.a.
+TEM-013,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#5a6072,fondo,5.49,4.5,sí
+TEM-013,claro,acento,--color-acento,--accent,#d8e2ee,,,,n.a.
+TEM-013,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#1f3a5c,acento,8.82,4.5,sí
+TEM-013,claro,destructivo,--color-destructivo,--destructive,#b8332e,fondo,5.18,3,sí
+TEM-013,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,5.91,4.5,sí
+TEM-013,claro,borde,--color-borde,--border,#c9cfd8,fondo,1.37,3,condicional
+TEM-013,claro,borde-campo,--color-borde-campo,--input,#c9cfd8,,,,n.a.
+TEM-013,claro,anillo-foco,--color-anillo-foco,--ring,#6b87b0,fondo,3.22,3,sí
+TEM-013,claro,grafica-1,--color-grafica-1,--chart-1,#3b608f,,,,n.a.
+TEM-013,claro,grafica-2,--color-grafica-2,--chart-2,#b8694a,,,,n.a.
+TEM-013,claro,grafica-3,--color-grafica-3,--chart-3,#5b8caf,,,,n.a.
+TEM-013,claro,grafica-4,--color-grafica-4,--chart-4,#4a7c59,,,,n.a.
+TEM-013,claro,grafica-5,--color-grafica-5,--chart-5,#c9a14a,,,,n.a.
+TEM-013,oscuro,fondo,--color-fondo,--background,#14171c,,,,n.a.
+TEM-013,oscuro,tinta,--color-tinta,--foreground,#e6e9ef,fondo,14.77,4.5,sí
+TEM-013,oscuro,superficie,--color-superficie,--card,#1c2027,,,,n.a.
+TEM-013,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#e6e9ef,superficie,13.43,4.5,sí
+TEM-013,oscuro,emergente,--color-emergente,--popover,#232831,,,,n.a.
+TEM-013,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e6e9ef,emergente,12.17,4.5,sí
+TEM-013,oscuro,primario,--color-primario,--primary,#6b8db8,fondo,5.24,3,sí
+TEM-013,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#0f1216,primario,5.48,4.5,sí
+TEM-013,oscuro,secundario,--color-secundario,--secondary,#d18866,,,,n.a.
+TEM-013,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#1a0e08,secundario,6.69,4.5,sí
+TEM-013,oscuro,apagado,--color-apagado,--muted,#232831,,,,n.a.
+TEM-013,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#9097a6,fondo,6.13,4.5,sí
+TEM-013,oscuro,acento,--color-acento,--accent,#1f2d3d,,,,n.a.
+TEM-013,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#a8c2dd,acento,7.61,4.5,sí
+TEM-013,oscuro,destructivo,--color-destructivo,--destructive,#d4524c,fondo,4.37,3,sí
+TEM-013,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#160807,destructivo,4.77,4.5,sí
+TEM-013,oscuro,borde,--color-borde,--border,#353c48,fondo,1.62,3,condicional
+TEM-013,oscuro,borde-campo,--color-borde-campo,--input,#353c48,,,,n.a.
+TEM-013,oscuro,anillo-foco,--color-anillo-foco,--ring,#88a8c9,fondo,7.26,3,sí
+TEM-013,oscuro,grafica-1,--color-grafica-1,--chart-1,#6b8db8,,,,n.a.
+TEM-013,oscuro,grafica-2,--color-grafica-2,--chart-2,#d18866,,,,n.a.
+TEM-013,oscuro,grafica-3,--color-grafica-3,--chart-3,#88a8c9,,,,n.a.
+TEM-013,oscuro,grafica-4,--color-grafica-4,--chart-4,#6b9b78,,,,n.a.
+TEM-013,oscuro,grafica-5,--color-grafica-5,--chart-5,#dab86a,,,,n.a.
+TEM-014,claro,fondo,--color-fondo,--background,#F2EFE9,,,,n.a.
+TEM-014,claro,tinta,--color-tinta,--foreground,#191B1E,fondo,15.04,4.5,sí
+TEM-014,claro,superficie,--color-superficie,--card,#FAF8F2,,,,n.a.
+TEM-014,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#191B1E,superficie,16.25,4.5,sí
+TEM-014,claro,emergente,--color-emergente,--popover,#FAF8F2,,,,n.a.
+TEM-014,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#191B1E,emergente,16.25,4.5,sí
+TEM-014,claro,primario,--color-primario,--primary,#191B1E,fondo,15.04,3,sí
+TEM-014,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#F2EFE9,primario,15.04,4.5,sí
+TEM-014,claro,secundario,--color-secundario,--secondary,#EAE5DB,,,,n.a.
+TEM-014,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#191B1E,secundario,13.75,4.5,sí
+TEM-014,claro,apagado,--color-apagado,--muted,#EAE5DB,,,,n.a.
+TEM-014,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#71756C,fondo,4.10,4.5,no
+TEM-014,claro,acento,--color-acento,--accent,#E4572E,,,,n.a.
+TEM-014,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#FAF8F2,acento,3.47,4.5,no
+TEM-014,claro,destructivo,--color-destructivo,--destructive,#C5451F,fondo,4.31,3,sí
+TEM-014,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FAF8F2,destructivo,4.66,4.5,sí
+TEM-014,claro,borde,--color-borde,--border,#D8D2C4,fondo,1.31,3,condicional
+TEM-014,claro,borde-campo,--color-borde-campo,--input,#D8D2C4,,,,n.a.
+TEM-014,claro,anillo-foco,--color-anillo-foco,--ring,#E4572E,fondo,3.21,3,sí
+TEM-014,oscuro,fondo,--color-fondo,--background,#191B1E,,,,n.a.
+TEM-014,oscuro,tinta,--color-tinta,--foreground,#F2EFE9,fondo,15.04,4.5,sí
+TEM-014,oscuro,superficie,--color-superficie,--card,#22252A,,,,n.a.
+TEM-014,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#F2EFE9,superficie,13.40,4.5,sí
+TEM-014,oscuro,emergente,--color-emergente,--popover,#22252A,,,,n.a.
+TEM-014,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#F2EFE9,emergente,13.40,4.5,sí
+TEM-014,oscuro,primario,--color-primario,--primary,#F2EFE9,fondo,15.04,3,sí
+TEM-014,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#191B1E,primario,15.04,4.5,sí
+TEM-014,oscuro,secundario,--color-secundario,--secondary,#22252A,,,,n.a.
+TEM-014,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#F2EFE9,secundario,13.40,4.5,sí
+TEM-014,oscuro,apagado,--color-apagado,--muted,#2A2E34,,,,n.a.
+TEM-014,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#A6A8A0,fondo,7.17,4.5,sí
+TEM-014,oscuro,acento,--color-acento,--accent,#E4572E,,,,n.a.
+TEM-014,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#FAF8F2,acento,3.47,4.5,no
+TEM-014,oscuro,destructivo,--color-destructivo,--destructive,#E4572E,fondo,4.69,3,sí
+TEM-014,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FAF8F2,destructivo,3.47,4.5,no
+TEM-014,oscuro,borde,--color-borde,--border,#33373E,fondo,1.44,3,condicional
+TEM-014,oscuro,borde-campo,--color-borde-campo,--input,#33373E,,,,n.a.
+TEM-014,oscuro,anillo-foco,--color-anillo-foco,--ring,#E4572E,fondo,4.69,3,sí
+TEM-015,claro,fondo,--color-fondo,--background,#000000,,,,n.a.
+TEM-015,claro,tinta,--color-tinta,--foreground,#ffffff,fondo,21.00,4.5,sí
+TEM-015,claro,superficie,--color-superficie,--card,#000000,,,,n.a.
+TEM-015,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#ffffff,superficie,21.00,4.5,sí
+TEM-015,claro,emergente,--color-emergente,--popover,#000000,,,,n.a.
+TEM-015,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#ffffff,emergente,21.00,4.5,sí
+TEM-015,claro,primario,--color-primario,--primary,#ff00c8,fondo,6.09,3,sí
+TEM-015,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,6.09,4.5,sí
+TEM-015,claro,secundario,--color-secundario,--secondary,#222222,,,,n.a.
+TEM-015,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffffff,secundario,15.91,4.5,sí
+TEM-015,claro,apagado,--color-apagado,--muted,#111111,,,,n.a.
+TEM-015,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#aaaaaa,fondo,9.04,4.5,sí
+TEM-015,claro,acento,--color-acento,--accent,#ff00c8,,,,n.a.
+TEM-015,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#000000,acento,6.09,4.5,sí
+TEM-015,claro,destructivo,--color-destructivo,--destructive,#ff3d00,fondo,5.92,3,sí
+TEM-015,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.55,4.5,no
+TEM-015,claro,borde,--color-borde,--border,#333333,fondo,1.66,3,condicional
+TEM-015,claro,borde-campo,--color-borde-campo,--input,#1a1a1a,,,,n.a.
+TEM-015,claro,anillo-foco,--color-anillo-foco,--ring,#ff00c8,fondo,6.09,3,sí
+TEM-015,claro,grafica-1,--color-grafica-1,--chart-1,#ff00c8,,,,n.a.
+TEM-015,claro,grafica-2,--color-grafica-2,--chart-2,#9000ff,,,,n.a.
+TEM-015,claro,grafica-3,--color-grafica-3,--chart-3,#00e5ff,,,,n.a.
+TEM-015,claro,grafica-4,--color-grafica-4,--chart-4,#00ffcc,,,,n.a.
+TEM-015,claro,grafica-5,--color-grafica-5,--chart-5,#ffe600,,,,n.a.
+TEM-015,oscuro,fondo,--color-fondo,--background,#000000,,,,n.a.
+TEM-015,oscuro,tinta,--color-tinta,--foreground,#ffffff,fondo,21.00,4.5,sí
+TEM-015,oscuro,superficie,--color-superficie,--card,#000000,,,,n.a.
+TEM-015,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#ffffff,superficie,21.00,4.5,sí
+TEM-015,oscuro,emergente,--color-emergente,--popover,#000000,,,,n.a.
+TEM-015,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#ffffff,emergente,21.00,4.5,sí
+TEM-015,oscuro,primario,--color-primario,--primary,#ff0000,fondo,5.25,3,sí
+TEM-015,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,5.25,4.5,sí
+TEM-015,oscuro,secundario,--color-secundario,--secondary,#222222,,,,n.a.
+TEM-015,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffffff,secundario,15.91,4.5,sí
+TEM-015,oscuro,apagado,--color-apagado,--muted,#111111,,,,n.a.
+TEM-015,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#aaaaaa,fondo,9.04,4.5,sí
+TEM-015,oscuro,acento,--color-acento,--accent,#ff00c8,,,,n.a.
+TEM-015,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#000000,acento,6.09,4.5,sí
+TEM-015,oscuro,destructivo,--color-destructivo,--destructive,#ff3d00,fondo,5.92,3,sí
+TEM-015,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.55,4.5,no
+TEM-015,oscuro,borde,--color-borde,--border,#333333,fondo,1.66,3,condicional
+TEM-015,oscuro,borde-campo,--color-borde-campo,--input,#1a1a1a,,,,n.a.
+TEM-015,oscuro,anillo-foco,--color-anillo-foco,--ring,#ff00c8,fondo,6.09,3,sí
+TEM-015,oscuro,grafica-1,--color-grafica-1,--chart-1,#ff00c8,,,,n.a.
+TEM-015,oscuro,grafica-2,--color-grafica-2,--chart-2,#9000ff,,,,n.a.
+TEM-015,oscuro,grafica-3,--color-grafica-3,--chart-3,#00e5ff,,,,n.a.
+TEM-015,oscuro,grafica-4,--color-grafica-4,--chart-4,#00ffcc,,,,n.a.
+TEM-015,oscuro,grafica-5,--color-grafica-5,--chart-5,#ffe600,,,,n.a.
+TEM-016,claro,fondo,--color-fondo,--background,#ffffff,,,,n.a.
+TEM-016,claro,tinta,--color-tinta,--foreground,#3d3929,fondo,11.57,4.5,sí
+TEM-016,claro,superficie,--color-superficie,--card,#f5f4ef,,,,n.a.
+TEM-016,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#141413,superficie,16.74,4.5,sí
+TEM-016,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-016,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#28261b,emergente,15.18,4.5,sí
+TEM-016,claro,primario,--color-primario,--primary,#c96442,fondo,3.90,3,sí
+TEM-016,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.90,4.5,no
+TEM-016,claro,secundario,--color-secundario,--secondary,#e9e6dc,,,,n.a.
+TEM-016,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#535146,secundario,6.39,4.5,sí
+TEM-016,claro,apagado,--color-apagado,--muted,#ede9de,,,,n.a.
+TEM-016,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#6e6d68,fondo,5.18,4.5,sí
+TEM-016,claro,acento,--color-acento,--accent,#e9e6dc,,,,n.a.
+TEM-016,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#28261b,acento,12.16,4.5,sí
+TEM-016,claro,destructivo,--color-destructivo,--destructive,#141413,fondo,18.43,3,sí
+TEM-016,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,18.43,4.5,sí
+TEM-016,claro,borde,--color-borde,--border,#dad9d4,fondo,1.41,3,condicional
+TEM-016,claro,borde-campo,--color-borde-campo,--input,#b4b2a7,,,,n.a.
+TEM-016,claro,anillo-foco,--color-anillo-foco,--ring,#c96442,fondo,3.90,3,sí
+TEM-016,claro,grafica-1,--color-grafica-1,--chart-1,#b05730,,,,n.a.
+TEM-016,claro,grafica-2,--color-grafica-2,--chart-2,#9c87f5,,,,n.a.
+TEM-016,claro,grafica-3,--color-grafica-3,--chart-3,#ded8c4,,,,n.a.
+TEM-016,claro,grafica-4,--color-grafica-4,--chart-4,#dbd3f0,,,,n.a.
+TEM-016,claro,grafica-5,--color-grafica-5,--chart-5,#b4552d,,,,n.a.
+TEM-016,oscuro,fondo,--color-fondo,--background,#262624,,,,n.a.
+TEM-016,oscuro,tinta,--color-tinta,--foreground,#f1f1ef,fondo,13.41,4.5,sí
+TEM-016,oscuro,superficie,--color-superficie,--card,#2c2c2b,,,,n.a.
+TEM-016,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#faf9f5,superficie,13.27,4.5,sí
+TEM-016,oscuro,emergente,--color-emergente,--popover,#30302e,,,,n.a.
+TEM-016,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e5e5e2,emergente,10.48,4.5,sí
+TEM-016,oscuro,primario,--color-primario,--primary,#d97757,fondo,4.86,3,sí
+TEM-016,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#141413,primario,5.90,4.5,sí
+TEM-016,oscuro,secundario,--color-secundario,--secondary,#faf9f5,,,,n.a.
+TEM-016,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#30302e,secundario,12.55,4.5,sí
+TEM-016,oscuro,apagado,--color-apagado,--muted,#1b1b19,,,,n.a.
+TEM-016,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#b7b5a9,fondo,7.36,4.5,sí
+TEM-016,oscuro,acento,--color-acento,--accent,#1a1915,,,,n.a.
+TEM-016,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#f5f4ee,acento,15.96,4.5,sí
+TEM-016,oscuro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,4.03,3,sí
+TEM-016,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.76,4.5,no
+TEM-016,oscuro,borde,--color-borde,--border,#3a3a31,fondo,1.32,3,condicional
+TEM-016,oscuro,borde-campo,--color-borde-campo,--input,#52514a,,,,n.a.
+TEM-016,oscuro,anillo-foco,--color-anillo-foco,--ring,#d97757,fondo,4.86,3,sí
+TEM-016,oscuro,grafica-1,--color-grafica-1,--chart-1,#b05730,,,,n.a.
+TEM-016,oscuro,grafica-2,--color-grafica-2,--chart-2,#9c87f5,,,,n.a.
+TEM-016,oscuro,grafica-3,--color-grafica-3,--chart-3,#1a1915,,,,n.a.
+TEM-016,oscuro,grafica-4,--color-grafica-4,--chart-4,#2f2b48,,,,n.a.
+TEM-016,oscuro,grafica-5,--color-grafica-5,--chart-5,#b4552d,,,,n.a.
+TEM-017,claro,fondo,--color-fondo,--background,#49401d,,,,n.a.
+TEM-017,claro,tinta,--color-tinta,--foreground,#3d3929,fondo,1.12,4.5,no
+TEM-017,claro,superficie,--color-superficie,--card,#f5f4ef,,,,n.a.
+TEM-017,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#141413,superficie,16.74,4.5,sí
+TEM-017,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-017,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#28261b,emergente,15.18,4.5,sí
+TEM-017,claro,primario,--color-primario,--primary,#c96442,fondo,2.65,3,no
+TEM-017,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.90,4.5,no
+TEM-017,claro,secundario,--color-secundario,--secondary,#e9e6dc,,,,n.a.
+TEM-017,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#535146,secundario,6.39,4.5,sí
+TEM-017,claro,apagado,--color-apagado,--muted,#ede9de,,,,n.a.
+TEM-017,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#6e6d68,fondo,1.99,4.5,no
+TEM-017,claro,acento,--color-acento,--accent,#e9e6dc,,,,n.a.
+TEM-017,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#28261b,acento,12.16,4.5,sí
+TEM-017,claro,destructivo,--color-destructivo,--destructive,#141413,fondo,1.79,3,no
+TEM-017,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,18.43,4.5,sí
+TEM-017,claro,borde,--color-borde,--border,#dad9d4,fondo,7.30,3,sí
+TEM-017,claro,borde-campo,--color-borde-campo,--input,#b4b2a7,,,,n.a.
+TEM-017,claro,anillo-foco,--color-anillo-foco,--ring,#c96442,fondo,2.65,3,no
+TEM-017,claro,grafica-1,--color-grafica-1,--chart-1,#b05730,,,,n.a.
+TEM-017,claro,grafica-2,--color-grafica-2,--chart-2,#9c87f5,,,,n.a.
+TEM-017,claro,grafica-3,--color-grafica-3,--chart-3,#ded8c4,,,,n.a.
+TEM-017,claro,grafica-4,--color-grafica-4,--chart-4,#dbd3f0,,,,n.a.
+TEM-017,claro,grafica-5,--color-grafica-5,--chart-5,#b4552d,,,,n.a.
+TEM-017,oscuro,fondo,--color-fondo,--background,#262624,,,,n.a.
+TEM-017,oscuro,tinta,--color-tinta,--foreground,#f1f1ef,fondo,13.41,4.5,sí
+TEM-017,oscuro,superficie,--color-superficie,--card,#2c2c2b,,,,n.a.
+TEM-017,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#faf9f5,superficie,13.27,4.5,sí
+TEM-017,oscuro,emergente,--color-emergente,--popover,#30302e,,,,n.a.
+TEM-017,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e5e5e2,emergente,10.48,4.5,sí
+TEM-017,oscuro,primario,--color-primario,--primary,#d97757,fondo,4.86,3,sí
+TEM-017,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#141413,primario,5.90,4.5,sí
+TEM-017,oscuro,secundario,--color-secundario,--secondary,#faf9f5,,,,n.a.
+TEM-017,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#30302e,secundario,12.55,4.5,sí
+TEM-017,oscuro,apagado,--color-apagado,--muted,#1b1b19,,,,n.a.
+TEM-017,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#b7b5a9,fondo,7.36,4.5,sí
+TEM-017,oscuro,acento,--color-acento,--accent,#1a1915,,,,n.a.
+TEM-017,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#f5f4ee,acento,15.96,4.5,sí
+TEM-017,oscuro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,4.03,3,sí
+TEM-017,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.76,4.5,no
+TEM-017,oscuro,borde,--color-borde,--border,#3a3a31,fondo,1.32,3,condicional
+TEM-017,oscuro,borde-campo,--color-borde-campo,--input,#52514a,,,,n.a.
+TEM-017,oscuro,anillo-foco,--color-anillo-foco,--ring,#d97757,fondo,4.86,3,sí
+TEM-017,oscuro,grafica-1,--color-grafica-1,--chart-1,#b05730,,,,n.a.
+TEM-017,oscuro,grafica-2,--color-grafica-2,--chart-2,#9c87f5,,,,n.a.
+TEM-017,oscuro,grafica-3,--color-grafica-3,--chart-3,#1a1915,,,,n.a.
+TEM-017,oscuro,grafica-4,--color-grafica-4,--chart-4,#2f2b48,,,,n.a.
+TEM-017,oscuro,grafica-5,--color-grafica-5,--chart-5,#b4552d,,,,n.a.
+TEM-018,claro,fondo,--color-fondo,--background,#e8ebed,,,,n.a.
+TEM-018,claro,tinta,--color-tinta,--foreground,#333333,fondo,10.55,4.5,sí
+TEM-018,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-018,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#333333,superficie,12.63,4.5,sí
+TEM-018,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-018,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#333333,emergente,12.63,4.5,sí
+TEM-018,claro,primario,--color-primario,--primary,#e37e31,fondo,2.40,3,no
+TEM-018,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,2.88,4.5,no
+TEM-018,claro,secundario,--color-secundario,--secondary,#4176fb,,,,n.a.
+TEM-018,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffffff,secundario,4.03,4.5,no
+TEM-018,claro,apagado,--color-apagado,--muted,#f9fafb,,,,n.a.
+TEM-018,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#6b7280,fondo,4.04,4.5,no
+TEM-018,claro,acento,--color-acento,--accent,#4176fb,,,,n.a.
+TEM-018,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#ffffff,acento,4.03,4.5,no
+TEM-018,claro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,3.14,3,sí
+TEM-018,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.76,4.5,no
+TEM-018,claro,borde,--color-borde,--border,#cccccc,fondo,1.34,3,condicional
+TEM-018,claro,borde-campo,--color-borde-campo,--input,#f4f5f7,,,,n.a.
+TEM-018,claro,anillo-foco,--color-anillo-foco,--ring,#dc5029,fondo,3.36,3,sí
+TEM-018,claro,grafica-1,--color-grafica-1,--chart-1,#7399bf,,,,n.a.
+TEM-018,claro,grafica-2,--color-grafica-2,--chart-2,#e37e31,,,,n.a.
+TEM-018,claro,grafica-3,--color-grafica-3,--chart-3,#d54450,,,,n.a.
+TEM-018,claro,grafica-4,--color-grafica-4,--chart-4,#e2b146,,,,n.a.
+TEM-018,claro,grafica-5,--color-grafica-5,--chart-5,#3c4c76,,,,n.a.
+TEM-018,oscuro,fondo,--color-fondo,--background,#1a1a1a,,,,n.a.
+TEM-018,oscuro,tinta,--color-tinta,--foreground,#e5e5e5,fondo,13.82,4.5,sí
+TEM-018,oscuro,superficie,--color-superficie,--card,#202020,,,,n.a.
+TEM-018,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#e5e5e5,superficie,12.93,4.5,sí
+TEM-018,oscuro,emergente,--color-emergente,--popover,#202020,,,,n.a.
+TEM-018,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e5e5e5,emergente,12.93,4.5,sí
+TEM-018,oscuro,primario,--color-primario,--primary,#df6035,fondo,4.86,3,sí
+TEM-018,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.58,4.5,no
+TEM-018,oscuro,secundario,--color-secundario,--secondary,#284167,,,,n.a.
+TEM-018,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#e5e5e5,secundario,8.16,4.5,sí
+TEM-018,oscuro,apagado,--color-apagado,--muted,#2a2a2a,,,,n.a.
+TEM-018,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#808080,fondo,4.41,4.5,no
+TEM-018,oscuro,acento,--color-acento,--accent,#2a3656,,,,n.a.
+TEM-018,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#bfdbfe,acento,8.39,4.5,sí
+TEM-018,oscuro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,4.62,3,sí
+TEM-018,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.76,4.5,no
+TEM-018,oscuro,borde,--color-borde,--border,#353535,fondo,1.42,3,condicional
+TEM-018,oscuro,borde-campo,--color-borde-campo,--input,#303030,,,,n.a.
+TEM-018,oscuro,anillo-foco,--color-anillo-foco,--ring,#e05d38,fondo,4.80,3,sí
+TEM-018,oscuro,grafica-1,--color-grafica-1,--chart-1,#85a6c7,,,,n.a.
+TEM-018,oscuro,grafica-2,--color-grafica-2,--chart-2,#e16f41,,,,n.a.
+TEM-018,oscuro,grafica-3,--color-grafica-3,--chart-3,#d54450,,,,n.a.
+TEM-018,oscuro,grafica-4,--color-grafica-4,--chart-4,#e2b146,,,,n.a.
+TEM-018,oscuro,grafica-5,--color-grafica-5,--chart-5,#3c4c76,,,,n.a.
+TEM-019,claro,fondo,--color-fondo,--background,#e8ebed,,,,n.a.
+TEM-019,claro,tinta,--color-tinta,--foreground,#333333,fondo,10.55,4.5,sí
+TEM-019,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-019,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#333333,superficie,12.63,4.5,sí
+TEM-019,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-019,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#333333,emergente,12.63,4.5,sí
+TEM-019,claro,primario,--color-primario,--primary,#df6035,fondo,2.99,3,no
+TEM-019,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.58,4.5,no
+TEM-019,claro,secundario,--color-secundario,--secondary,#2f4b79,,,,n.a.
+TEM-019,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffffff,secundario,8.74,4.5,sí
+TEM-019,claro,apagado,--color-apagado,--muted,#f9fafb,,,,n.a.
+TEM-019,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#6b7280,fondo,4.04,4.5,no
+TEM-019,claro,acento,--color-acento,--accent,#d6e4f0,,,,n.a.
+TEM-019,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#1e3a8a,acento,8.00,4.5,sí
+TEM-019,claro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,3.14,3,sí
+TEM-019,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.76,4.5,no
+TEM-019,claro,borde,--color-borde,--border,#cccccc,fondo,1.34,3,condicional
+TEM-019,claro,borde-campo,--color-borde-campo,--input,#f4f5f7,,,,n.a.
+TEM-019,claro,anillo-foco,--color-anillo-foco,--ring,#e05d38,fondo,3.03,3,sí
+TEM-019,claro,grafica-1,--color-grafica-1,--chart-1,#7399bf,,,,n.a.
+TEM-019,claro,grafica-2,--color-grafica-2,--chart-2,#e16f41,,,,n.a.
+TEM-019,claro,grafica-3,--color-grafica-3,--chart-3,#d54450,,,,n.a.
+TEM-019,claro,grafica-4,--color-grafica-4,--chart-4,#e2b146,,,,n.a.
+TEM-019,claro,grafica-5,--color-grafica-5,--chart-5,#3c4c76,,,,n.a.
+TEM-019,oscuro,fondo,--color-fondo,--background,#1a1a1a,,,,n.a.
+TEM-019,oscuro,tinta,--color-tinta,--foreground,#e5e5e5,fondo,13.82,4.5,sí
+TEM-019,oscuro,superficie,--color-superficie,--card,#202020,,,,n.a.
+TEM-019,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#e5e5e5,superficie,12.93,4.5,sí
+TEM-019,oscuro,emergente,--color-emergente,--popover,#202020,,,,n.a.
+TEM-019,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e5e5e5,emergente,12.93,4.5,sí
+TEM-019,oscuro,primario,--color-primario,--primary,#df6035,fondo,4.86,3,sí
+TEM-019,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.58,4.5,no
+TEM-019,oscuro,secundario,--color-secundario,--secondary,#284167,,,,n.a.
+TEM-019,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#e5e5e5,secundario,8.16,4.5,sí
+TEM-019,oscuro,apagado,--color-apagado,--muted,#2a2a2a,,,,n.a.
+TEM-019,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#808080,fondo,4.41,4.5,no
+TEM-019,oscuro,acento,--color-acento,--accent,#2a3656,,,,n.a.
+TEM-019,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#bfdbfe,acento,8.39,4.5,sí
+TEM-019,oscuro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,4.62,3,sí
+TEM-019,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.76,4.5,no
+TEM-019,oscuro,borde,--color-borde,--border,#353535,fondo,1.42,3,condicional
+TEM-019,oscuro,borde-campo,--color-borde-campo,--input,#303030,,,,n.a.
+TEM-019,oscuro,anillo-foco,--color-anillo-foco,--ring,#e05d38,fondo,4.80,3,sí
+TEM-019,oscuro,grafica-1,--color-grafica-1,--chart-1,#85a6c7,,,,n.a.
+TEM-019,oscuro,grafica-2,--color-grafica-2,--chart-2,#e16f41,,,,n.a.
+TEM-019,oscuro,grafica-3,--color-grafica-3,--chart-3,#d54450,,,,n.a.
+TEM-019,oscuro,grafica-4,--color-grafica-4,--chart-4,#e2b146,,,,n.a.
+TEM-019,oscuro,grafica-5,--color-grafica-5,--chart-5,#3c4c76,,,,n.a.
+TEM-020,claro,fondo,--color-fondo,--background,#fafafa,,,,n.a.
+TEM-020,claro,tinta,--color-tinta,--foreground,#0a0a0a,fondo,18.97,4.5,sí
+TEM-020,claro,superficie,--color-superficie,--card,#f5f5f5,,,,n.a.
+TEM-020,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#0a0a0a,superficie,18.16,4.5,sí
+TEM-020,claro,emergente,--color-emergente,--popover,#fafafa,,,,n.a.
+TEM-020,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#0a0a0a,emergente,18.97,4.5,sí
+TEM-020,claro,primario,--color-primario,--primary,#ff6900,fondo,2.77,3,no
+TEM-020,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,7.27,4.5,sí
+TEM-020,claro,secundario,--color-secundario,--secondary,#e5e5e5,,,,n.a.
+TEM-020,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#0a0a0a,secundario,15.72,4.5,sí
+TEM-020,claro,apagado,--color-apagado,--muted,#ebebeb,,,,n.a.
+TEM-020,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#555555,fondo,7.14,4.5,sí
+TEM-020,claro,acento,--color-acento,--accent,#ff8b38,,,,n.a.
+TEM-020,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#000000,acento,9.00,4.5,sí
+TEM-020,claro,destructivo,--color-destructivo,--destructive,#ff0000,fondo,3.83,3,sí
+TEM-020,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#fafafa,destructivo,3.83,4.5,no
+TEM-020,claro,borde,--color-borde,--border,#cecece,fondo,1.51,3,condicional
+TEM-020,claro,borde-campo,--color-borde-campo,--input,#cecece,,,,n.a.
+TEM-020,claro,anillo-foco,--color-anillo-foco,--ring,#ff6900,fondo,2.77,3,no
+TEM-020,claro,grafica-1,--color-grafica-1,--chart-1,#ff6900,,,,n.a.
+TEM-020,claro,grafica-2,--color-grafica-2,--chart-2,#00cccc,,,,n.a.
+TEM-020,claro,grafica-3,--color-grafica-3,--chart-3,#ffbf00,,,,n.a.
+TEM-020,claro,grafica-4,--color-grafica-4,--chart-4,#aa00ff,,,,n.a.
+TEM-020,claro,grafica-5,--color-grafica-5,--chart-5,#0080ff,,,,n.a.
+TEM-020,oscuro,fondo,--color-fondo,--background,#121212,,,,n.a.
+TEM-020,oscuro,tinta,--color-tinta,--foreground,#f2f2f2,fondo,16.73,4.5,sí
+TEM-020,oscuro,superficie,--color-superficie,--card,#1a1a1a,,,,n.a.
+TEM-020,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#f2f2f2,superficie,15.55,4.5,sí
+TEM-020,oscuro,emergente,--color-emergente,--popover,#121212,,,,n.a.
+TEM-020,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#f2f2f2,emergente,16.73,4.5,sí
+TEM-020,oscuro,primario,--color-primario,--primary,#ff6900,fondo,6.49,3,sí
+TEM-020,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#000000,primario,7.27,4.5,sí
+TEM-020,oscuro,secundario,--color-secundario,--secondary,#333333,,,,n.a.
+TEM-020,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#f2f2f2,secundario,11.29,4.5,sí
+TEM-020,oscuro,apagado,--color-apagado,--muted,#262626,,,,n.a.
+TEM-020,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a6a6a6,fondo,7.70,4.5,sí
+TEM-020,oscuro,acento,--color-acento,--accent,#ff8b38,,,,n.a.
+TEM-020,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#000000,acento,9.00,4.5,sí
+TEM-020,oscuro,destructivo,--color-destructivo,--destructive,#ff0000,fondo,4.69,3,sí
+TEM-020,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#f2f2f2,destructivo,3.57,4.5,no
+TEM-020,oscuro,borde,--color-borde,--border,#404040,fondo,1.81,3,condicional
+TEM-020,oscuro,borde-campo,--color-borde-campo,--input,#404040,,,,n.a.
+TEM-020,oscuro,anillo-foco,--color-anillo-foco,--ring,#ff6900,fondo,6.49,3,sí
+TEM-020,oscuro,grafica-1,--color-grafica-1,--chart-1,#ff6900,,,,n.a.
+TEM-020,oscuro,grafica-2,--color-grafica-2,--chart-2,#00cccc,,,,n.a.
+TEM-020,oscuro,grafica-3,--color-grafica-3,--chart-3,#ffbf00,,,,n.a.
+TEM-020,oscuro,grafica-4,--color-grafica-4,--chart-4,#aa00ff,,,,n.a.
+TEM-020,oscuro,grafica-5,--color-grafica-5,--chart-5,#0080ff,,,,n.a.
+TEM-021,claro,fondo,--color-fondo,--background,#fdf7fa,,,,n.a.
+TEM-021,claro,tinta,--color-tinta,--foreground,#91185c,fondo,7.98,4.5,sí
+TEM-021,claro,superficie,--color-superficie,--card,#fff5fb,,,,n.a.
+TEM-021,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#91185c,superficie,7.92,4.5,sí
+TEM-021,claro,emergente,--color-emergente,--popover,#fff7fc,,,,n.a.
+TEM-021,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#91185c,emergente,8.02,4.5,sí
+TEM-021,claro,primario,--color-primario,--primary,#e6067a,fondo,4.25,3,sí
+TEM-021,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,4.50,4.5,no
+TEM-021,claro,secundario,--color-secundario,--secondary,#ffd6ff,,,,n.a.
+TEM-021,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#91185c,secundario,6.55,4.5,sí
+TEM-021,claro,apagado,--color-apagado,--muted,#ffe3f2,,,,n.a.
+TEM-021,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#c04283,fondo,4.57,4.5,sí
+TEM-021,claro,acento,--color-acento,--accent,#ffc1e3,,,,n.a.
+TEM-021,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#91185c,acento,5.62,4.5,sí
+TEM-021,claro,destructivo,--color-destructivo,--destructive,#d13869,fondo,4.43,3,sí
+TEM-021,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,4.69,4.5,sí
+TEM-021,claro,borde,--color-borde,--border,#ffc7e6,fondo,1.36,3,condicional
+TEM-021,claro,borde-campo,--color-borde-campo,--input,#ffd6ff,,,,n.a.
+TEM-021,claro,anillo-foco,--color-anillo-foco,--ring,#e6067a,fondo,4.25,3,sí
+TEM-021,claro,grafica-1,--color-grafica-1,--chart-1,#e6067a,,,,n.a.
+TEM-021,claro,grafica-2,--color-grafica-2,--chart-2,#c44b97,,,,n.a.
+TEM-021,claro,grafica-3,--color-grafica-3,--chart-3,#9969b6,,,,n.a.
+TEM-021,claro,grafica-4,--color-grafica-4,--chart-4,#7371bf,,,,n.a.
+TEM-021,claro,grafica-5,--color-grafica-5,--chart-5,#5e84ff,,,,n.a.
+TEM-021,oscuro,fondo,--color-fondo,--background,#1a0922,,,,n.a.
+TEM-021,oscuro,tinta,--color-tinta,--foreground,#ffb3ff,fondo,11.88,4.5,sí
+TEM-021,oscuro,superficie,--color-superficie,--card,#2a1435,,,,n.a.
+TEM-021,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#ffb3ff,superficie,10.52,4.5,sí
+TEM-021,oscuro,emergente,--color-emergente,--popover,#2a1435,,,,n.a.
+TEM-021,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#ffb3ff,emergente,10.52,4.5,sí
+TEM-021,oscuro,primario,--color-primario,--primary,#ff6bef,fondo,7.78,3,sí
+TEM-021,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#180518,primario,8.01,4.5,sí
+TEM-021,oscuro,secundario,--color-secundario,--secondary,#46204f,,,,n.a.
+TEM-021,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffb3ff,secundario,8.32,4.5,sí
+TEM-021,oscuro,apagado,--color-apagado,--muted,#331941,,,,n.a.
+TEM-021,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#d67ad6,fondo,6.88,4.5,sí
+TEM-021,oscuro,acento,--color-acento,--accent,#5a1f5d,,,,n.a.
+TEM-021,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#ffb3ff,acento,7.35,4.5,sí
+TEM-021,oscuro,destructivo,--color-destructivo,--destructive,#ff2876,fondo,5.26,3,sí
+TEM-021,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#f9f9f9,destructivo,3.43,4.5,no
+TEM-021,oscuro,borde,--color-borde,--border,#4a1b5f,fondo,1.46,3,condicional
+TEM-021,oscuro,borde-campo,--color-borde-campo,--input,#46204f,,,,n.a.
+TEM-021,oscuro,anillo-foco,--color-anillo-foco,--ring,#ff6bef,fondo,7.78,3,sí
+TEM-021,oscuro,grafica-1,--color-grafica-1,--chart-1,#ff6bef,,,,n.a.
+TEM-021,oscuro,grafica-2,--color-grafica-2,--chart-2,#c359e3,,,,n.a.
+TEM-021,oscuro,grafica-3,--color-grafica-3,--chart-3,#9161ff,,,,n.a.
+TEM-021,oscuro,grafica-4,--color-grafica-4,--chart-4,#6f73e2,,,,n.a.
+TEM-021,oscuro,grafica-5,--color-grafica-5,--chart-5,#547aff,,,,n.a.
+TEM-022,claro,fondo,--color-fondo,--background,hsl(0 0% 98%),,,,n.a.
+TEM-022,claro,tinta,--color-tinta,--foreground,"hsl(345,100%,15%)",fondo,15.22,4.5,sí
+TEM-022,claro,superficie,--color-superficie,--card,"hsl(0,0%,100%)",,,,n.a.
+TEM-022,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(345,100%,15%)",superficie,15.90,4.5,sí
+TEM-022,claro,emergente,--color-emergente,--popover,"hsl(0,0%,100%)",,,,n.a.
+TEM-022,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(345,100%,15%)",emergente,15.90,4.5,sí
+TEM-022,claro,primario,--color-primario,--primary,hsl(345 100% 35%),fondo,6.83,3,sí
+TEM-022,claro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0,0%,100%)",primario,7.14,4.5,sí
+TEM-022,claro,secundario,--color-secundario,--secondary,"hsl(45,20%,96%)",,,,n.a.
+TEM-022,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(345,100%,25%)",secundario,10.05,4.5,sí
+TEM-022,claro,apagado,--color-apagado,--muted,"hsl(45,10%,95%)",,,,n.a.
+TEM-022,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(345,20%,45%)",fondo,5.29,4.5,sí
+TEM-022,claro,acento,--color-acento,--accent,"hsl(45,30%,90%)",,,,n.a.
+TEM-022,claro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(345,100%,30%)",acento,7.28,4.5,sí
+TEM-022,claro,destructivo,--color-destructivo,--destructive,"hsl(0,84%,60%)",fondo,3.62,3,sí
+TEM-022,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0,0%,98%)",destructivo,3.62,4.5,no
+TEM-022,claro,borde,--color-borde,--border,"hsl(45,10%,90%)",fondo,1.19,3,condicional
+TEM-022,claro,borde-campo,--color-borde-campo,--input,"hsl(45,10%,90%)",,,,n.a.
+TEM-022,claro,anillo-foco,--color-anillo-foco,--ring,"hsl(345,100%,35%)",fondo,6.83,3,sí
+TEM-022,claro,grafica-1,--color-grafica-1,--chart-1,"hsl(345,100%,35%)",,,,n.a.
+TEM-022,claro,grafica-2,--color-grafica-2,--chart-2,"hsl(173,58%,39%)",,,,n.a.
+TEM-022,claro,grafica-3,--color-grafica-3,--chart-3,"hsl(43,74%,66%)",,,,n.a.
+TEM-022,claro,grafica-4,--color-grafica-4,--chart-4,"hsl(27,87%,67%)",,,,n.a.
+TEM-022,claro,grafica-5,--color-grafica-5,--chart-5,"hsl(12,76%,61%)",,,,n.a.
+TEM-022,oscuro,fondo,--color-fondo,--background,"hsl(0,0%,10%)",,,,n.a.
+TEM-022,oscuro,tinta,--color-tinta,--foreground,"hsl(0,0%,98%)",fondo,16.75,4.5,sí
+TEM-022,oscuro,superficie,--color-superficie,--card,"hsl(0,0%,12%)",,,,n.a.
+TEM-022,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(0,0%,98%)",superficie,15.85,4.5,sí
+TEM-022,oscuro,emergente,--color-emergente,--popover,"hsl(0,0%,10%)",,,,n.a.
+TEM-022,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(0,0%,98%)",emergente,16.75,4.5,sí
+TEM-022,oscuro,primario,--color-primario,--primary,"hsl(345,100%,45%)",fondo,3.67,3,sí
+TEM-022,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0,0%,100%)",primario,4.76,4.5,sí
+TEM-022,oscuro,secundario,--color-secundario,--secondary,"hsl(0,0%,20%)",,,,n.a.
+TEM-022,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(0,0%,98%)",secundario,12.09,4.5,sí
+TEM-022,oscuro,apagado,--color-apagado,--muted,"hsl(0,0%,15%)",,,,n.a.
+TEM-022,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(0,0%,65%)",fondo,7.16,4.5,sí
+TEM-022,oscuro,acento,--color-acento,--accent,"hsl(345,100%,20%)",,,,n.a.
+TEM-022,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(0,0%,98%)",acento,12.73,4.5,sí
+TEM-022,oscuro,destructivo,--color-destructivo,--destructive,"hsl(0,62%,40%)",fondo,2.43,3,no
+TEM-022,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0,0%,98%)",destructivo,6.88,4.5,sí
+TEM-022,oscuro,borde,--color-borde,--border,"hsl(0,0%,20%)",fondo,1.38,3,condicional
+TEM-022,oscuro,borde-campo,--color-borde-campo,--input,"hsl(0,0%,20%)",,,,n.a.
+TEM-022,oscuro,anillo-foco,--color-anillo-foco,--ring,"hsl(345,100%,45%)",fondo,3.67,3,sí
+TEM-022,oscuro,grafica-1,--color-grafica-1,--chart-1,"hsl(345,100%,45%)",,,,n.a.
+TEM-022,oscuro,grafica-2,--color-grafica-2,--chart-2,"hsl(173,58%,50%)",,,,n.a.
+TEM-022,oscuro,grafica-3,--color-grafica-3,--chart-3,"hsl(43,74%,75%)",,,,n.a.
+TEM-022,oscuro,grafica-4,--color-grafica-4,--chart-4,"hsl(27,87%,75%)",,,,n.a.
+TEM-022,oscuro,grafica-5,--color-grafica-5,--chart-5,"hsl(12,76%,70%)",,,,n.a.
+TEM-023,claro,fondo,--color-fondo,--background,#212121,,,,n.a.
+TEM-023,claro,tinta,--color-tinta,--foreground,#ecc518,fondo,9.64,4.5,sí
+TEM-023,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-023,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#fa3365,superficie,3.67,4.5,no
+TEM-023,claro,emergente,--color-emergente,--popover,"hsl(0,0%,100%)",,,,n.a.
+TEM-023,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(345,100%,15%)",emergente,15.90,4.5,sí
+TEM-023,claro,primario,--color-primario,--primary,#212121,fondo,1.00,3,no
+TEM-023,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#fa3365,primario,4.39,4.5,no
+TEM-023,claro,secundario,--color-secundario,--secondary,#ecc518,,,,n.a.
+TEM-023,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#212121,secundario,9.64,4.5,sí
+TEM-023,claro,apagado,--color-apagado,--muted,#ecc518,,,,n.a.
+TEM-023,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#1d1d1d,fondo,1.05,4.5,no
+TEM-023,claro,acento,--color-acento,--accent,#fa3365,,,,n.a.
+TEM-023,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#212121,acento,4.39,4.5,no
+TEM-023,claro,destructivo,--color-destructivo,--destructive,"hsl(0,84%,60%)",fondo,4.26,3,sí
+TEM-023,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0,0%,98%)",destructivo,3.62,4.5,no
+TEM-023,claro,borde,--color-borde,--border,hsl(48 10% 90%),fondo,13.02,3,sí
+TEM-023,claro,borde-campo,--color-borde-campo,--input,hsl(48 10% 90%),,,,n.a.
+TEM-023,claro,anillo-foco,--color-anillo-foco,--ring,hsl(345 90.5% 41.5%),fondo,2.76,3,no
+TEM-023,claro,grafica-1,--color-grafica-1,--chart-1,"hsl(345,100%,35%)",,,,n.a.
+TEM-023,claro,grafica-2,--color-grafica-2,--chart-2,"hsl(173,58%,39%)",,,,n.a.
+TEM-023,claro,grafica-3,--color-grafica-3,--chart-3,hsl(43 74% 66%),,,,n.a.
+TEM-023,claro,grafica-4,--color-grafica-4,--chart-4,"hsl(27,87%,67%)",,,,n.a.
+TEM-023,claro,grafica-5,--color-grafica-5,--chart-5,"hsl(12,76%,61%)",,,,n.a.
+TEM-023,oscuro,fondo,--color-fondo,--background,"hsl(0,0%,10%)",,,,n.a.
+TEM-023,oscuro,tinta,--color-tinta,--foreground,"hsl(0,0%,98%)",fondo,16.75,4.5,sí
+TEM-023,oscuro,superficie,--color-superficie,--card,"hsl(0,0%,12%)",,,,n.a.
+TEM-023,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(0,0%,98%)",superficie,15.85,4.5,sí
+TEM-023,oscuro,emergente,--color-emergente,--popover,"hsl(0,0%,10%)",,,,n.a.
+TEM-023,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(0,0%,98%)",emergente,16.75,4.5,sí
+TEM-023,oscuro,primario,--color-primario,--primary,"hsl(345,100%,45%)",fondo,3.67,3,sí
+TEM-023,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0,0%,100%)",primario,4.76,4.5,sí
+TEM-023,oscuro,secundario,--color-secundario,--secondary,"hsl(0,0%,20%)",,,,n.a.
+TEM-023,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(0,0%,98%)",secundario,12.09,4.5,sí
+TEM-023,oscuro,apagado,--color-apagado,--muted,"hsl(0,0%,15%)",,,,n.a.
+TEM-023,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(0,0%,65%)",fondo,7.16,4.5,sí
+TEM-023,oscuro,acento,--color-acento,--accent,"hsl(345,100%,20%)",,,,n.a.
+TEM-023,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(0,0%,98%)",acento,12.73,4.5,sí
+TEM-023,oscuro,destructivo,--color-destructivo,--destructive,"hsl(0,62%,40%)",fondo,2.43,3,no
+TEM-023,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0,0%,98%)",destructivo,6.88,4.5,sí
+TEM-023,oscuro,borde,--color-borde,--border,"hsl(0,0%,20%)",fondo,1.38,3,condicional
+TEM-023,oscuro,borde-campo,--color-borde-campo,--input,"hsl(0,0%,20%)",,,,n.a.
+TEM-023,oscuro,anillo-foco,--color-anillo-foco,--ring,"hsl(345,100%,45%)",fondo,3.67,3,sí
+TEM-023,oscuro,grafica-1,--color-grafica-1,--chart-1,"hsl(345,100%,45%)",,,,n.a.
+TEM-023,oscuro,grafica-2,--color-grafica-2,--chart-2,"hsl(173,58%,50%)",,,,n.a.
+TEM-023,oscuro,grafica-3,--color-grafica-3,--chart-3,"hsl(43,74%,75%)",,,,n.a.
+TEM-023,oscuro,grafica-4,--color-grafica-4,--chart-4,"hsl(27,87%,75%)",,,,n.a.
+TEM-023,oscuro,grafica-5,--color-grafica-5,--chart-5,"hsl(12,76%,70%)",,,,n.a.
+TEM-024,claro,fondo,--color-fondo,--background,#ffffff,,,,n.a.
+TEM-024,claro,tinta,--color-tinta,--foreground,#1c3a41,fondo,12.13,4.5,sí
+TEM-024,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-024,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#1c3a41,superficie,12.13,4.5,sí
+TEM-024,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-024,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#ffffff,emergente,1.00,4.5,no
+TEM-024,claro,primario,--color-primario,--primary,#66abff,fondo,2.38,3,no
+TEM-024,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,2.38,4.5,no
+TEM-024,claro,secundario,--color-secundario,--secondary,#ffffff,,,,n.a.
+TEM-024,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#000000,secundario,21.00,4.5,sí
+TEM-024,claro,apagado,--color-apagado,--muted,#f2f0f0,,,,n.a.
+TEM-024,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#404f54,fondo,8.52,4.5,sí
+TEM-024,claro,acento,--color-acento,--accent,#f8f6fc,,,,n.a.
+TEM-024,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#375258,acento,7.80,4.5,sí
+TEM-024,claro,destructivo,--color-destructivo,--destructive,#ff4395,fondo,3.24,3,sí
+TEM-024,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.24,4.5,no
+TEM-024,claro,borde,--color-borde,--border,#f0f9ff,fondo,1.07,3,condicional
+TEM-024,claro,borde-campo,--color-borde-campo,--input,#f0ad60,,,,n.a.
+TEM-024,claro,anillo-foco,--color-anillo-foco,--ring,#002757,fondo,14.71,3,sí
+TEM-024,claro,grafica-1,--color-grafica-1,--chart-1,#66abff,,,,n.a.
+TEM-024,claro,grafica-2,--color-grafica-2,--chart-2,#4487f6,,,,n.a.
+TEM-024,claro,grafica-3,--color-grafica-3,--chart-3,#3470db,,,,n.a.
+TEM-024,claro,grafica-4,--color-grafica-4,--chart-4,#265db7,,,,n.a.
+TEM-024,claro,grafica-5,--color-grafica-5,--chart-5,#285190,,,,n.a.
+TEM-024,oscuro,fondo,--color-fondo,--background,#201919,,,,n.a.
+TEM-024,oscuro,tinta,--color-tinta,--foreground,#f1f8f9,fondo,16.08,4.5,sí
+TEM-024,oscuro,superficie,--color-superficie,--card,#2f2626,,,,n.a.
+TEM-024,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#f1f8f9,superficie,13.70,4.5,sí
+TEM-024,oscuro,emergente,--color-emergente,--popover,#2f2626,,,,n.a.
+TEM-024,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#f1f8f9,emergente,13.70,4.5,sí
+TEM-024,oscuro,primario,--color-primario,--primary,#8dc8ff,fondo,9.75,3,sí
+TEM-024,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#201919,primario,9.75,4.5,sí
+TEM-024,oscuro,secundario,--color-secundario,--secondary,#3e3535,,,,n.a.
+TEM-024,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#dce4e5,secundario,9.22,4.5,sí
+TEM-024,oscuro,apagado,--color-apagado,--muted,#211a1a,,,,n.a.
+TEM-024,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a3b4b8,fondo,8.05,4.5,sí
+TEM-024,oscuro,acento,--color-acento,--accent,#4c4445,,,,n.a.
+TEM-024,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#dce4e5,acento,7.33,4.5,sí
+TEM-024,oscuro,destructivo,--color-destructivo,--destructive,#ff4395,fondo,5.34,3,sí
+TEM-024,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#201919,destructivo,5.34,4.5,sí
+TEM-024,oscuro,borde,--color-borde,--border,#3e3535,fondo,1.45,3,condicional
+TEM-024,oscuro,borde-campo,--color-borde-campo,--input,#3e3535,,,,n.a.
+TEM-024,oscuro,anillo-foco,--color-anillo-foco,--ring,#8dc8ff,fondo,9.75,3,sí
+TEM-024,oscuro,grafica-1,--color-grafica-1,--chart-1,#8dc8ff,,,,n.a.
+TEM-024,oscuro,grafica-2,--color-grafica-2,--chart-2,#66abff,,,,n.a.
+TEM-024,oscuro,grafica-3,--color-grafica-3,--chart-3,#4487f6,,,,n.a.
+TEM-024,oscuro,grafica-4,--color-grafica-4,--chart-4,#3470db,,,,n.a.
+TEM-024,oscuro,grafica-5,--color-grafica-5,--chart-5,#265db7,,,,n.a.
+TEM-025,claro,fondo,--color-fondo,--background,#fff0f8,,,,n.a.
+TEM-025,claro,tinta,--color-tinta,--foreground,#91185c,fondo,7.66,4.5,sí
+TEM-025,claro,superficie,--color-superficie,--card,#fff7fc,,,,n.a.
+TEM-025,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#91185c,superficie,8.02,4.5,sí
+TEM-025,claro,emergente,--color-emergente,--popover,#fff7fc,,,,n.a.
+TEM-025,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#91185c,emergente,8.02,4.5,sí
+TEM-025,claro,primario,--color-primario,--primary,#e6067a,fondo,4.08,3,sí
+TEM-025,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,4.50,4.5,no
+TEM-025,claro,secundario,--color-secundario,--secondary,#ffd6ff,,,,n.a.
+TEM-025,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#91185c,secundario,6.55,4.5,sí
+TEM-025,claro,apagado,--color-apagado,--muted,#ffe3f2,,,,n.a.
+TEM-025,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#c04283,fondo,4.39,4.5,no
+TEM-025,claro,acento,--color-acento,--accent,#ffc1e3,,,,n.a.
+TEM-025,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#91185c,acento,5.62,4.5,sí
+TEM-025,claro,destructivo,--color-destructivo,--destructive,#d13869,fondo,4.26,3,sí
+TEM-025,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,4.69,4.5,sí
+TEM-025,claro,borde,--color-borde,--border,#ffc7e6,fondo,1.31,3,condicional
+TEM-025,claro,borde-campo,--color-borde-campo,--input,#ffd6ff,,,,n.a.
+TEM-025,claro,anillo-foco,--color-anillo-foco,--ring,#e6067a,fondo,4.08,3,sí
+TEM-025,claro,grafica-1,--color-grafica-1,--chart-1,#e6067a,,,,n.a.
+TEM-025,claro,grafica-2,--color-grafica-2,--chart-2,#c44b97,,,,n.a.
+TEM-025,claro,grafica-3,--color-grafica-3,--chart-3,#9969b6,,,,n.a.
+TEM-025,claro,grafica-4,--color-grafica-4,--chart-4,#7371bf,,,,n.a.
+TEM-025,claro,grafica-5,--color-grafica-5,--chart-5,#5e84ff,,,,n.a.
+TEM-025,oscuro,fondo,--color-fondo,--background,#1a0922,,,,n.a.
+TEM-025,oscuro,tinta,--color-tinta,--foreground,#ffb3ff,fondo,11.88,4.5,sí
+TEM-025,oscuro,superficie,--color-superficie,--card,#2a1435,,,,n.a.
+TEM-025,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#ffb3ff,superficie,10.52,4.5,sí
+TEM-025,oscuro,emergente,--color-emergente,--popover,#2a1435,,,,n.a.
+TEM-025,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#ffb3ff,emergente,10.52,4.5,sí
+TEM-025,oscuro,primario,--color-primario,--primary,#ff6bef,fondo,7.78,3,sí
+TEM-025,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#180518,primario,8.01,4.5,sí
+TEM-025,oscuro,secundario,--color-secundario,--secondary,#46204f,,,,n.a.
+TEM-025,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffb3ff,secundario,8.32,4.5,sí
+TEM-025,oscuro,apagado,--color-apagado,--muted,#331941,,,,n.a.
+TEM-025,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#d67ad6,fondo,6.88,4.5,sí
+TEM-025,oscuro,acento,--color-acento,--accent,#5a1f5d,,,,n.a.
+TEM-025,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#ffb3ff,acento,7.35,4.5,sí
+TEM-025,oscuro,destructivo,--color-destructivo,--destructive,#ff2876,fondo,5.26,3,sí
+TEM-025,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#f9f9f9,destructivo,3.43,4.5,no
+TEM-025,oscuro,borde,--color-borde,--border,#4a1b5f,fondo,1.46,3,condicional
+TEM-025,oscuro,borde-campo,--color-borde-campo,--input,#46204f,,,,n.a.
+TEM-025,oscuro,anillo-foco,--color-anillo-foco,--ring,#ff6bef,fondo,7.78,3,sí
+TEM-025,oscuro,grafica-1,--color-grafica-1,--chart-1,#ff6bef,,,,n.a.
+TEM-025,oscuro,grafica-2,--color-grafica-2,--chart-2,#c359e3,,,,n.a.
+TEM-025,oscuro,grafica-3,--color-grafica-3,--chart-3,#9161ff,,,,n.a.
+TEM-025,oscuro,grafica-4,--color-grafica-4,--chart-4,#6f73e2,,,,n.a.
+TEM-025,oscuro,grafica-5,--color-grafica-5,--chart-5,#547aff,,,,n.a.
+TEM-026,claro,fondo,--color-fondo,--background,#e7e5e4,,,,n.a.
+TEM-026,claro,tinta,--color-tinta,--foreground,transparent,fondo,,,no
+TEM-026,claro,superficie,--color-superficie,--card,hsl(0 7.6% 89.2%),,,,n.a.
+TEM-026,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,hsl(0 0% 5.2%),superficie,15.01,4.5,sí
+TEM-026,claro,emergente,--color-emergente,--popover,"hsl(0, 0%, 85%)",,,,n.a.
+TEM-026,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(0, 0%, 5%)",emergente,13.76,4.5,sí
+TEM-026,claro,primario,--color-primario,--primary,hsl(0 59% 39.9%),fondo,5.78,3,sí
+TEM-026,claro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0, 0%, 100%)",primario,7.26,4.5,sí
+TEM-026,claro,secundario,--color-secundario,--secondary,hsl(0 0.7% 15%),,,,n.a.
+TEM-026,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,hsl(0 0% 93.7%),secundario,13.14,4.5,sí
+TEM-026,claro,apagado,--color-apagado,--muted,hsl(0 0% 77%),,,,n.a.
+TEM-026,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,hsl(0 1.6% 36.4%),fondo,5.33,4.5,sí
+TEM-026,claro,acento,--color-acento,--accent,hsl(0 60% 40%),,,,n.a.
+TEM-026,claro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(0, 0%, 100%)",acento,7.22,4.5,sí
+TEM-026,claro,destructivo,--color-destructivo,--destructive,"hsl(0, 80%, 30%)",fondo,7.77,3,sí
+TEM-026,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0, 0%, 100%)",destructivo,9.76,4.5,sí
+TEM-026,claro,borde,--color-borde,--border,hsl(0 0% 79%),fondo,1.31,3,condicional
+TEM-026,claro,borde-campo,--color-borde-campo,--input,hsl(0 5.1% 80.4%),,,,n.a.
+TEM-026,claro,anillo-foco,--color-anillo-foco,--ring,"hsl(0, 75%, 35%)",fondo,6.57,3,sí
+TEM-026,claro,grafica-1,--color-grafica-1,--chart-1,"hsl(0, 70%, 40%)",,,,n.a.
+TEM-026,claro,grafica-2,--color-grafica-2,--chart-2,"hsl(0, 0%, 20%)",,,,n.a.
+TEM-026,claro,grafica-3,--color-grafica-3,--chart-3,hsl(0 0% 45.3%),,,,n.a.
+TEM-026,claro,grafica-4,--color-grafica-4,--chart-4,"hsl(0, 70%, 25%)",,,,n.a.
+TEM-026,claro,grafica-5,--color-grafica-5,--chart-5,"hsl(0, 0%, 10%)",,,,n.a.
+TEM-026,oscuro,fondo,--color-fondo,--background,"hsl(0, 0%, 2%)",,,,n.a.
+TEM-026,oscuro,tinta,--color-tinta,--foreground,"hsl(0, 0%, 92%)",fondo,17.02,4.5,sí
+TEM-026,oscuro,superficie,--color-superficie,--card,"hsl(0, 0%, 5%)",,,,n.a.
+TEM-026,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(0, 0%, 92%)",superficie,16.27,4.5,sí
+TEM-026,oscuro,emergente,--color-emergente,--popover,"hsl(0, 0%, 5%)",,,,n.a.
+TEM-026,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(0, 0%, 92%)",emergente,16.27,4.5,sí
+TEM-026,oscuro,primario,--color-primario,--primary,hsl(0 80% 42%),fondo,3.28,3,sí
+TEM-026,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0, 0%, 100%)",primario,6.21,4.5,sí
+TEM-026,oscuro,secundario,--color-secundario,--secondary,"hsl(0, 0%, 12%)",,,,n.a.
+TEM-026,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(0, 0%, 90%)",secundario,13.21,4.5,sí
+TEM-026,oscuro,apagado,--color-apagado,--muted,"hsl(0, 0%, 10%)",,,,n.a.
+TEM-026,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(0, 0%, 50%)",fondo,5.12,4.5,sí
+TEM-026,oscuro,acento,--color-acento,--accent,hsl(0 65.2% 37.1%),,,,n.a.
+TEM-026,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(0, 0%, 100%)",acento,7.90,4.5,sí
+TEM-026,oscuro,destructivo,--color-destructivo,--destructive,"hsl(0, 90%, 25%)",fondo,1.79,3,no
+TEM-026,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0, 0%, 100%)",destructivo,11.38,4.5,sí
+TEM-026,oscuro,borde,--color-borde,--border,hsl(0 0% 19.5%),fondo,1.58,3,condicional
+TEM-026,oscuro,borde-campo,--color-borde-campo,--input,hsl(0 0% 17.2%),,,,n.a.
+TEM-026,oscuro,anillo-foco,--color-anillo-foco,--ring,hsl(0 80% 42%),fondo,3.28,3,sí
+TEM-026,oscuro,grafica-1,--color-grafica-1,--chart-1,"hsl(0, 80%, 42%)",,,,n.a.
+TEM-026,oscuro,grafica-2,--color-grafica-2,--chart-2,"hsl(0, 0%, 35%)",,,,n.a.
+TEM-026,oscuro,grafica-3,--color-grafica-3,--chart-3,"hsl(0, 0%, 55%)",,,,n.a.
+TEM-026,oscuro,grafica-4,--color-grafica-4,--chart-4,"hsl(0, 80%, 30%)",,,,n.a.
+TEM-026,oscuro,grafica-5,--color-grafica-5,--chart-5,hsl(0 0% 21.4%),,,,n.a.
+TEM-027,claro,fondo,--color-fondo,--background,#e8ebed,,,,n.a.
+TEM-027,claro,tinta,--color-tinta,--foreground,#333333,fondo,10.55,4.5,sí
+TEM-027,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-027,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#333333,superficie,12.63,4.5,sí
+TEM-027,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-027,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#333333,emergente,12.63,4.5,sí
+TEM-027,claro,primario,--color-primario,--primary,#2c76ff,fondo,3.41,3,sí
+TEM-027,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,4.08,4.5,no
+TEM-027,claro,secundario,--color-secundario,--secondary,#ff9f9f,,,,n.a.
+TEM-027,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#4b5563,secundario,3.85,4.5,no
+TEM-027,claro,apagado,--color-apagado,--muted,#f9fafb,,,,n.a.
+TEM-027,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#6b7280,fondo,4.04,4.5,no
+TEM-027,claro,acento,--color-acento,--accent,#d6e4f0,,,,n.a.
+TEM-027,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#1e3a8a,acento,8.00,4.5,sí
+TEM-027,claro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,3.14,3,sí
+TEM-027,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.76,4.5,no
+TEM-027,claro,borde,--color-borde,--border,#dcdfe2,fondo,1.12,3,condicional
+TEM-027,claro,borde-campo,--color-borde-campo,--input,#f4f5f7,,,,n.a.
+TEM-027,claro,anillo-foco,--color-anillo-foco,--ring,#e05d38,fondo,3.03,3,sí
+TEM-027,claro,grafica-1,--color-grafica-1,--chart-1,#86a7c8,,,,n.a.
+TEM-027,claro,grafica-2,--color-grafica-2,--chart-2,#eea591,,,,n.a.
+TEM-027,claro,grafica-3,--color-grafica-3,--chart-3,#5a7ca6,,,,n.a.
+TEM-027,claro,grafica-4,--color-grafica-4,--chart-4,#466494,,,,n.a.
+TEM-027,claro,grafica-5,--color-grafica-5,--chart-5,#334c82,,,,n.a.
+TEM-027,oscuro,fondo,--color-fondo,--background,#1c2433,,,,n.a.
+TEM-027,oscuro,tinta,--color-tinta,--foreground,#e5e5e5,fondo,12.35,4.5,sí
+TEM-027,oscuro,superficie,--color-superficie,--card,#2a3040,,,,n.a.
+TEM-027,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#e5e5e5,superficie,10.45,4.5,sí
+TEM-027,oscuro,emergente,--color-emergente,--popover,#262b38,,,,n.a.
+TEM-027,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e5e5e5,emergente,11.23,4.5,sí
+TEM-027,oscuro,primario,--color-primario,--primary,#2687f5,fondo,4.35,3,sí
+TEM-027,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.58,4.5,no
+TEM-027,oscuro,secundario,--color-secundario,--secondary,#ff6464,,,,n.a.
+TEM-027,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#e5e5e5,secundario,2.30,4.5,no
+TEM-027,oscuro,apagado,--color-apagado,--muted,#2a303e,,,,n.a.
+TEM-027,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a3a3a3,fondo,6.17,4.5,sí
+TEM-027,oscuro,acento,--color-acento,--accent,#2a3656,,,,n.a.
+TEM-027,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#bfdbfe,acento,8.39,4.5,sí
+TEM-027,oscuro,destructivo,--color-destructivo,--destructive,#ef4444,fondo,4.14,3,sí
+TEM-027,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.76,4.5,no
+TEM-027,oscuro,borde,--color-borde,--border,#3d4354,fondo,1.58,3,condicional
+TEM-027,oscuro,borde-campo,--color-borde-campo,--input,#3d4354,,,,n.a.
+TEM-027,oscuro,anillo-foco,--color-anillo-foco,--ring,#e05d38,fondo,4.29,3,sí
+TEM-027,oscuro,grafica-1,--color-grafica-1,--chart-1,#86a7c8,,,,n.a.
+TEM-027,oscuro,grafica-2,--color-grafica-2,--chart-2,#e6a08f,,,,n.a.
+TEM-027,oscuro,grafica-3,--color-grafica-3,--chart-3,#5a7ca6,,,,n.a.
+TEM-027,oscuro,grafica-4,--color-grafica-4,--chart-4,#466494,,,,n.a.
+TEM-027,oscuro,grafica-5,--color-grafica-5,--chart-5,#334c82,,,,n.a.
+TEM-028,claro,fondo,--color-fondo,--background,"hsl(0,0%,100%)",,,,n.a.
+TEM-028,claro,tinta,--color-tinta,--foreground,"hsl(0,0%,0%)",fondo,21.00,4.5,sí
+TEM-028,claro,superficie,--color-superficie,--card,"hsl(0,0%,100%)",,,,n.a.
+TEM-028,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(0,0%,0%)",superficie,21.00,4.5,sí
+TEM-028,claro,emergente,--color-emergente,--popover,"hsl(0,0%,100%)",,,,n.a.
+TEM-028,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(0,0%,0%)",emergente,21.00,4.5,sí
+TEM-028,claro,primario,--color-primario,--primary,"hsl(0, 100%, 43%)",fondo,5.22,3,sí
+TEM-028,claro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0,0%,100%)",primario,5.22,4.5,sí
+TEM-028,claro,secundario,--color-secundario,--secondary,"hsl(0,0%,0%)",,,,n.a.
+TEM-028,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(0,0%,100%)",secundario,21.00,4.5,sí
+TEM-028,claro,apagado,--color-apagado,--muted,"hsl(0,0%,96%)",,,,n.a.
+TEM-028,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(0,0%,40%)",fondo,5.74,4.5,sí
+TEM-028,claro,acento,--color-acento,--accent,hsl(0 100% 50%),,,,n.a.
+TEM-028,claro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(0,0%,0%)",acento,5.25,4.5,sí
+TEM-028,claro,destructivo,--color-destructivo,--destructive,"hsl(0,100%,40%)",fondo,5.89,3,sí
+TEM-028,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0,0%,100%)",destructivo,5.89,4.5,sí
+TEM-028,claro,borde,--color-borde,--border,hsl(0 0% 0% / 0),fondo,21.00,3,sí
+TEM-028,claro,borde-campo,--color-borde-campo,--input,"hsl(0,0%,100%)",,,,n.a.
+TEM-028,claro,anillo-foco,--color-anillo-foco,--ring,"hsl(0,100%,45%)",fondo,4.83,3,sí
+TEM-028,claro,grafica-1,--color-grafica-1,--chart-1,"hsl(0,0%,0%)",,,,n.a.
+TEM-028,claro,grafica-2,--color-grafica-2,--chart-2,"hsl(0,100%,45%)",,,,n.a.
+TEM-028,claro,grafica-3,--color-grafica-3,--chart-3,"hsl(45,100%,50%)",,,,n.a.
+TEM-028,claro,grafica-4,--color-grafica-4,--chart-4,"hsl(120,20%,35%)",,,,n.a.
+TEM-028,claro,grafica-5,--color-grafica-5,--chart-5,"hsl(20,40%,40%)",,,,n.a.
+TEM-028,oscuro,fondo,--color-fondo,--background,hsl(0 0% 0%),,,,n.a.
+TEM-028,oscuro,tinta,--color-tinta,--foreground,hsl(0 0% 100%),fondo,21.00,4.5,sí
+TEM-028,oscuro,superficie,--color-superficie,--card,"hsl(0,0%,4%)",,,,n.a.
+TEM-028,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(0,0%,100%)",superficie,19.78,4.5,sí
+TEM-028,oscuro,emergente,--color-emergente,--popover,"hsl(0,0%,4%)",,,,n.a.
+TEM-028,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(0,0%,100%)",emergente,19.78,4.5,sí
+TEM-028,oscuro,primario,--color-primario,--primary,hsl(0 100% 50% / 0.81),fondo,5.25,3,sí
+TEM-028,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,hsl(0 0% 100%),primario,4.00,4.5,no
+TEM-028,oscuro,secundario,--color-secundario,--secondary,"hsl(0,0%,100%)",,,,n.a.
+TEM-028,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(0,0%,0%)",secundario,21.00,4.5,sí
+TEM-028,oscuro,apagado,--color-apagado,--muted,"hsl(0,0%,12%)",,,,n.a.
+TEM-028,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(0,0%,70%)",fondo,9.96,4.5,sí
+TEM-028,oscuro,acento,--color-acento,--accent,hsl(34 75.3% 49.1%),,,,n.a.
+TEM-028,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,hsl(0 0% 0%),acento,7.67,4.5,sí
+TEM-028,oscuro,destructivo,--color-destructivo,--destructive,"hsl(0,100%,60%)",fondo,5.77,3,sí
+TEM-028,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0,0%,100%)",destructivo,3.64,4.5,no
+TEM-028,oscuro,borde,--color-borde,--border,hsl(0 0% 0%),fondo,1.00,3,condicional
+TEM-028,oscuro,borde-campo,--color-borde-campo,--input,hsl(0 0% 0%),,,,n.a.
+TEM-028,oscuro,anillo-foco,--color-anillo-foco,--ring,"rgba(255, 0, 0, 0)",fondo,5.25,3,sí
+TEM-028,oscuro,grafica-1,--color-grafica-1,--chart-1,"hsl(0,0%,100%)",,,,n.a.
+TEM-028,oscuro,grafica-2,--color-grafica-2,--chart-2,"hsl(0,100%,50%)",,,,n.a.
+TEM-028,oscuro,grafica-3,--color-grafica-3,--chart-3,"hsl(45,100%,55%)",,,,n.a.
+TEM-028,oscuro,grafica-4,--color-grafica-4,--chart-4,hsl(120 15% 45%),,,,n.a.
+TEM-028,oscuro,grafica-5,--color-grafica-5,--chart-5,"hsl(20,30%,50%)",,,,n.a.
+TEM-029,claro,fondo,--color-fondo,--background,#fcf5f7,,,,n.a.
+TEM-029,claro,tinta,--color-tinta,--foreground,#0a1931,fondo,16.34,4.5,sí
+TEM-029,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-029,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#0a1931,superficie,17.55,4.5,sí
+TEM-029,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-029,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#0a1931,emergente,17.55,4.5,sí
+TEM-029,claro,primario,--color-primario,--primary,#0047ab,fondo,7.85,3,sí
+TEM-029,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,8.44,4.5,sí
+TEM-029,claro,secundario,--color-secundario,--secondary,#ff4d6d,,,,n.a.
+TEM-029,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffffff,secundario,3.21,4.5,no
+TEM-029,claro,apagado,--color-apagado,--muted,#e5eaf5,,,,n.a.
+TEM-029,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#4a5568,fondo,7.00,4.5,sí
+TEM-029,claro,acento,--color-acento,--accent,#ffb3c1,,,,n.a.
+TEM-029,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#0a1931,acento,10.42,4.5,sí
+TEM-029,claro,destructivo,--color-destructivo,--destructive,#e11d48,fondo,4.37,3,sí
+TEM-029,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,4.70,4.5,sí
+TEM-029,claro,borde,--color-borde,--border,#cbd5e1,fondo,1.38,3,condicional
+TEM-029,claro,borde-campo,--color-borde-campo,--input,#ffffff,,,,n.a.
+TEM-029,claro,anillo-foco,--color-anillo-foco,--ring,#0047ab,fondo,7.85,3,sí
+TEM-029,claro,grafica-1,--color-grafica-1,--chart-1,#0047ab,,,,n.a.
+TEM-029,claro,grafica-2,--color-grafica-2,--chart-2,#ff4d6d,,,,n.a.
+TEM-029,claro,grafica-3,--color-grafica-3,--chart-3,#ff9e7d,,,,n.a.
+TEM-029,claro,grafica-4,--color-grafica-4,--chart-4,#002366,,,,n.a.
+TEM-029,claro,grafica-5,--color-grafica-5,--chart-5,#ff758f,,,,n.a.
+TEM-029,oscuro,fondo,--color-fondo,--background,#00050d,,,,n.a.
+TEM-029,oscuro,tinta,--color-tinta,--foreground,#ffffff,fondo,20.44,4.5,sí
+TEM-029,oscuro,superficie,--color-superficie,--card,#001026,,,,n.a.
+TEM-029,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#ffffff,superficie,19.05,4.5,sí
+TEM-029,oscuro,emergente,--color-emergente,--popover,#00050d,,,,n.a.
+TEM-029,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#ffffff,emergente,20.44,4.5,sí
+TEM-029,oscuro,primario,--color-primario,--primary,#4dabff,fondo,8.35,3,sí
+TEM-029,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#00050d,primario,8.35,4.5,sí
+TEM-029,oscuro,secundario,--color-secundario,--secondary,#ff4d6d,,,,n.a.
+TEM-029,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#ffffff,secundario,3.21,4.5,no
+TEM-029,oscuro,apagado,--color-apagado,--muted,#001a40,,,,n.a.
+TEM-029,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#cbd5e1,fondo,13.77,4.5,sí
+TEM-029,oscuro,acento,--color-acento,--accent,#d02f4d,,,,n.a.
+TEM-029,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#ffffff,acento,5.01,4.5,sí
+TEM-029,oscuro,destructivo,--color-destructivo,--destructive,#ff3333,fondo,5.62,3,sí
+TEM-029,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.64,4.5,no
+TEM-029,oscuro,borde,--color-borde,--border,#021c45,fondo,1.22,3,condicional
+TEM-029,oscuro,borde-campo,--color-borde-campo,--input,#001a40,,,,n.a.
+TEM-029,oscuro,anillo-foco,--color-anillo-foco,--ring,#4dabff,fondo,8.35,3,sí
+TEM-029,oscuro,grafica-1,--color-grafica-1,--chart-1,#4dabff,,,,n.a.
+TEM-029,oscuro,grafica-2,--color-grafica-2,--chart-2,#ff4d6d,,,,n.a.
+TEM-029,oscuro,grafica-3,--color-grafica-3,--chart-3,#ffb3c1,,,,n.a.
+TEM-029,oscuro,grafica-4,--color-grafica-4,--chart-4,#80bfff,,,,n.a.
+TEM-029,oscuro,grafica-5,--color-grafica-5,--chart-5,#ff0033,,,,n.a.
+TEM-030,claro,fondo,--color-fondo,--background,#fdfdfd,,,,n.a.
+TEM-030,claro,tinta,--color-tinta,--foreground,#000000,fondo,20.65,4.5,sí
+TEM-030,claro,superficie,--color-superficie,--card,#fdfdfd,,,,n.a.
+TEM-030,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#000000,superficie,20.65,4.5,sí
+TEM-030,claro,emergente,--color-emergente,--popover,#fcfcfc,,,,n.a.
+TEM-030,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#000000,emergente,20.47,4.5,sí
+TEM-030,claro,primario,--color-primario,--primary,#c92d6a,fondo,5.08,3,sí
+TEM-030,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,5.16,4.5,sí
+TEM-030,claro,secundario,--color-secundario,--secondary,#1b1d1e,,,,n.a.
+TEM-030,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#edf0f4,secundario,14.80,4.5,sí
+TEM-030,claro,apagado,--color-apagado,--muted,#f5f5f5,,,,n.a.
+TEM-030,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#525252,fondo,7.68,4.5,sí
+TEM-030,claro,acento,--color-acento,--accent,#fbdae7,,,,n.a.
+TEM-030,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#c92d6a,acento,4.00,4.5,no
+TEM-030,claro,destructivo,--color-destructivo,--destructive,#e54b4f,fondo,3.79,3,sí
+TEM-030,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.85,4.5,no
+TEM-030,claro,borde,--color-borde,--border,#e7e7ee,fondo,1.21,3,condicional
+TEM-030,claro,borde-campo,--color-borde-campo,--input,#ebebeb,,,,n.a.
+TEM-030,claro,anillo-foco,--color-anillo-foco,--ring,#000000,fondo,20.65,3,sí
+TEM-030,claro,grafica-1,--color-grafica-1,--chart-1,#4ac885,,,,n.a.
+TEM-030,claro,grafica-2,--color-grafica-2,--chart-2,#c92d6a,,,,n.a.
+TEM-030,claro,grafica-3,--color-grafica-3,--chart-3,#fd822b,,,,n.a.
+TEM-030,claro,grafica-4,--color-grafica-4,--chart-4,#a146fb,,,,n.a.
+TEM-030,claro,grafica-5,--color-grafica-5,--chart-5,#747474,,,,n.a.
+TEM-030,oscuro,fondo,--color-fondo,--background,#060606,,,,n.a.
+TEM-030,oscuro,tinta,--color-tinta,--foreground,#f0f0f0,fondo,17.78,4.5,sí
+TEM-030,oscuro,superficie,--color-superficie,--card,#18191b,,,,n.a.
+TEM-030,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#f0f0f0,superficie,15.44,4.5,sí
+TEM-030,oscuro,emergente,--color-emergente,--popover,#222327,,,,n.a.
+TEM-030,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#f0f0f0,emergente,13.78,4.5,sí
+TEM-030,oscuro,primario,--color-primario,--primary,#c92d6a,fondo,3.92,3,sí
+TEM-030,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,5.16,4.5,sí
+TEM-030,oscuro,secundario,--color-secundario,--secondary,#1b1d1e,,,,n.a.
+TEM-030,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#f0f0f0,secundario,14.85,4.5,sí
+TEM-030,oscuro,apagado,--color-apagado,--muted,#2a2c33,,,,n.a.
+TEM-030,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a0a0a0,fondo,7.75,4.5,sí
+TEM-030,oscuro,acento,--color-acento,--accent,#1e293b,,,,n.a.
+TEM-030,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#c92d6a,acento,2.83,4.5,no
+TEM-030,oscuro,destructivo,--color-destructivo,--destructive,#f87171,fondo,7.32,3,sí
+TEM-030,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,2.77,4.5,no
+TEM-030,oscuro,borde,--color-borde,--border,#33353a,fondo,1.65,3,condicional
+TEM-030,oscuro,borde-campo,--color-borde-campo,--input,#33353a,,,,n.a.
+TEM-030,oscuro,anillo-foco,--color-anillo-foco,--ring,#c92d6a,fondo,3.92,3,sí
+TEM-030,oscuro,grafica-1,--color-grafica-1,--chart-1,#4ade80,,,,n.a.
+TEM-030,oscuro,grafica-2,--color-grafica-2,--chart-2,#c92d6a,,,,n.a.
+TEM-030,oscuro,grafica-3,--color-grafica-3,--chart-3,#fca5a5,,,,n.a.
+TEM-030,oscuro,grafica-4,--color-grafica-4,--chart-4,#5993f4,,,,n.a.
+TEM-030,oscuro,grafica-5,--color-grafica-5,--chart-5,#a0a0a0,,,,n.a.
+TEM-031,claro,fondo,--color-fondo,--background,#fdfdfd,,,,n.a.
+TEM-031,claro,tinta,--color-tinta,--foreground,#000000,fondo,20.65,4.5,sí
+TEM-031,claro,superficie,--color-superficie,--card,#fdfdfd,,,,n.a.
+TEM-031,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#000000,superficie,20.65,4.5,sí
+TEM-031,claro,emergente,--color-emergente,--popover,#fcfcfc,,,,n.a.
+TEM-031,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#000000,emergente,20.47,4.5,sí
+TEM-031,claro,primario,--color-primario,--primary,#c92d6a,fondo,5.08,3,sí
+TEM-031,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,5.16,4.5,sí
+TEM-031,claro,secundario,--color-secundario,--secondary,#1b1d1e,,,,n.a.
+TEM-031,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#edf0f4,secundario,14.80,4.5,sí
+TEM-031,claro,apagado,--color-apagado,--muted,#f5f5f5,,,,n.a.
+TEM-031,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#525252,fondo,7.68,4.5,sí
+TEM-031,claro,acento,--color-acento,--accent,#fbdae7,,,,n.a.
+TEM-031,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#c92d6a,acento,4.00,4.5,no
+TEM-031,claro,destructivo,--color-destructivo,--destructive,#e54b4f,fondo,3.79,3,sí
+TEM-031,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.85,4.5,no
+TEM-031,claro,borde,--color-borde,--border,#e7e7ee,fondo,1.21,3,condicional
+TEM-031,claro,borde-campo,--color-borde-campo,--input,#ebebeb,,,,n.a.
+TEM-031,claro,anillo-foco,--color-anillo-foco,--ring,#000000,fondo,20.65,3,sí
+TEM-031,claro,grafica-1,--color-grafica-1,--chart-1,#4ac885,,,,n.a.
+TEM-031,claro,grafica-2,--color-grafica-2,--chart-2,#c92d6a,,,,n.a.
+TEM-031,claro,grafica-3,--color-grafica-3,--chart-3,#fd822b,,,,n.a.
+TEM-031,claro,grafica-4,--color-grafica-4,--chart-4,#a146fb,,,,n.a.
+TEM-031,claro,grafica-5,--color-grafica-5,--chart-5,#747474,,,,n.a.
+TEM-031,oscuro,fondo,--color-fondo,--background,#060606,,,,n.a.
+TEM-031,oscuro,tinta,--color-tinta,--foreground,#f0f0f0,fondo,17.78,4.5,sí
+TEM-031,oscuro,superficie,--color-superficie,--card,#18191b,,,,n.a.
+TEM-031,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#f0f0f0,superficie,15.44,4.5,sí
+TEM-031,oscuro,emergente,--color-emergente,--popover,#222327,,,,n.a.
+TEM-031,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#f0f0f0,emergente,13.78,4.5,sí
+TEM-031,oscuro,primario,--color-primario,--primary,#c92d6a,fondo,3.92,3,sí
+TEM-031,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,5.16,4.5,sí
+TEM-031,oscuro,secundario,--color-secundario,--secondary,#1b1d1e,,,,n.a.
+TEM-031,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#f0f0f0,secundario,14.85,4.5,sí
+TEM-031,oscuro,apagado,--color-apagado,--muted,#2a2c33,,,,n.a.
+TEM-031,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a0a0a0,fondo,7.75,4.5,sí
+TEM-031,oscuro,acento,--color-acento,--accent,#1e293b,,,,n.a.
+TEM-031,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#c92d6a,acento,2.83,4.5,no
+TEM-031,oscuro,destructivo,--color-destructivo,--destructive,#f87171,fondo,7.32,3,sí
+TEM-031,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,2.77,4.5,no
+TEM-031,oscuro,borde,--color-borde,--border,#33353a,fondo,1.65,3,condicional
+TEM-031,oscuro,borde-campo,--color-borde-campo,--input,#33353a,,,,n.a.
+TEM-031,oscuro,anillo-foco,--color-anillo-foco,--ring,#c92d6a,fondo,3.92,3,sí
+TEM-031,oscuro,grafica-1,--color-grafica-1,--chart-1,#4ade80,,,,n.a.
+TEM-031,oscuro,grafica-2,--color-grafica-2,--chart-2,#c92d6a,,,,n.a.
+TEM-031,oscuro,grafica-3,--color-grafica-3,--chart-3,#fca5a5,,,,n.a.
+TEM-031,oscuro,grafica-4,--color-grafica-4,--chart-4,#5993f4,,,,n.a.
+TEM-031,oscuro,grafica-5,--color-grafica-5,--chart-5,#a0a0a0,,,,n.a.
+TEM-032,claro,fondo,--color-fondo,--background,"hsl(0, 0%, 100%)",,,,n.a.
+TEM-032,claro,tinta,--color-tinta,--foreground,"hsl(210, 10%, 15%)",fondo,15.18,4.5,sí
+TEM-032,claro,superficie,--color-superficie,--card,"hsl(0, 0%, 100%)",,,,n.a.
+TEM-032,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(210, 10%, 15%)",superficie,15.18,4.5,sí
+TEM-032,claro,emergente,--color-emergente,--popover,"hsl(0, 0%, 100%)",,,,n.a.
+TEM-032,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(210, 10%, 15%)",emergente,15.18,4.5,sí
+TEM-032,claro,primario,--color-primario,--primary,#ae0a28,fondo,7.31,3,sí
+TEM-032,claro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0, 0%, 100%)",primario,7.31,4.5,sí
+TEM-032,claro,secundario,--color-secundario,--secondary,"hsl(210, 10%, 96%)",,,,n.a.
+TEM-032,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(210, 10%, 20%)",secundario,11.66,4.5,sí
+TEM-032,claro,apagado,--color-apagado,--muted,"hsl(210, 10%, 97%)",,,,n.a.
+TEM-032,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(210, 10%, 40%)",fondo,5.85,4.5,sí
+TEM-032,claro,acento,--color-acento,--accent,#faf1e0,,,,n.a.
+TEM-032,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#ae0a28,acento,6.52,4.5,sí
+TEM-032,claro,destructivo,--color-destructivo,--destructive,"hsl(0, 84%, 60%)",fondo,3.78,3,sí
+TEM-032,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0, 0%, 100%)",destructivo,3.78,4.5,no
+TEM-032,claro,borde,--color-borde,--border,"hsl(210, 10%, 90%)",fondo,1.26,3,condicional
+TEM-032,claro,borde-campo,--color-borde-campo,--input,"hsl(210, 10%, 90%)",,,,n.a.
+TEM-032,claro,anillo-foco,--color-anillo-foco,--ring,"hsl(356, 84%, 48%)",fondo,4.85,3,sí
+TEM-032,claro,grafica-1,--color-grafica-1,--chart-1,"hsl(356, 84%, 48%)",,,,n.a.
+TEM-032,claro,grafica-2,--color-grafica-2,--chart-2,"hsl(210, 10%, 20%)",,,,n.a.
+TEM-032,claro,grafica-3,--color-grafica-3,--chart-3,"hsl(142, 70%, 45%)",,,,n.a.
+TEM-032,claro,grafica-4,--color-grafica-4,--chart-4,"hsl(47, 95%, 55%)",,,,n.a.
+TEM-032,claro,grafica-5,--color-grafica-5,--chart-5,"hsl(25, 95%, 55%)",,,,n.a.
+TEM-032,oscuro,fondo,--color-fondo,--background,"hsl(210, 10%, 4%)",,,,n.a.
+TEM-032,oscuro,tinta,--color-tinta,--foreground,"hsl(0, 0%, 98%)",fondo,18.95,4.5,sí
+TEM-032,oscuro,superficie,--color-superficie,--card,"hsl(210, 10%, 7%)",,,,n.a.
+TEM-032,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(0, 0%, 98%)",superficie,17.99,4.5,sí
+TEM-032,oscuro,emergente,--color-emergente,--popover,"hsl(210, 10%, 7%)",,,,n.a.
+TEM-032,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(0, 0%, 98%)",emergente,17.99,4.5,sí
+TEM-032,oscuro,primario,--color-primario,--primary,"hsl(356, 84%, 48%)",fondo,4.08,3,sí
+TEM-032,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0, 0%, 100%)",primario,4.85,4.5,sí
+TEM-032,oscuro,secundario,--color-secundario,--secondary,"hsl(210, 10%, 15%)",,,,n.a.
+TEM-032,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(0, 0%, 98%)",secundario,14.53,4.5,sí
+TEM-032,oscuro,apagado,--color-apagado,--muted,"hsl(210, 10%, 12%)",,,,n.a.
+TEM-032,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(210, 10%, 65%)",fondo,7.99,4.5,sí
+TEM-032,oscuro,acento,--color-acento,--accent,"hsl(356, 84%, 15%)",,,,n.a.
+TEM-032,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(356, 84%, 80%)",acento,8.20,4.5,sí
+TEM-032,oscuro,destructivo,--color-destructivo,--destructive,"hsl(0, 62%, 30%)",fondo,1.93,3,no
+TEM-032,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0, 0%, 98%)",destructivo,9.80,4.5,sí
+TEM-032,oscuro,borde,--color-borde,--border,"hsl(210, 10%, 16%)",fondo,1.35,3,condicional
+TEM-032,oscuro,borde-campo,--color-borde-campo,--input,"hsl(210, 10%, 16%)",,,,n.a.
+TEM-032,oscuro,anillo-foco,--color-anillo-foco,--ring,"hsl(356, 84%, 48%)",fondo,4.08,3,sí
+TEM-032,oscuro,grafica-1,--color-grafica-1,--chart-1,"hsl(356, 84%, 48%)",,,,n.a.
+TEM-032,oscuro,grafica-2,--color-grafica-2,--chart-2,"hsl(210, 10%, 80%)",,,,n.a.
+TEM-032,oscuro,grafica-3,--color-grafica-3,--chart-3,"hsl(142, 70%, 45%)",,,,n.a.
+TEM-032,oscuro,grafica-4,--color-grafica-4,--chart-4,"hsl(47, 95%, 55%)",,,,n.a.
+TEM-032,oscuro,grafica-5,--color-grafica-5,--chart-5,"hsl(25, 95%, 55%)",,,,n.a.
+TEM-033,claro,fondo,--color-fondo,--background,#F7F5E9,,,,n.a.
+TEM-033,claro,tinta,--color-tinta,--foreground,#503E33,fondo,9.24,4.5,sí
+TEM-033,claro,superficie,--color-superficie,--card,#F7F5E9,,,,n.a.
+TEM-033,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#503E33,superficie,9.24,4.5,sí
+TEM-033,claro,emergente,--color-emergente,--popover,#FFFFFF,,,,n.a.
+TEM-033,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#503E33,emergente,10.11,4.5,sí
+TEM-033,claro,primario,--color-primario,--primary,#A95C64,fondo,4.36,3,sí
+TEM-033,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#FFFFFF,primario,4.77,4.5,sí
+TEM-033,claro,secundario,--color-secundario,--secondary,#C3A697,,,,n.a.
+TEM-033,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#FFFFFF,secundario,2.28,4.5,no
+TEM-033,claro,apagado,--color-apagado,--muted,#E9C9BE,,,,n.a.
+TEM-033,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#946F5C,fondo,4.09,4.5,no
+TEM-033,claro,acento,--color-acento,--accent,#E9C9BE,,,,n.a.
+TEM-033,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#503E33,acento,6.53,4.5,sí
+TEM-033,claro,destructivo,--color-destructivo,--destructive,#1F1C18,fondo,15.51,3,sí
+TEM-033,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FFFFFF,destructivo,16.97,4.5,sí
+TEM-033,claro,borde,--color-borde,--border,#946F5C,fondo,4.09,3,sí
+TEM-033,claro,borde-campo,--color-borde-campo,--input,#946F5C,,,,n.a.
+TEM-033,claro,anillo-foco,--color-anillo-foco,--ring,#A95C64,fondo,4.36,3,sí
+TEM-033,claro,grafica-1,--color-grafica-1,--chart-1,#A95C64,,,,n.a.
+TEM-033,claro,grafica-2,--color-grafica-2,--chart-2,#946F5C,,,,n.a.
+TEM-033,claro,grafica-3,--color-grafica-3,--chart-3,#C9A188,,,,n.a.
+TEM-033,claro,grafica-4,--color-grafica-4,--chart-4,#C3A697,,,,n.a.
+TEM-033,claro,grafica-5,--color-grafica-5,--chart-5,#A87D77,,,,n.a.
+TEM-033,oscuro,fondo,--color-fondo,--background,#2B2421,,,,n.a.
+TEM-033,oscuro,tinta,--color-tinta,--foreground,#F7F5E9,fondo,13.94,4.5,sí
+TEM-033,oscuro,superficie,--color-superficie,--card,#3C332E,,,,n.a.
+TEM-033,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#F7F5E9,superficie,11.26,4.5,sí
+TEM-033,oscuro,emergente,--color-emergente,--popover,#3C332E,,,,n.a.
+TEM-033,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#F7F5E9,emergente,11.26,4.5,sí
+TEM-033,oscuro,primario,--color-primario,--primary,#C9A188,fondo,6.49,3,sí
+TEM-033,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#2B2421,primario,6.49,4.5,sí
+TEM-033,oscuro,secundario,--color-secundario,--secondary,#946F5C,,,,n.a.
+TEM-033,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#F7F5E9,secundario,4.09,4.5,no
+TEM-033,oscuro,apagado,--color-apagado,--muted,#503E33,,,,n.a.
+TEM-033,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#C5AA9B,fondo,6.97,4.5,sí
+TEM-033,oscuro,acento,--color-acento,--accent,#C3A697,,,,n.a.
+TEM-033,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#2B2421,acento,6.70,4.5,sí
+TEM-033,oscuro,destructivo,--color-destructivo,--destructive,#E57373,fondo,5.11,3,sí
+TEM-033,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#2B2421,destructivo,5.11,4.5,sí
+TEM-033,oscuro,borde,--color-borde,--border,#503E33,fondo,1.51,3,condicional
+TEM-033,oscuro,borde-campo,--color-borde-campo,--input,#503E33,,,,n.a.
+TEM-033,oscuro,anillo-foco,--color-anillo-foco,--ring,#C9A188,fondo,6.49,3,sí
+TEM-033,oscuro,grafica-1,--color-grafica-1,--chart-1,#C9A188,,,,n.a.
+TEM-033,oscuro,grafica-2,--color-grafica-2,--chart-2,#C3A697,,,,n.a.
+TEM-033,oscuro,grafica-3,--color-grafica-3,--chart-3,#A95C64,,,,n.a.
+TEM-033,oscuro,grafica-4,--color-grafica-4,--chart-4,#946F5C,,,,n.a.
+TEM-033,oscuro,grafica-5,--color-grafica-5,--chart-5,#A87D77,,,,n.a.
+TEM-034,claro,fondo,--color-fondo,--background,#f8fafc,,,,n.a.
+TEM-034,claro,tinta,--color-tinta,--foreground,#233039,fondo,12.92,4.5,sí
+TEM-034,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-034,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#253639,superficie,12.61,4.5,sí
+TEM-034,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-034,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#253839,emergente,12.33,4.5,sí
+TEM-034,claro,primario,--color-primario,--primary,#227472,fondo,5.27,3,sí
+TEM-034,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#f2f2f2,primario,4.92,4.5,sí
+TEM-034,claro,secundario,--color-secundario,--secondary,#e5e7eb,,,,n.a.
+TEM-034,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#3a4e50,secundario,7.11,4.5,sí
+TEM-034,claro,apagado,--color-apagado,--muted,#f3f4f6,,,,n.a.
+TEM-034,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#28312b,fondo,12.83,4.5,sí
+TEM-034,claro,acento,--color-acento,--accent,#cfeccf,,,,n.a.
+TEM-034,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#3c4e4f,acento,6.91,4.5,sí
+TEM-034,claro,destructivo,--color-destructivo,--destructive,#d3300e,fondo,4.78,3,sí
+TEM-034,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,5.00,4.5,sí
+TEM-034,claro,borde,--color-borde,--border,#d1d5db,fondo,1.41,3,condicional
+TEM-034,claro,borde-campo,--color-borde-campo,--input,#dae8d9,,,,n.a.
+TEM-034,claro,anillo-foco,--color-anillo-foco,--ring,#78b27f,fondo,2.37,3,no
+TEM-034,claro,grafica-1,--color-grafica-1,--chart-1,#bcded2,,,,n.a.
+TEM-034,claro,grafica-2,--color-grafica-2,--chart-2,#87b79f,,,,n.a.
+TEM-034,claro,grafica-3,--color-grafica-3,--chart-3,#6c927f,,,,n.a.
+TEM-034,claro,grafica-4,--color-grafica-4,--chart-4,#436e59,,,,n.a.
+TEM-034,claro,grafica-5,--color-grafica-5,--chart-5,#3b5c3d,,,,n.a.
+TEM-034,oscuro,fondo,--color-fondo,--background,#16171d,,,,n.a.
+TEM-034,oscuro,tinta,--color-tinta,--foreground,#cbf4ed,fondo,15.07,4.5,sí
+TEM-034,oscuro,superficie,--color-superficie,--card,#202b30,,,,n.a.
+TEM-034,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#cbf4ed,superficie,12.21,4.5,sí
+TEM-034,oscuro,emergente,--color-emergente,--popover,#161a1d,,,,n.a.
+TEM-034,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#00f0d3,emergente,12.01,4.5,sí
+TEM-034,oscuro,primario,--color-primario,--primary,#00f0d3,fondo,12.27,3,sí
+TEM-034,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#0b2821,primario,10.75,4.5,sí
+TEM-034,oscuro,secundario,--color-secundario,--secondary,#304345,,,,n.a.
+TEM-034,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#d1d5db,secundario,7.07,4.5,sí
+TEM-034,oscuro,apagado,--color-apagado,--muted,#1f2b30,,,,n.a.
+TEM-034,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#9ca3af,fondo,7.04,4.5,sí
+TEM-034,oscuro,acento,--color-acento,--accent,#374151,,,,n.a.
+TEM-034,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#d1d5db,acento,7.00,4.5,sí
+TEM-034,oscuro,destructivo,--color-destructivo,--destructive,#e98100,fondo,6.48,3,sí
+TEM-034,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#1d2725,destructivo,5.55,4.5,sí
+TEM-034,oscuro,borde,--color-borde,--border,#4a6767,fondo,2.92,3,condicional
+TEM-034,oscuro,borde-campo,--color-borde-campo,--input,#375656,,,,n.a.
+TEM-034,oscuro,anillo-foco,--color-anillo-foco,--ring,#00f0d3,fondo,12.27,3,sí
+TEM-034,oscuro,grafica-1,--color-grafica-1,--chart-1,#00f0e3,,,,n.a.
+TEM-034,oscuro,grafica-2,--color-grafica-2,--chart-2,#5cd1be,,,,n.a.
+TEM-034,oscuro,grafica-3,--color-grafica-3,--chart-3,#51958c,,,,n.a.
+TEM-034,oscuro,grafica-4,--color-grafica-4,--chart-4,#42636a,,,,n.a.
+TEM-034,oscuro,grafica-5,--color-grafica-5,--chart-5,#1c3a3a,,,,n.a.
+TEM-035,claro,fondo,--color-fondo,--background,"hsl(0,0%,100%)",,,,n.a.
+TEM-035,claro,tinta,--color-tinta,--foreground,"hsl(0,0%,0%)",fondo,21.00,4.5,sí
+TEM-035,claro,superficie,--color-superficie,--card,"hsl(0,0%,100%)",,,,n.a.
+TEM-035,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(0,0%,0%)",superficie,21.00,4.5,sí
+TEM-035,claro,emergente,--color-emergente,--popover,"hsl(0,0%,100%)",,,,n.a.
+TEM-035,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(0,0%,0%)",emergente,21.00,4.5,sí
+TEM-035,claro,primario,--color-primario,--primary,"hsl(0, 100%, 43%)",fondo,5.22,3,sí
+TEM-035,claro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0,0%,100%)",primario,5.22,4.5,sí
+TEM-035,claro,secundario,--color-secundario,--secondary,"hsl(0,0%,0%)",,,,n.a.
+TEM-035,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(0,0%,100%)",secundario,21.00,4.5,sí
+TEM-035,claro,apagado,--color-apagado,--muted,"hsl(0,0%,96%)",,,,n.a.
+TEM-035,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(0,0%,40%)",fondo,5.74,4.5,sí
+TEM-035,claro,acento,--color-acento,--accent,"hsl(45,100%,50%)",,,,n.a.
+TEM-035,claro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(0,0%,0%)",acento,12.73,4.5,sí
+TEM-035,claro,destructivo,--color-destructivo,--destructive,"hsl(0,100%,40%)",fondo,5.89,3,sí
+TEM-035,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0,0%,100%)",destructivo,5.89,4.5,sí
+TEM-035,claro,borde,--color-borde,--border,"hsl(0,0%,0%)",fondo,21.00,3,sí
+TEM-035,claro,borde-campo,--color-borde-campo,--input,"hsl(0,0%,100%)",,,,n.a.
+TEM-035,claro,anillo-foco,--color-anillo-foco,--ring,"hsl(0,100%,45%)",fondo,4.83,3,sí
+TEM-035,claro,grafica-1,--color-grafica-1,--chart-1,"hsl(0,0%,0%)",,,,n.a.
+TEM-035,claro,grafica-2,--color-grafica-2,--chart-2,"hsl(0,100%,45%)",,,,n.a.
+TEM-035,claro,grafica-3,--color-grafica-3,--chart-3,"hsl(45,100%,50%)",,,,n.a.
+TEM-035,claro,grafica-4,--color-grafica-4,--chart-4,"hsl(120,20%,35%)",,,,n.a.
+TEM-035,claro,grafica-5,--color-grafica-5,--chart-5,"hsl(20,40%,40%)",,,,n.a.
+TEM-035,oscuro,fondo,--color-fondo,--background,"hsl(0,0%,0%)",,,,n.a.
+TEM-035,oscuro,tinta,--color-tinta,--foreground,"hsl(0,0%,100%)",fondo,21.00,4.5,sí
+TEM-035,oscuro,superficie,--color-superficie,--card,"hsl(0,0%,4%)",,,,n.a.
+TEM-035,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(0,0%,100%)",superficie,19.78,4.5,sí
+TEM-035,oscuro,emergente,--color-emergente,--popover,"hsl(0,0%,4%)",,,,n.a.
+TEM-035,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(0,0%,100%)",emergente,19.78,4.5,sí
+TEM-035,oscuro,primario,--color-primario,--primary,"hsl(0,100%,50%)",fondo,5.25,3,sí
+TEM-035,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0,0%,100%)",primario,4.00,4.5,no
+TEM-035,oscuro,secundario,--color-secundario,--secondary,"hsl(0,0%,100%)",,,,n.a.
+TEM-035,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(0,0%,0%)",secundario,21.00,4.5,sí
+TEM-035,oscuro,apagado,--color-apagado,--muted,"hsl(0,0%,12%)",,,,n.a.
+TEM-035,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(0,0%,70%)",fondo,9.96,4.5,sí
+TEM-035,oscuro,acento,--color-acento,--accent,"hsl(45,100%,55%)",,,,n.a.
+TEM-035,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(0,0%,0%)",acento,13.31,4.5,sí
+TEM-035,oscuro,destructivo,--color-destructivo,--destructive,"hsl(0,100%,60%)",fondo,5.77,3,sí
+TEM-035,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0,0%,100%)",destructivo,3.64,4.5,no
+TEM-035,oscuro,borde,--color-borde,--border,"hsl(0,0%,100%)",fondo,21.00,3,sí
+TEM-035,oscuro,borde-campo,--color-borde-campo,--input,"hsl(0,0%,0%)",,,,n.a.
+TEM-035,oscuro,anillo-foco,--color-anillo-foco,--ring,"hsl(0,100%,50%)",fondo,5.25,3,sí
+TEM-035,oscuro,grafica-1,--color-grafica-1,--chart-1,"hsl(0,0%,100%)",,,,n.a.
+TEM-035,oscuro,grafica-2,--color-grafica-2,--chart-2,"hsl(0,100%,50%)",,,,n.a.
+TEM-035,oscuro,grafica-3,--color-grafica-3,--chart-3,"hsl(45,100%,55%)",,,,n.a.
+TEM-035,oscuro,grafica-4,--color-grafica-4,--chart-4,"hsl(120,15%,45%)",,,,n.a.
+TEM-035,oscuro,grafica-5,--color-grafica-5,--chart-5,"hsl(20,30%,50%)",,,,n.a.
+TEM-036,claro,fondo,--color-fondo,--background,#f9fdff,,,,n.a.
+TEM-036,claro,tinta,--color-tinta,--foreground,#031a1e,fondo,17.53,4.5,sí
+TEM-036,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-036,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#031a1e,superficie,17.94,4.5,sí
+TEM-036,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-036,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#1c1c34,emergente,16.60,4.5,sí
+TEM-036,claro,primario,--color-primario,--primary,oklch(0.704 0.14 182.503),fondo,2.37,3,no
+TEM-036,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#fcfcfc,primario,2.36,4.5,no
+TEM-036,claro,secundario,--color-secundario,--secondary,#e4f2f2,,,,n.a.
+TEM-036,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#2d4e54,secundario,7.85,4.5,sí
+TEM-036,claro,apagado,--color-apagado,--muted,#ebf4f4,,,,n.a.
+TEM-036,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#50686d,fondo,5.79,4.5,sí
+TEM-036,claro,acento,--color-acento,--accent,#c3ecdf,,,,n.a.
+TEM-036,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#006363,acento,5.53,4.5,sí
+TEM-036,claro,destructivo,--color-destructivo,--destructive,#ce514d,fondo,4.18,3,sí
+TEM-036,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,4.28,4.5,no
+TEM-036,claro,borde,--color-borde,--border,#dae3e4,fondo,1.28,3,condicional
+TEM-036,claro,borde-campo,--color-borde-campo,--input,#dae3e4,,,,n.a.
+TEM-036,claro,anillo-foco,--color-anillo-foco,--ring,oklch(0.704 0.14 182.503),fondo,2.37,3,no
+TEM-036,claro,grafica-1,--color-grafica-1,--chart-1,oklch(0.704 0.14 182.503),,,,n.a.
+TEM-036,claro,grafica-2,--color-grafica-2,--chart-2,#00a3d7,,,,n.a.
+TEM-036,claro,grafica-3,--color-grafica-3,--chart-3,#b18cfe,,,,n.a.
+TEM-036,claro,grafica-4,--color-grafica-4,--chart-4,#ffc677,,,,n.a.
+TEM-036,claro,grafica-5,--color-grafica-5,--chart-5,#cce8b5,,,,n.a.
+TEM-036,oscuro,fondo,--color-fondo,--background,#030b0b,,,,n.a.
+TEM-036,oscuro,tinta,--color-tinta,--foreground,#e4edee,fondo,16.70,4.5,sí
+TEM-036,oscuro,superficie,--color-superficie,--card,#061415,,,,n.a.
+TEM-036,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#e4edee,superficie,15.78,4.5,sí
+TEM-036,oscuro,emergente,--color-emergente,--popover,#161724,,,,n.a.
+TEM-036,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e6e6f5,emergente,14.38,4.5,sí
+TEM-036,oscuro,primario,--color-primario,--primary,oklch(0.704 0.14 182.503),fondo,8.20,3,sí
+TEM-036,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,2.42,4.5,no
+TEM-036,oscuro,secundario,--color-secundario,--secondary,#0b2425,,,,n.a.
+TEM-036,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#b8d4d5,secundario,10.37,4.5,sí
+TEM-036,oscuro,apagado,--color-apagado,--muted,#0f1d1e,,,,n.a.
+TEM-036,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#7a9596,fondo,6.22,4.5,sí
+TEM-036,oscuro,acento,--color-acento,--accent,oklch(0.437 0.078 188.216),,,,n.a.
+TEM-036,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#90caca,acento,4.12,4.5,no
+TEM-036,oscuro,destructivo,--color-destructivo,--destructive,#f84b4b,fondo,5.77,3,sí
+TEM-036,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#fafafd,destructivo,3.30,4.5,no
+TEM-036,oscuro,borde,--color-borde,--border,#142223,fondo,1.21,3,condicional
+TEM-036,oscuro,borde-campo,--color-borde-campo,--input,#142223,,,,n.a.
+TEM-036,oscuro,anillo-foco,--color-anillo-foco,--ring,oklch(0.704 0.14 182.503),fondo,8.20,3,sí
+TEM-036,oscuro,grafica-1,--color-grafica-1,--chart-1,oklch(0.704 0.14 182.503),,,,n.a.
+TEM-036,oscuro,grafica-2,--color-grafica-2,--chart-2,#00a3d7,,,,n.a.
+TEM-036,oscuro,grafica-3,--color-grafica-3,--chart-3,#b18cfe,,,,n.a.
+TEM-036,oscuro,grafica-4,--color-grafica-4,--chart-4,#ffc677,,,,n.a.
+TEM-036,oscuro,grafica-5,--color-grafica-5,--chart-5,#cce8b5,,,,n.a.
+TEM-037,claro,fondo,--color-fondo,--background,#f9fdff,,,,n.a.
+TEM-037,claro,tinta,--color-tinta,--foreground,#031a1e,fondo,17.53,4.5,sí
+TEM-037,claro,superficie,--color-superficie,--card,#ffffff,,,,n.a.
+TEM-037,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#031a1e,superficie,17.94,4.5,sí
+TEM-037,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-037,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#1c1c34,emergente,16.60,4.5,sí
+TEM-037,claro,primario,--color-primario,--primary,oklch(0.704 0.14 182.503),fondo,2.37,3,no
+TEM-037,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#fcfcfc,primario,2.36,4.5,no
+TEM-037,claro,secundario,--color-secundario,--secondary,#e4f2f2,,,,n.a.
+TEM-037,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#2d4e54,secundario,7.85,4.5,sí
+TEM-037,claro,apagado,--color-apagado,--muted,#ebf4f4,,,,n.a.
+TEM-037,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#50686d,fondo,5.79,4.5,sí
+TEM-037,claro,acento,--color-acento,--accent,#c3ecdf,,,,n.a.
+TEM-037,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#006363,acento,5.53,4.5,sí
+TEM-037,claro,destructivo,--color-destructivo,--destructive,#ce514d,fondo,4.18,3,sí
+TEM-037,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,4.28,4.5,no
+TEM-037,claro,borde,--color-borde,--border,#dae3e4,fondo,1.28,3,condicional
+TEM-037,claro,borde-campo,--color-borde-campo,--input,#dae3e4,,,,n.a.
+TEM-037,claro,anillo-foco,--color-anillo-foco,--ring,oklch(0.704 0.14 182.503),fondo,2.37,3,no
+TEM-037,claro,grafica-1,--color-grafica-1,--chart-1,oklch(0.704 0.14 182.503),,,,n.a.
+TEM-037,claro,grafica-2,--color-grafica-2,--chart-2,#00a3d7,,,,n.a.
+TEM-037,claro,grafica-3,--color-grafica-3,--chart-3,#b18cfe,,,,n.a.
+TEM-037,claro,grafica-4,--color-grafica-4,--chart-4,#ffc677,,,,n.a.
+TEM-037,claro,grafica-5,--color-grafica-5,--chart-5,#cce8b5,,,,n.a.
+TEM-037,oscuro,fondo,--color-fondo,--background,#030b0b,,,,n.a.
+TEM-037,oscuro,tinta,--color-tinta,--foreground,#e4edee,fondo,16.70,4.5,sí
+TEM-037,oscuro,superficie,--color-superficie,--card,#061415,,,,n.a.
+TEM-037,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#e4edee,superficie,15.78,4.5,sí
+TEM-037,oscuro,emergente,--color-emergente,--popover,#161724,,,,n.a.
+TEM-037,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e6e6f5,emergente,14.38,4.5,sí
+TEM-037,oscuro,primario,--color-primario,--primary,oklch(0.704 0.14 182.503),fondo,8.20,3,sí
+TEM-037,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,2.42,4.5,no
+TEM-037,oscuro,secundario,--color-secundario,--secondary,#0b2425,,,,n.a.
+TEM-037,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#b8d4d5,secundario,10.37,4.5,sí
+TEM-037,oscuro,apagado,--color-apagado,--muted,#0f1d1e,,,,n.a.
+TEM-037,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#7a9596,fondo,6.22,4.5,sí
+TEM-037,oscuro,acento,--color-acento,--accent,oklch(0.437 0.078 188.216),,,,n.a.
+TEM-037,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#90caca,acento,4.12,4.5,no
+TEM-037,oscuro,destructivo,--color-destructivo,--destructive,#f84b4b,fondo,5.77,3,sí
+TEM-037,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#fafafd,destructivo,3.30,4.5,no
+TEM-037,oscuro,borde,--color-borde,--border,#142223,fondo,1.21,3,condicional
+TEM-037,oscuro,borde-campo,--color-borde-campo,--input,#142223,,,,n.a.
+TEM-037,oscuro,anillo-foco,--color-anillo-foco,--ring,oklch(0.704 0.14 182.503),fondo,8.20,3,sí
+TEM-037,oscuro,grafica-1,--color-grafica-1,--chart-1,oklch(0.704 0.14 182.503),,,,n.a.
+TEM-037,oscuro,grafica-2,--color-grafica-2,--chart-2,#00a3d7,,,,n.a.
+TEM-037,oscuro,grafica-3,--color-grafica-3,--chart-3,#b18cfe,,,,n.a.
+TEM-037,oscuro,grafica-4,--color-grafica-4,--chart-4,#ffc677,,,,n.a.
+TEM-037,oscuro,grafica-5,--color-grafica-5,--chart-5,#cce8b5,,,,n.a.
+TEM-038,claro,fondo,--color-fondo,--background,"hsl(170, 40%, 98%)",,,,n.a.
+TEM-038,claro,tinta,--color-tinta,--foreground,"hsl(180, 40%, 15%)",fondo,12.62,4.5,sí
+TEM-038,claro,superficie,--color-superficie,--card,"hsl(170, 40%, 100%)",,,,n.a.
+TEM-038,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(180, 40%, 15%)",superficie,13.06,4.5,sí
+TEM-038,claro,emergente,--color-emergente,--popover,"hsl(170, 40%, 100%)",,,,n.a.
+TEM-038,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(180, 40%, 15%)",emergente,13.06,4.5,sí
+TEM-038,claro,primario,--color-primario,--primary,"hsl(171, 100%, 35%)",fondo,2.58,3,no
+TEM-038,claro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(0, 0%, 100%)",primario,2.67,4.5,no
+TEM-038,claro,secundario,--color-secundario,--secondary,"hsl(185, 80%, 94%)",,,,n.a.
+TEM-038,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(185, 90%, 25%)",secundario,5.40,4.5,sí
+TEM-038,claro,apagado,--color-apagado,--muted,"hsl(170, 20%, 94%)",,,,n.a.
+TEM-038,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(180, 15%, 45%)",fondo,3.94,4.5,no
+TEM-038,claro,acento,--color-acento,--accent,"hsl(190, 100%, 94%)",,,,n.a.
+TEM-038,claro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(190, 100%, 25%)",acento,5.70,4.5,sí
+TEM-038,claro,destructivo,--color-destructivo,--destructive,"hsl(340, 90%, 60%)",fondo,3.48,3,sí
+TEM-038,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0, 0%, 100%)",destructivo,3.60,4.5,no
+TEM-038,claro,borde,--color-borde,--border,"hsl(171, 30%, 88%)",fondo,1.21,3,condicional
+TEM-038,claro,borde-campo,--color-borde-campo,--input,"hsl(171, 30%, 88%)",,,,n.a.
+TEM-038,claro,anillo-foco,--color-anillo-foco,--ring,"hsl(171, 100%, 35%)",fondo,2.58,3,no
+TEM-038,claro,grafica-1,--color-grafica-1,--chart-1,"hsl(171, 100%, 35%)",,,,n.a.
+TEM-038,claro,grafica-2,--color-grafica-2,--chart-2,"hsl(190, 80%, 45%)",,,,n.a.
+TEM-038,claro,grafica-3,--color-grafica-3,--chart-3,"hsl(210, 80%, 55%)",,,,n.a.
+TEM-038,claro,grafica-4,--color-grafica-4,--chart-4,"hsl(150, 60%, 50%)",,,,n.a.
+TEM-038,claro,grafica-5,--color-grafica-5,--chart-5,"hsl(330, 80%, 65%)",,,,n.a.
+TEM-038,oscuro,fondo,--color-fondo,--background,"hsl(180, 50%, 4%)",,,,n.a.
+TEM-038,oscuro,tinta,--color-tinta,--foreground,"hsl(170, 20%, 96%)",fondo,17.92,4.5,sí
+TEM-038,oscuro,superficie,--color-superficie,--card,"hsl(180, 45%, 7%)",,,,n.a.
+TEM-038,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(170, 20%, 96%)",superficie,16.54,4.5,sí
+TEM-038,oscuro,emergente,--color-emergente,--popover,"hsl(180, 45%, 7%)",,,,n.a.
+TEM-038,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(170, 20%, 96%)",emergente,16.54,4.5,sí
+TEM-038,oscuro,primario,--color-primario,--primary,"hsl(171, 90%, 50%)",fondo,13.52,3,sí
+TEM-038,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(180, 50%, 5%)",primario,13.18,4.5,sí
+TEM-038,oscuro,secundario,--color-secundario,--secondary,"hsl(185, 40%, 15%)",,,,n.a.
+TEM-038,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(185, 90%, 90%)",secundario,11.88,4.5,sí
+TEM-038,oscuro,apagado,--color-apagado,--muted,"hsl(180, 30%, 12%)",,,,n.a.
+TEM-038,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(170, 10%, 70%)",fondo,9.65,4.5,sí
+TEM-038,oscuro,acento,--color-acento,--accent,"hsl(190, 50%, 15%)",,,,n.a.
+TEM-038,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(190, 90%, 90%)",acento,11.59,4.5,sí
+TEM-038,oscuro,destructivo,--color-destructivo,--destructive,"hsl(340, 80%, 45%)",fondo,3.59,3,sí
+TEM-038,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(0, 0%, 100%)",destructivo,5.40,4.5,sí
+TEM-038,oscuro,borde,--color-borde,--border,"hsl(180, 30%, 18%)",fondo,1.63,3,condicional
+TEM-038,oscuro,borde-campo,--color-borde-campo,--input,"hsl(180, 30%, 18%)",,,,n.a.
+TEM-038,oscuro,anillo-foco,--color-anillo-foco,--ring,"hsl(171, 90%, 50%)",fondo,13.52,3,sí
+TEM-038,oscuro,grafica-1,--color-grafica-1,--chart-1,"hsl(171, 90%, 50%)",,,,n.a.
+TEM-038,oscuro,grafica-2,--color-grafica-2,--chart-2,"hsl(190, 80%, 55%)",,,,n.a.
+TEM-038,oscuro,grafica-3,--color-grafica-3,--chart-3,"hsl(210, 80%, 65%)",,,,n.a.
+TEM-038,oscuro,grafica-4,--color-grafica-4,--chart-4,"hsl(150, 70%, 55%)",,,,n.a.
+TEM-038,oscuro,grafica-5,--color-grafica-5,--chart-5,"hsl(330, 80%, 70%)",,,,n.a.
+TEM-039,claro,fondo,--color-fondo,--background,#fdfdfd,,,,n.a.
+TEM-039,claro,tinta,--color-tinta,--foreground,#000000,fondo,20.65,4.5,sí
+TEM-039,claro,superficie,--color-superficie,--card,#fdfdfd,,,,n.a.
+TEM-039,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#000000,superficie,20.65,4.5,sí
+TEM-039,claro,emergente,--color-emergente,--popover,#fcfcfc,,,,n.a.
+TEM-039,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#000000,emergente,20.47,4.5,sí
+TEM-039,claro,primario,--color-primario,--primary,#7033ff,fondo,5.72,3,sí
+TEM-039,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,5.82,4.5,sí
+TEM-039,claro,secundario,--color-secundario,--secondary,#edf0f4,,,,n.a.
+TEM-039,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#080808,secundario,17.52,4.5,sí
+TEM-039,claro,apagado,--color-apagado,--muted,#f5f5f5,,,,n.a.
+TEM-039,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#525252,fondo,7.68,4.5,sí
+TEM-039,claro,acento,--color-acento,--accent,#e2ebff,,,,n.a.
+TEM-039,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#1e69dc,acento,4.27,4.5,no
+TEM-039,claro,destructivo,--color-destructivo,--destructive,#e54b4f,fondo,3.79,3,sí
+TEM-039,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.85,4.5,no
+TEM-039,claro,borde,--color-borde,--border,#e7e7ee,fondo,1.21,3,condicional
+TEM-039,claro,borde-campo,--color-borde-campo,--input,#ebebeb,,,,n.a.
+TEM-039,claro,anillo-foco,--color-anillo-foco,--ring,#000000,fondo,20.65,3,sí
+TEM-039,claro,grafica-1,--color-grafica-1,--chart-1,#4ac885,,,,n.a.
+TEM-039,claro,grafica-2,--color-grafica-2,--chart-2,#7033ff,,,,n.a.
+TEM-039,claro,grafica-3,--color-grafica-3,--chart-3,#fd822b,,,,n.a.
+TEM-039,claro,grafica-4,--color-grafica-4,--chart-4,#3276e4,,,,n.a.
+TEM-039,claro,grafica-5,--color-grafica-5,--chart-5,#747474,,,,n.a.
+TEM-039,oscuro,fondo,--color-fondo,--background,#1a1b1e,,,,n.a.
+TEM-039,oscuro,tinta,--color-tinta,--foreground,#f0f0f0,fondo,15.11,4.5,sí
+TEM-039,oscuro,superficie,--color-superficie,--card,#222327,,,,n.a.
+TEM-039,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#f0f0f0,superficie,13.78,4.5,sí
+TEM-039,oscuro,emergente,--color-emergente,--popover,#222327,,,,n.a.
+TEM-039,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#f0f0f0,emergente,13.78,4.5,sí
+TEM-039,oscuro,primario,--color-primario,--primary,#8c5cff,fondo,4.17,3,sí
+TEM-039,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,4.13,4.5,no
+TEM-039,oscuro,secundario,--color-secundario,--secondary,#2a2c33,,,,n.a.
+TEM-039,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#f0f0f0,secundario,12.23,4.5,sí
+TEM-039,oscuro,apagado,--color-apagado,--muted,#2a2c33,,,,n.a.
+TEM-039,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a0a0a0,fondo,6.59,4.5,sí
+TEM-039,oscuro,acento,--color-acento,--accent,#1e293b,,,,n.a.
+TEM-039,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#79c0ff,acento,7.52,4.5,sí
+TEM-039,oscuro,destructivo,--color-destructivo,--destructive,#f87171,fondo,6.23,3,sí
+TEM-039,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,2.77,4.5,no
+TEM-039,oscuro,borde,--color-borde,--border,#33353a,fondo,1.40,3,condicional
+TEM-039,oscuro,borde-campo,--color-borde-campo,--input,#33353a,,,,n.a.
+TEM-039,oscuro,anillo-foco,--color-anillo-foco,--ring,#8c5cff,fondo,4.17,3,sí
+TEM-039,oscuro,grafica-1,--color-grafica-1,--chart-1,#4ade80,,,,n.a.
+TEM-039,oscuro,grafica-2,--color-grafica-2,--chart-2,#8c5cff,,,,n.a.
+TEM-039,oscuro,grafica-3,--color-grafica-3,--chart-3,#fca5a5,,,,n.a.
+TEM-039,oscuro,grafica-4,--color-grafica-4,--chart-4,#5993f4,,,,n.a.
+TEM-039,oscuro,grafica-5,--color-grafica-5,--chart-5,#a0a0a0,,,,n.a.
+TEM-040,claro,fondo,--color-fondo,--background,#F2F1E6,,,,n.a.
+TEM-040,claro,tinta,--color-tinta,--foreground,#000000,fondo,18.50,4.5,sí
+TEM-040,claro,superficie,--color-superficie,--card,#F2F1E6,,,,n.a.
+TEM-040,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#000000,superficie,18.50,4.5,sí
+TEM-040,claro,emergente,--color-emergente,--popover,#FFFFFF,,,,n.a.
+TEM-040,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#000000,emergente,21.00,4.5,sí
+TEM-040,claro,primario,--color-primario,--primary,#A855F7,fondo,3.49,3,sí
+TEM-040,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#FFFFFF,primario,3.96,4.5,no
+TEM-040,claro,secundario,--color-secundario,--secondary,#C084FC,,,,n.a.
+TEM-040,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#000000,secundario,7.95,4.5,sí
+TEM-040,claro,apagado,--color-apagado,--muted,#E8E7DB,,,,n.a.
+TEM-040,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#666666,fondo,5.06,4.5,sí
+TEM-040,claro,acento,--color-acento,--accent,#A855F7,,,,n.a.
+TEM-040,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#FFFFFF,acento,3.96,4.5,no
+TEM-040,claro,destructivo,--color-destructivo,--destructive,#FF4D4D,fondo,2.88,3,no
+TEM-040,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FFFFFF,destructivo,3.27,4.5,no
+TEM-040,claro,borde,--color-borde,--border,#000000,fondo,18.50,3,sí
+TEM-040,claro,borde-campo,--color-borde-campo,--input,#FFFFFF,,,,n.a.
+TEM-040,claro,anillo-foco,--color-anillo-foco,--ring,#A855F7,fondo,3.49,3,sí
+TEM-040,claro,grafica-1,--color-grafica-1,--chart-1,#A855F7,,,,n.a.
+TEM-040,claro,grafica-2,--color-grafica-2,--chart-2,#36FF9B,,,,n.a.
+TEM-040,claro,grafica-3,--color-grafica-3,--chart-3,#000000,,,,n.a.
+TEM-040,claro,grafica-4,--color-grafica-4,--chart-4,#666666,,,,n.a.
+TEM-040,claro,grafica-5,--color-grafica-5,--chart-5,#C084FC,,,,n.a.
+TEM-040,oscuro,fondo,--color-fondo,--background,#121212,,,,n.a.
+TEM-040,oscuro,tinta,--color-tinta,--foreground,#F2F1E6,fondo,16.50,4.5,sí
+TEM-040,oscuro,superficie,--color-superficie,--card,#1F1F1F,,,,n.a.
+TEM-040,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#F2F1E6,superficie,14.52,4.5,sí
+TEM-040,oscuro,emergente,--color-emergente,--popover,#1F1F1F,,,,n.a.
+TEM-040,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#F2F1E6,emergente,14.52,4.5,sí
+TEM-040,oscuro,primario,--color-primario,--primary,#A855F7,fondo,4.73,3,sí
+TEM-040,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#FFFFFF,primario,3.96,4.5,no
+TEM-040,oscuro,secundario,--color-secundario,--secondary,#2A2A2A,,,,n.a.
+TEM-040,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#F2F1E6,secundario,12.64,4.5,sí
+TEM-040,oscuro,apagado,--color-apagado,--muted,#2A2A2A,,,,n.a.
+TEM-040,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#A0A0A0,fondo,7.16,4.5,sí
+TEM-040,oscuro,acento,--color-acento,--accent,#A855F7,,,,n.a.
+TEM-040,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#FFFFFF,acento,3.96,4.5,no
+TEM-040,oscuro,destructivo,--color-destructivo,--destructive,#800000,fondo,1.71,3,no
+TEM-040,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#FFFFFF,destructivo,10.95,4.5,sí
+TEM-040,oscuro,borde,--color-borde,--border,#333333,fondo,1.48,3,condicional
+TEM-040,oscuro,borde-campo,--color-borde-campo,--input,#1F1F1F,,,,n.a.
+TEM-040,oscuro,anillo-foco,--color-anillo-foco,--ring,#A855F7,fondo,4.73,3,sí
+TEM-040,oscuro,grafica-1,--color-grafica-1,--chart-1,#A855F7,,,,n.a.
+TEM-040,oscuro,grafica-2,--color-grafica-2,--chart-2,#36FF9B,,,,n.a.
+TEM-040,oscuro,grafica-3,--color-grafica-3,--chart-3,#FFFFFF,,,,n.a.
+TEM-040,oscuro,grafica-4,--color-grafica-4,--chart-4,#666666,,,,n.a.
+TEM-040,oscuro,grafica-5,--color-grafica-5,--chart-5,#121212,,,,n.a.
+TEM-041,claro,fondo,--color-fondo,--background,"hsl(210, 40%, 98%)",,,,n.a.
+TEM-041,claro,tinta,--color-tinta,--foreground,"hsl(224, 71%, 4%)",fondo,19.25,4.5,sí
+TEM-041,claro,superficie,--color-superficie,--card,"hsl(0, 0%, 100%)",,,,n.a.
+TEM-041,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(224, 71%, 4%)",superficie,20.16,4.5,sí
+TEM-041,claro,emergente,--color-emergente,--popover,"hsl(0, 0%, 100%)",,,,n.a.
+TEM-041,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(224, 71%, 4%)",emergente,20.16,4.5,sí
+TEM-041,claro,primario,--color-primario,--primary,"hsl(263, 70%, 50%)",fondo,6.91,3,sí
+TEM-041,claro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(210, 40%, 98%)",primario,6.91,4.5,sí
+TEM-041,claro,secundario,--color-secundario,--secondary,"hsl(263, 20%, 94%)",,,,n.a.
+TEM-041,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(263, 70%, 30%)",secundario,10.84,4.5,sí
+TEM-041,claro,apagado,--color-apagado,--muted,"hsl(220, 14%, 96%)",,,,n.a.
+TEM-041,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(220, 9%, 46%)",fondo,4.63,4.5,sí
+TEM-041,claro,acento,--color-acento,--accent,"hsl(263, 80%, 96%)",,,,n.a.
+TEM-041,claro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(263, 70%, 50%)",acento,6.31,4.5,sí
+TEM-041,claro,destructivo,--color-destructivo,--destructive,"hsl(0, 84%, 60%)",fondo,3.61,3,sí
+TEM-041,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(210, 40%, 98%)",destructivo,3.61,4.5,no
+TEM-041,claro,borde,--color-borde,--border,"hsl(220, 13%, 91%)",fondo,1.18,3,condicional
+TEM-041,claro,borde-campo,--color-borde-campo,--input,"hsl(220, 13%, 91%)",,,,n.a.
+TEM-041,claro,anillo-foco,--color-anillo-foco,--ring,"hsl(263, 70%, 50%)",fondo,6.91,3,sí
+TEM-041,claro,grafica-1,--color-grafica-1,--chart-1,"hsl(263, 70%, 50%)",,,,n.a.
+TEM-041,claro,grafica-2,--color-grafica-2,--chart-2,"hsl(190, 90%, 45%)",,,,n.a.
+TEM-041,claro,grafica-3,--color-grafica-3,--chart-3,"hsl(150, 60%, 40%)",,,,n.a.
+TEM-041,claro,grafica-4,--color-grafica-4,--chart-4,"hsl(280, 65%, 60%)",,,,n.a.
+TEM-041,claro,grafica-5,--color-grafica-5,--chart-5,"hsl(330, 80%, 60%)",,,,n.a.
+TEM-041,oscuro,fondo,--color-fondo,--background,"hsl(260, 25%, 2%)",,,,n.a.
+TEM-041,oscuro,tinta,--color-tinta,--foreground,"hsl(210, 40%, 98%)",fondo,19.56,4.5,sí
+TEM-041,oscuro,superficie,--color-superficie,--card,"hsl(260, 25%, 4%)",,,,n.a.
+TEM-041,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,"hsl(210, 40%, 98%)",superficie,19.08,4.5,sí
+TEM-041,oscuro,emergente,--color-emergente,--popover,"hsl(260, 25%, 5%)",,,,n.a.
+TEM-041,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,"hsl(210, 40%, 98%)",emergente,18.84,4.5,sí
+TEM-041,oscuro,primario,--color-primario,--primary,"hsl(263, 85%, 65%)",fondo,4.87,3,sí
+TEM-041,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,"hsl(260, 25%, 2%)",primario,4.87,4.5,sí
+TEM-041,oscuro,secundario,--color-secundario,--secondary,"hsl(263, 40%, 15%)",,,,n.a.
+TEM-041,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,"hsl(263, 85%, 85%)",secundario,9.61,4.5,sí
+TEM-041,oscuro,apagado,--color-apagado,--muted,"hsl(260, 20%, 12%)",,,,n.a.
+TEM-041,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,"hsl(260, 10%, 70%)",fondo,9.14,4.5,sí
+TEM-041,oscuro,acento,--color-acento,--accent,"hsl(263, 60%, 15%)",,,,n.a.
+TEM-041,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,"hsl(263, 85%, 65%)",acento,4.16,4.5,no
+TEM-041,oscuro,destructivo,--color-destructivo,--destructive,"hsl(0, 84%, 60%)",fondo,5.41,3,sí
+TEM-041,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,"hsl(210, 40%, 98%)",destructivo,3.61,4.5,no
+TEM-041,oscuro,borde,--color-borde,--border,"hsl(260, 20%, 15%)",fondo,1.27,3,condicional
+TEM-041,oscuro,borde-campo,--color-borde-campo,--input,"hsl(260, 20%, 15%)",,,,n.a.
+TEM-041,oscuro,anillo-foco,--color-anillo-foco,--ring,"hsl(263, 85%, 65%)",fondo,4.87,3,sí
+TEM-041,oscuro,grafica-1,--color-grafica-1,--chart-1,"hsl(263, 85%, 65%)",,,,n.a.
+TEM-041,oscuro,grafica-2,--color-grafica-2,--chart-2,"hsl(190, 80%, 55%)",,,,n.a.
+TEM-041,oscuro,grafica-3,--color-grafica-3,--chart-3,"hsl(150, 70%, 50%)",,,,n.a.
+TEM-041,oscuro,grafica-4,--color-grafica-4,--chart-4,"hsl(280, 80%, 70%)",,,,n.a.
+TEM-041,oscuro,grafica-5,--color-grafica-5,--chart-5,"hsl(330, 90%, 65%)",,,,n.a.
+TEM-042,claro,fondo,--color-fondo,--background,#fbfbff,,,,n.a.
+TEM-042,claro,tinta,--color-tinta,--foreground,#1a1b25,fondo,16.58,4.5,sí
+TEM-042,claro,superficie,--color-superficie,--card,#fbfbff,,,,n.a.
+TEM-042,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#1a1b25,superficie,16.58,4.5,sí
+TEM-042,claro,emergente,--color-emergente,--popover,#ffffff,,,,n.a.
+TEM-042,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#1a1b25,emergente,17.11,4.5,sí
+TEM-042,claro,primario,--color-primario,--primary,#846feb,fondo,3.73,3,sí
+TEM-042,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.85,4.5,no
+TEM-042,claro,secundario,--color-secundario,--secondary,#f0effd,,,,n.a.
+TEM-042,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#3b3464,secundario,9.92,4.5,sí
+TEM-042,claro,apagado,--color-apagado,--muted,#f1f1f8,,,,n.a.
+TEM-042,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#63637e,fondo,5.63,4.5,sí
+TEM-042,claro,acento,--color-acento,--accent,#f0effd,,,,n.a.
+TEM-042,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#4b36cc,acento,6.84,4.5,sí
+TEM-042,claro,destructivo,--color-destructivo,--destructive,#eb4f4f,fondo,3.53,3,sí
+TEM-042,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,3.64,4.5,no
+TEM-042,claro,borde,--color-borde,--border,#e2e2f2,fondo,1.24,3,condicional
+TEM-042,claro,borde-campo,--color-borde-campo,--input,#d0d0eb,,,,n.a.
+TEM-042,claro,anillo-foco,--color-anillo-foco,--ring,#846feb,fondo,3.73,3,sí
+TEM-042,claro,grafica-1,--color-grafica-1,--chart-1,#846feb,,,,n.a.
+TEM-042,claro,grafica-2,--color-grafica-2,--chart-2,#b5a9f2,,,,n.a.
+TEM-042,claro,grafica-3,--color-grafica-3,--chart-3,#3b3464,,,,n.a.
+TEM-042,claro,grafica-4,--color-grafica-4,--chart-4,#d5d0f7,,,,n.a.
+TEM-042,claro,grafica-5,--color-grafica-5,--chart-5,#6a57d1,,,,n.a.
+TEM-042,oscuro,fondo,--color-fondo,--background,#0b0a12,,,,n.a.
+TEM-042,oscuro,tinta,--color-tinta,--foreground,#e6e6f2,fondo,15.91,4.5,sí
+TEM-042,oscuro,superficie,--color-superficie,--card,#0b0a12,,,,n.a.
+TEM-042,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#e6e6f2,superficie,15.91,4.5,sí
+TEM-042,oscuro,emergente,--color-emergente,--popover,#14131f,,,,n.a.
+TEM-042,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#e6e6f2,emergente,14.85,4.5,sí
+TEM-042,oscuro,primario,--color-primario,--primary,#846feb,fondo,5.11,3,sí
+TEM-042,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#ffffff,primario,3.85,4.5,no
+TEM-042,oscuro,secundario,--color-secundario,--secondary,#1d1b30,,,,n.a.
+TEM-042,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#e6e6f2,secundario,13.55,4.5,sí
+TEM-042,oscuro,apagado,--color-apagado,--muted,#161524,,,,n.a.
+TEM-042,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#9898b8,fondo,7.05,4.5,sí
+TEM-042,oscuro,acento,--color-acento,--accent,#252244,,,,n.a.
+TEM-042,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#b5a9f2,acento,7.13,4.5,sí
+TEM-042,oscuro,destructivo,--color-destructivo,--destructive,#811d1d,fondo,1.99,3,no
+TEM-042,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ffffff,destructivo,9.87,4.5,sí
+TEM-042,oscuro,borde,--color-borde,--border,#222135,fondo,1.25,3,condicional
+TEM-042,oscuro,borde-campo,--color-borde-campo,--input,#2c2a47,,,,n.a.
+TEM-042,oscuro,anillo-foco,--color-anillo-foco,--ring,#846feb,fondo,5.11,3,sí
+TEM-042,oscuro,grafica-1,--color-grafica-1,--chart-1,#846feb,,,,n.a.
+TEM-042,oscuro,grafica-2,--color-grafica-2,--chart-2,#6a57d1,,,,n.a.
+TEM-042,oscuro,grafica-3,--color-grafica-3,--chart-3,#b5a9f2,,,,n.a.
+TEM-042,oscuro,grafica-4,--color-grafica-4,--chart-4,#3b3464,,,,n.a.
+TEM-042,oscuro,grafica-5,--color-grafica-5,--chart-5,#5244a3,,,,n.a.
+TEM-043,claro,fondo,--color-fondo,--background,hsl(225.9 100% 99%),,,,n.a.
+TEM-043,claro,tinta,--color-tinta,--foreground,hsl(225.9 100% 10%),fondo,18.46,4.5,sí
+TEM-043,claro,superficie,--color-superficie,--card,hsl(225.9 40% 98%),,,,n.a.
+TEM-043,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,hsl(222.2 47.4% 11.2%),superficie,16.92,4.5,sí
+TEM-043,claro,emergente,--color-emergente,--popover,hsl(225.9 60% 96%),,,,n.a.
+TEM-043,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,hsl(222.2 47.4% 11.2%),emergente,15.89,4.5,sí
+TEM-043,claro,primario,--color-primario,--primary,oklch(0.457 0.24 277.023),fondo,7.80,3,sí
+TEM-043,claro,sobre-primario,--color-sobre-primario,--primary-foreground,oklch(0.962 0.018 272.314),primario,7.22,4.5,sí
+TEM-043,claro,secundario,--color-secundario,--secondary,oklch(0.609 0.126 221.723),,,,n.a.
+TEM-043,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,oklch(0.984 0.019 200.873),secundario,3.46,4.5,no
+TEM-043,claro,apagado,--color-apagado,--muted,hsl(188.7 44.5% 72%),,,,n.a.
+TEM-043,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,hsl(188.7 44.5% 22%),fondo,9.44,4.5,sí
+TEM-043,claro,acento,--color-acento,--accent,oklch(0.87 0.065 274.039),,,,n.a.
+TEM-043,claro,sobre-acento,--color-sobre-acento,--accent-foreground,oklch(0.257 0.09 281.288),acento,10.74,4.5,sí
+TEM-043,claro,destructivo,--color-destructivo,--destructive,#bf616a,fondo,3.96,3,sí
+TEM-043,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,hsl(355.7 100% 98%),destructivo,3.82,4.5,no
+TEM-043,claro,borde,--color-borde,--border,oklch(0.869 0.022 252.894),fondo,1.44,3,condicional
+TEM-043,claro,borde-campo,--color-borde-campo,--input,oklch(0.869 0.022 252.894),,,,n.a.
+TEM-043,claro,anillo-foco,--color-anillo-foco,--ring,oklch(0.869 0.022 252.894),fondo,1.44,3,no
+TEM-043,claro,grafica-1,--color-grafica-1,--chart-1,8fbcbb,,,,n.a.
+TEM-043,claro,grafica-2,--color-grafica-2,--chart-2,88c0d0,,,,n.a.
+TEM-043,claro,grafica-3,--color-grafica-3,--chart-3,#81a1c1,,,,n.a.
+TEM-043,claro,grafica-4,--color-grafica-4,--chart-4,#5e81ac,,,,n.a.
+TEM-043,claro,grafica-5,--color-grafica-5,--chart-5,oklch(0.52 0.105 223.128),,,,n.a.
+TEM-043,oscuro,fondo,--color-fondo,--background,oklch(0.141 0.005 285.823),,,,n.a.
+TEM-043,oscuro,tinta,--color-tinta,--foreground,oklch(0.962 0.018 272.314),fondo,17.79,4.5,sí
+TEM-043,oscuro,superficie,--color-superficie,--card,hsl(243.8 47.1% 10%),,,,n.a.
+TEM-043,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,oklch(0.962 0.018 272.314),superficie,16.96,4.5,sí
+TEM-043,oscuro,emergente,--color-emergente,--popover,hsl(243.8 47.1% 10%),,,,n.a.
+TEM-043,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,oklch(0.962 0.018 272.314),emergente,16.96,4.5,sí
+TEM-043,oscuro,primario,--color-primario,--primary,oklch(0.585 0.233 277.117),fondo,4.35,3,sí
+TEM-043,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,hsl(243.8 47.1% 5%),primario,4.38,4.5,no
+TEM-043,oscuro,secundario,--color-secundario,--secondary,oklch(0.715 0.143 215.221),,,,n.a.
+TEM-043,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,oklch(0.302 0.056 229.695),secundario,5.66,4.5,sí
+TEM-043,oscuro,apagado,--color-apagado,--muted,oklch(0.257 0.09 281.288),,,,n.a.
+TEM-043,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,oklch(0.715 0.143 215.221),fondo,8.41,4.5,sí
+TEM-043,oscuro,acento,--color-acento,--accent,oklch(0.257 0.09 281.288),,,,n.a.
+TEM-043,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,oklch(0.962 0.018 272.314),acento,14.34,4.5,sí
+TEM-043,oscuro,destructivo,--color-destructivo,--destructive,oklch(0.586 0.253 17.585),fondo,4.41,3,sí
+TEM-043,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,oklch(0.969 0.015 12.422),destructivo,4.10,4.5,no
+TEM-043,oscuro,borde,--color-borde,--border,oklch(0.279 0.041 260.031),fondo,1.36,3,condicional
+TEM-043,oscuro,borde-campo,--color-borde-campo,--input,oklch(0.279 0.041 260.031),,,,n.a.
+TEM-043,oscuro,anillo-foco,--color-anillo-foco,--ring,oklch(0.279 0.041 260.031),fondo,1.36,3,no
+TEM-043,oscuro,grafica-1,--color-grafica-1,--chart-1,oklch(0.438 0.218 303.724),,,,n.a.
+TEM-043,oscuro,grafica-2,--color-grafica-2,--chart-2,oklch(0.606 0.25 292.717),,,,n.a.
+TEM-043,oscuro,grafica-3,--color-grafica-3,--chart-3,oklch(0.398 0.195 277.366),,,,n.a.
+TEM-043,oscuro,grafica-4,--color-grafica-4,--chart-4,oklch(0.707 0.165 254.624),,,,n.a.
+TEM-043,oscuro,grafica-5,--color-grafica-5,--chart-5,oklch(0.488 0.243 264.376),,,,n.a.
+TEM-044,claro,fondo,--color-fondo,--background,hsl(0 0% 100%),,,,n.a.
+TEM-044,claro,tinta,--color-tinta,--foreground,hsl(222.2 84% 4.9%),fondo,19.99,4.5,sí
+TEM-044,claro,superficie,--color-superficie,--card,hsl(0 0% 100%),,,,n.a.
+TEM-044,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,hsl(222.2 84% 4.9%),superficie,19.99,4.5,sí
+TEM-044,claro,emergente,--color-emergente,--popover,hsl(0 0% 100%),,,,n.a.
+TEM-044,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,hsl(222.2 84% 4.9%),emergente,19.99,4.5,sí
+TEM-044,claro,primario,--color-primario,--primary,#f30606,fondo,4.34,3,sí
+TEM-044,claro,sobre-primario,--color-sobre-primario,--primary-foreground,hsl(210 40% 98%),primario,4.14,4.5,no
+TEM-044,claro,secundario,--color-secundario,--secondary,hsl(210 40% 96%),,,,n.a.
+TEM-044,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,hsl(222.2 84% 4.9%),secundario,18.21,4.5,sí
+TEM-044,claro,apagado,--color-apagado,--muted,hsl(210 40% 96%),,,,n.a.
+TEM-044,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,hsl(215.4 16.3% 46.9%),fondo,4.75,4.5,sí
+TEM-044,claro,acento,--color-acento,--accent,hsl(210 40% 96%),,,,n.a.
+TEM-044,claro,sobre-acento,--color-sobre-acento,--accent-foreground,hsl(222.2 84% 4.9%),acento,18.21,4.5,sí
+TEM-044,claro,destructivo,--color-destructivo,--destructive,hsl(0 84.2% 60.2%),fondo,3.76,3,sí
+TEM-044,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,hsl(210 40% 98%),destructivo,3.59,4.5,no
+TEM-044,claro,borde,--color-borde,--border,hsl(214.3 31.8% 91.4%),fondo,1.23,3,condicional
+TEM-044,claro,borde-campo,--color-borde-campo,--input,hsl(214.3 31.8% 91.4%),,,,n.a.
+TEM-044,claro,anillo-foco,--color-anillo-foco,--ring,hsl(222.2 84% 4.9%),fondo,19.99,3,sí
+TEM-044,claro,grafica-1,--color-grafica-1,--chart-1,hsl(12 76% 61%),,,,n.a.
+TEM-044,claro,grafica-2,--color-grafica-2,--chart-2,hsl(173 58% 39%),,,,n.a.
+TEM-044,claro,grafica-3,--color-grafica-3,--chart-3,hsl(197 37% 24%),,,,n.a.
+TEM-044,claro,grafica-4,--color-grafica-4,--chart-4,hsl(43 74% 66%),,,,n.a.
+TEM-044,claro,grafica-5,--color-grafica-5,--chart-5,hsl(27 87% 67%),,,,n.a.
+TEM-044,oscuro,fondo,--color-fondo,--background,hsl(222.2 84% 4.9%),,,,n.a.
+TEM-044,oscuro,tinta,--color-tinta,--foreground,hsl(210 40% 98%),fondo,19.09,4.5,sí
+TEM-044,oscuro,superficie,--color-superficie,--card,hsl(222.2 84% 4.9%),,,,n.a.
+TEM-044,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,hsl(210 40% 98%),superficie,19.09,4.5,sí
+TEM-044,oscuro,emergente,--color-emergente,--popover,hsl(222.2 84% 4.9%),,,,n.a.
+TEM-044,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,hsl(210 40% 98%),emergente,19.09,4.5,sí
+TEM-044,oscuro,primario,--color-primario,--primary,hsl(210 40% 98%),fondo,19.09,3,sí
+TEM-044,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,hsl(222.2 47.4% 11.2%),primario,17.04,4.5,sí
+TEM-044,oscuro,secundario,--color-secundario,--secondary,hsl(217.2 32.6% 17.5%),,,,n.a.
+TEM-044,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,hsl(210 40% 98%),secundario,13.95,4.5,sí
+TEM-044,oscuro,apagado,--color-apagado,--muted,hsl(217.2 32.6% 17.5%),,,,n.a.
+TEM-044,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,hsl(215 20.2% 65.1%),fondo,7.80,4.5,sí
+TEM-044,oscuro,acento,--color-acento,--accent,hsl(217.2 32.6% 17.5%),,,,n.a.
+TEM-044,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,hsl(210 40% 98%),acento,13.95,4.5,sí
+TEM-044,oscuro,destructivo,--color-destructivo,--destructive,hsl(0 84.2% 60.2%),fondo,5.31,3,sí
+TEM-044,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,hsl(210 40% 98%),destructivo,3.59,4.5,no
+TEM-044,oscuro,borde,--color-borde,--border,hsl(217.2 32.6% 17.5%),fondo,1.37,3,condicional
+TEM-044,oscuro,borde-campo,--color-borde-campo,--input,hsl(217.2 32.6% 17.5%),,,,n.a.
+TEM-044,oscuro,anillo-foco,--color-anillo-foco,--ring,hsl(212.7 26.8% 83.9%),fondo,13.46,3,sí
+TEM-044,oscuro,grafica-1,--color-grafica-1,--chart-1,hsl(12 76% 61%),,,,n.a.
+TEM-044,oscuro,grafica-2,--color-grafica-2,--chart-2,hsl(173 58% 39%),,,,n.a.
+TEM-044,oscuro,grafica-3,--color-grafica-3,--chart-3,hsl(197 37% 24%),,,,n.a.
+TEM-044,oscuro,grafica-4,--color-grafica-4,--chart-4,hsl(43 74% 66%),,,,n.a.
+TEM-044,oscuro,grafica-5,--color-grafica-5,--chart-5,hsl(27 87% 67%),,,,n.a.
+TEM-045,claro,fondo,--color-fondo,--background,#fcfcfc,,,,n.a.
+TEM-045,claro,tinta,--color-tinta,--foreground,#171717,fondo,17.47,4.5,sí
+TEM-045,claro,superficie,--color-superficie,--card,#fcfcfc,,,,n.a.
+TEM-045,claro,tinta-superficie,--color-tinta-superficie,--card-foreground,#171717,superficie,17.47,4.5,sí
+TEM-045,claro,emergente,--color-emergente,--popover,#fcfcfc,,,,n.a.
+TEM-045,claro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#525252,emergente,7.62,4.5,sí
+TEM-045,claro,primario,--color-primario,--primary,#72e3ad,fondo,1.54,3,no
+TEM-045,claro,sobre-primario,--color-sobre-primario,--primary-foreground,#1e2723,primario,9.72,4.5,sí
+TEM-045,claro,secundario,--color-secundario,--secondary,#fdfdfd,,,,n.a.
+TEM-045,claro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#171717,secundario,17.62,4.5,sí
+TEM-045,claro,apagado,--color-apagado,--muted,#ededed,,,,n.a.
+TEM-045,claro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#202020,fondo,15.88,4.5,sí
+TEM-045,claro,acento,--color-acento,--accent,#ededed,,,,n.a.
+TEM-045,claro,sobre-acento,--color-sobre-acento,--accent-foreground,#202020,acento,13.92,4.5,sí
+TEM-045,claro,destructivo,--color-destructivo,--destructive,#ca3214,fondo,5.15,3,sí
+TEM-045,claro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#fffcfc,destructivo,5.17,4.5,sí
+TEM-045,claro,borde,--color-borde,--border,#dfdfdf,fondo,1.30,3,condicional
+TEM-045,claro,borde-campo,--color-borde-campo,--input,#f6f6f6,,,,n.a.
+TEM-045,claro,anillo-foco,--color-anillo-foco,--ring,#72e3ad,fondo,1.54,3,no
+TEM-045,claro,grafica-1,--color-grafica-1,--chart-1,#72e3ad,,,,n.a.
+TEM-045,claro,grafica-2,--color-grafica-2,--chart-2,#3b82f6,,,,n.a.
+TEM-045,claro,grafica-3,--color-grafica-3,--chart-3,#8b5cf6,,,,n.a.
+TEM-045,claro,grafica-4,--color-grafica-4,--chart-4,#f59e0b,,,,n.a.
+TEM-045,claro,grafica-5,--color-grafica-5,--chart-5,#10b981,,,,n.a.
+TEM-045,oscuro,fondo,--color-fondo,--background,#121212,,,,n.a.
+TEM-045,oscuro,tinta,--color-tinta,--foreground,#e2e8f0,fondo,15.20,4.5,sí
+TEM-045,oscuro,superficie,--color-superficie,--card,#171717,,,,n.a.
+TEM-045,oscuro,tinta-superficie,--color-tinta-superficie,--card-foreground,#e2e8f0,superficie,14.54,4.5,sí
+TEM-045,oscuro,emergente,--color-emergente,--popover,#242424,,,,n.a.
+TEM-045,oscuro,tinta-emergente,--color-tinta-emergente,--popover-foreground,#a9a9a9,emergente,6.60,4.5,sí
+TEM-045,oscuro,primario,--color-primario,--primary,#006239,fondo,2.50,3,no
+TEM-045,oscuro,sobre-primario,--color-sobre-primario,--primary-foreground,#dde8e3,primario,5.96,4.5,sí
+TEM-045,oscuro,secundario,--color-secundario,--secondary,#242424,,,,n.a.
+TEM-045,oscuro,sobre-secundario,--color-sobre-secundario,--secondary-foreground,#fafafa,secundario,14.87,4.5,sí
+TEM-045,oscuro,apagado,--color-apagado,--muted,#1f1f1f,,,,n.a.
+TEM-045,oscuro,tinta-apagada,--color-tinta-apagada,--muted-foreground,#a2a2a2,fondo,7.34,4.5,sí
+TEM-045,oscuro,acento,--color-acento,--accent,#313131,,,,n.a.
+TEM-045,oscuro,sobre-acento,--color-sobre-acento,--accent-foreground,#fafafa,acento,12.46,4.5,sí
+TEM-045,oscuro,destructivo,--color-destructivo,--destructive,#541c15,fondo,1.39,3,no
+TEM-045,oscuro,sobre-destructivo,--color-sobre-destructivo,--destructive-foreground,#ede9e8,destructivo,11.21,4.5,sí
+TEM-045,oscuro,borde,--color-borde,--border,#292929,fondo,1.29,3,condicional
+TEM-045,oscuro,borde-campo,--color-borde-campo,--input,#242424,,,,n.a.
+TEM-045,oscuro,anillo-foco,--color-anillo-foco,--ring,#4ade80,fondo,10.75,3,sí
+TEM-045,oscuro,grafica-1,--color-grafica-1,--chart-1,#4ade80,,,,n.a.
+TEM-045,oscuro,grafica-2,--color-grafica-2,--chart-2,#60a5fa,,,,n.a.
+TEM-045,oscuro,grafica-3,--color-grafica-3,--chart-3,#a78bfa,,,,n.a.
+TEM-045,oscuro,grafica-4,--color-grafica-4,--chart-4,#fbbf24,,,,n.a.
+TEM-045,oscuro,grafica-5,--color-grafica-5,--chart-5,#2dd4bf,,,,n.a.

@@ -1,0 +1,14 @@
+{
+  "name": "skills-presentacion",
+  "owner": {
+    "name": "Leonardo Reales"
+  },
+  "description": "Skills de Leonardo Reales para presentaciones vivas y videos de flujo en Claude Code.",
+  "plugins": [
+    {
+      "name": "skills-presentacion",
+      "source": "./",
+      "description": "presentacion-viva + mochilero."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Flujo 4 · Documento protagonista (ejemplo de composición sin estaciones)</title>
+<link rel="stylesheet" href="comun.css">
+<style>
+  /* Gramática §5.bis: un solo documento vive todo el video y se transforma. Los paneles (cfg.limpio) solo ponen el
+     texto de cada paso a la derecha; el documento lo construye cfg.extra y se mueve por poses clave. */
+  .col { position: absolute; left: 1080px; top: 0; bottom: 0; width: 720px; display: flex; flex-direction: column; justify-content: center; }
+  .eb { font-family: 'Consolas', monospace; font-size: 24px; letter-spacing: .08em; color: var(--goldTxt); text-transform: uppercase; }
+  .eb b { display: inline-block; min-width: 54px; padding: 4px 0; margin-right: 14px; text-align: center; border-radius: 6px; background: var(--ink); color: var(--bg); font-weight: 400; }
+  .ph { font-size: 62px; font-weight: 600; line-height: 1.1; margin-top: 18px; text-wrap: balance; }
+  .sb { font-size: 32px; line-height: 1.3; color: var(--mute); margin-top: 20px; }
+  .doc { position: absolute; left: 0; top: 0; width: 800px; height: 1000px; transform-origin: 0 0; box-sizing: border-box; padding: 40px 48px;
+    background: var(--bg); border: 1.5px solid var(--line); border-radius: 6px; box-shadow: 0 28px 70px rgba(var(--ink-rgb), .16); color: var(--ink); }
+  .doc .ej { position: absolute; right: 48px; top: -16px; font-family: 'Consolas', monospace; font-size: 16px; letter-spacing: .1em; background: var(--gold); color: var(--bg); padding: 5px 12px; border-radius: 4px; }
+  .doc h2 { margin: 0 0 24px; font-size: 34px; border-bottom: 2px solid var(--ink); padding-bottom: 16px; }
+  .doc .f { display: flex; gap: 16px; align-items: baseline; height: 64px; border-bottom: 1px solid var(--track); padding-top: 14px; box-sizing: border-box; }
+  .doc .l { width: 200px; flex: none; font-size: 16px; letter-spacing: .06em; text-transform: uppercase; color: var(--mute); }
+  .doc .v { font-size: 26px; font-weight: 600; white-space: nowrap; }
+  .doc .firma { position: absolute; left: 48px; bottom: 48px; width: 300px; height: 130px; }
+  .doc .firma svg { width: 300px; height: 90px; }
+  .doc .firma div { border-top: 1.5px solid var(--ink); padding-top: 8px; font-size: 16px; letter-spacing: .06em; text-transform: uppercase; color: var(--mute); }
+  .doc .sello { position: absolute; right: 60px; bottom: 60px; width: 200px; height: 200px; }
+  .bandeja { position: absolute; left: 300px; top: 300px; width: 360px; height: 420px; border-radius: 18px; border: 2px dashed var(--line); }
+  .bandeja span { position: absolute; left: 0; right: 0; bottom: -52px; text-align: center; font-size: 26px; color: var(--mute); }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script src="motor.js"></script>
+<script>
+(function () {
+  // Tema derivado de tres colores (claro). Datos 100 % ficticios.
+  const TEMA = { fondo: '#FFFFFF', tinta: '#14233A', acento: '#B07D2B' };
+  const C = SV.tema(TEMA);
+  const T = { llenar: 0, firmar: 4.4, enviar: 7.6, aprobar: 10.6, fin: 14.4 };
+  const col = (n, eb, ph, sb) => '<div class="col"><div class="eb" data-in="0.15"><b>' + n + '</b>' + eb + '</div>' +
+    '<div class="ph" data-in="0.3">' + ph + '</div><div class="sb" data-in="0.55">' + sb + '</div></div>';
+
+  function documento(api) {
+    const el = api.D('doc', api.root, '<span class="ej">EJEMPLO · DATOS FICTICIOS</span><h2>Solicitud de préstamo de sala</h2>' +
+      ['Fecha', 'Solicitante', 'Sala', 'Motivo'].map(l => '<div class="f"><span class="l">' + l + '</span><span class="v"></span></div>').join('') +
+      '<div class="firma"><svg viewBox="0 0 300 90"><path d="M20 66 C40 20 62 18 60 52 C58 78 80 34 102 40 C120 44 110 68 132 60 C158 50 168 24 190 34 C210 44 204 66 228 58 L280 44" fill="none" stroke="' + C.ink + '" stroke-width="3" stroke-linecap="round"/></svg><div>Firma del solicitante</div></div>' +
+      '<div class="sello">' + SV.sello({ arriba: 'COORDINACIÓN', abajo: 'APROBADO', id: 'st' }) + '</div>');
+    const vs = [...el.querySelectorAll('.v')];
+    const esc = SV.escribir([
+      { el: vs[0], texto: '12/03/2027', pausa: 0.3 }, { el: vs[1], texto: 'Ana Ruiz Díaz' },
+      { el: vs[2], texto: 'Sala de reuniones 2' }, { el: vs[3], texto: 'Comité de bienvenida' }], T.llenar + 0.9);
+    const firma = SV.trazo(el.querySelector('.firma path'));
+    const st = el.querySelector('.st');
+    // [t, x, y, escala, opacidad]: grande a la izquierda → se encoge y entra en la bandeja → vuelve para el sello
+    const pose = SV.poses([
+      [0, 150, 100, 1, 0], [0.6, 150, 40, 1, 1],
+      [T.enviar + 0.3, 150, 40, 1, 1], [T.enviar + 1.3, 340, 335, 0.35, 1], [T.enviar + 2.2, 340, 335, 0.35, 1], [T.enviar + 2.6, 340, 335, 0.35, 0],
+      [T.aprobar - 0.2, 150, 100, 1, 0], [T.aprobar + 0.4, 150, 40, 1, 1]]);
+    api.ups.push(t => {
+      const [x, y, s, o] = pose(t);
+      el.style.display = o < 0.002 ? 'none' : 'block';
+      el.style.opacity = o.toFixed(4);
+      el.style.transform = 'translate(' + x.toFixed(2) + 'px,' + y.toFixed(2) + 'px) scale(' + s.toFixed(4) + ')';
+      esc.up(t); firma(t, T.firmar + 0.8, 1.0); SV.golpe(st, t, T.aprobar + 1.2);
+    });
+  }
+
+  SV.run({
+    tema: TEMA,
+    duration: 14.4, // = T.fin
+    limpio: true,
+    extra: documento,
+    panels: [
+      { t0: T.llenar, t1: T.firmar, full: true, html: col('01', 'Diligenciar', 'Llena la solicitud', 'Cada campo, sin dejar ninguno en blanco.') },
+      { t0: T.firmar, t1: T.enviar, full: true, html: col('02', 'Firmar', 'Fírmala', 'La firma te hace responsable de lo que pides.') },
+      { t0: T.enviar, t1: T.aprobar, full: true, html: '<div class="bandeja" data-pop="0.2"><span>Bandeja de Coordinación</span></div>' + col('03', 'Enviar', 'Entrégala a Coordinación', 'Llega a la bandeja de quien aprueba.') },
+      { t0: T.aprobar, t1: null, full: true, html: col('04', 'Aprobar', 'Vuelve con el visto bueno', 'Con el sello, la sala queda reservada.') }
+    ]
+  });
+})();
+</script>
+</body>
+</html>

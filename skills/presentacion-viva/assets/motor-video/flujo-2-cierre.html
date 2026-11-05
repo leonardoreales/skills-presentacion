@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Flujo 3 · Paz y salvo</title>
+<link rel="stylesheet" href="comun.css">
+<style>
+  .eh { display: flex; align-items: center; gap: 16px; padding: 18px 20px 12px; border-bottom: 1px solid var(--track); }
+  .av { width: 50px; height: 50px; border-radius: 50%; background: radial-gradient(circle at 50% 38%, var(--dim) 0 9px, transparent 10px), radial-gradient(ellipse 18px 12px at 50% 92%, var(--dim) 0 99%, transparent 100%), var(--bg3); border: 1.5px solid var(--line); flex: none; }
+  .eh .who { flex: 1; }
+  .eh .who .bar { display: block; margin: 6px 0; }
+  .btnG { font-size: 26px; font-weight: 600; color: var(--bg2); background: var(--gold); border-radius: 999px; padding: 10px 22px; white-space: nowrap; }
+  .cap { font-size: 22px; color: var(--mute); padding: 10px 20px 2px; }
+  .ar { display: flex; align-items: center; height: 44px; padding: 0 20px; gap: 16px; }
+  .mini { font-family: 'Consolas', monospace; font-size: 22px; padding: 3px 12px; border-radius: 999px; border: 1.5px solid; }
+  .mini.act { color: var(--cream); border-color: rgba(var(--gold-rgb),.8); background: rgba(var(--gold-rgb),.12); }
+  .mini.dev { color: var(--bg2); border-color: var(--goldL); background: var(--goldL); }
+  .cols { display: flex; gap: 10px; margin: 6px 0 0 20px; }
+  .col { width: 180px; height: 168px; border-radius: 14px; background: rgba(var(--bg-rgb),.75); border: 1.5px solid var(--faint); padding: 16px 14px; box-sizing: border-box; }
+  .col h4 { margin: 0 0 18px; font-size: 25px; font-weight: 600; color: var(--ink); white-space: nowrap; }
+  .col .bar { display: block; margin-bottom: 14px; }
+  .confirm { position: absolute; right: 20px; bottom: 6px; font-size: 26px; font-weight: 600; color: var(--bg2); background: var(--gold); border-radius: 999px; padding: 11px 26px; }
+  .rows { margin: 8px 0 0 20px; width: 560px; }
+  .rr { display: flex; align-items: center; justify-content: space-between; height: 52px; border-bottom: 1px solid var(--track); }
+  .rr .mini { position: relative; }
+  .person { display: flex; align-items: center; gap: 16px; height: 76px; }
+  .person .st { margin-left: auto; font-size: 28px; color: var(--mute); }
+  .res-chips { position: absolute; left: 56px; bottom: 42px; display: flex; gap: 14px; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script src="motor.js"></script>
+<script>
+(function () {
+  const C = SV.tema('americana'); // colores por rol: cambia el tema aquí y en cfg.tema
+  const { prog, ease, mix, clamp, checkSvg } = SV;
+  const Y = 450;
+  const X = [240, 530, 820, 1110, 1400];
+  const T = [2.0, 3.6, 5.2, 6.8, 8.4];
+  const XG = 1700, TG = 10.25, TRES = 10.35;
+
+  const artExp = '<div class="card" data-pop="0.05" style="left:20px;top:4px;width:560px;height:262px">' +
+    '<div class="eh"><div class="av"></div><div class="who"><span class="bar" style="width:180px"></span><span class="bar" style="width:110px;opacity:.6"></span></div><div class="btnG">Generar acta</div></div>' +
+    '<div class="cap" data-in="0.5">Activos a su cargo</div>' +
+    '<div class="ar" data-in="0.6"><span class="bar" style="width:300px"></span><span class="mini act" style="margin-left:auto">ACTIVA</span></div>' +
+    '<div class="ar" data-in="0.72"><span class="bar" style="width:250px"></span><span class="mini act" style="margin-left:auto">ACTIVA</span></div>' +
+    '<div class="ar" data-in="0.84"><span class="bar" style="width:280px"></span><span class="mini act" style="margin-left:auto">ACTIVA</span></div></div>';
+
+  function thumb(x, y, i) {
+    return '<g data-pop="' + (0.35 + i * 0.15) + '"><rect x="' + x + '" y="' + y + '" width="46" height="34" rx="4" fill="' + C.bg3 + '"/>' +
+      '<path d="M' + (x + 6) + ' ' + (y + 28) + ' L' + (x + 18) + ' ' + (y + 15) + ' L' + (x + 27) + ' ' + (y + 23) + ' L' + (x + 33) + ' ' + (y + 18) + ' L' + (x + 41) + ' ' + (y + 28) + ' Z" fill="' + C.gold + '"/>' +
+      '<circle cx="' + (x + 35) + '" cy="' + (y + 10) + '" r="3.5" fill="' + C.goldL + '"/>' +
+      '<rect class="flash" data-i="' + i + '" x="' + x + '" y="' + y + '" width="46" height="34" rx="4" fill="#fff" opacity="0"/></g>' +
+      '<rect x="' + (x + 58) + '" y="' + (y + 8) + '" width="' + (78 - i * 10) + '" height="7" rx="3.5" fill="' + C.mute + '"/>' +
+      '<rect x="' + (x + 58) + '" y="' + (y + 22) + '" width="52" height="7" rx="3.5" fill="' + C.info + '"/>';
+  }
+  const docPage = (x, y, title) => '<rect x="' + x + '" y="' + y + '" width="190" height="248" rx="8" fill="' + C.ink + '" opacity=".95"/>' +
+    '<text x="' + (x + 18) + '" y="' + (y + 32) + '" font-size="19" font-weight="600" fill="' + C.bg2 + '">' + title + '</text>' +
+    '<rect x="' + (x + 18) + '" y="' + (y + 44) + '" width="154" height="2" fill="' + C.gold + '"/>';
+
+  const artActa = '<svg viewBox="0 0 600 272" width="600" height="272"><g data-pop="0.08">' + docPage(24, 12, 'Acta de paz y salvo') +
+    thumb(42, 76, 0) + thumb(42, 130, 1) + thumb(42, 184, 2) + '</g>' +
+    '<text x="250" y="92" font-size="30" font-weight="600" fill="' + C.ink + '" data-in="0.55">Foto fija por activo</text>' +
+    '<g data-in="0.9"><rect x="252" y="150" width="30" height="24" rx="4" fill="none" stroke="' + C.goldL + '" stroke-width="2.5"/>' +
+    '<path d="M258 150 V142 A9 9 0 0 1 276 142 V150" fill="none" stroke="' + C.goldL + '" stroke-width="2.5"/>' +
+    '<text x="298" y="170" font-size="27" fill="' + C.cream + '">sin activos nuevos</text>' +
+    '<text x="298" y="206" font-size="24" fill="' + C.mute + '">mientras esté abierta</text></g></svg>';
+
+  let rowsT = '';
+  for (let i = 0; i < 5; i++) rowsT += '<rect x="42" y="' + (72 + i * 26) + '" width="154" height="16" rx="3" fill="' + (i % 2 ? C.info : C.info) + '"/>';
+  const artFirma = '<svg viewBox="0 0 600 272" width="600" height="272"><g data-pop="0.08">' + docPage(24, 12, 'Acta de paz y salvo') + rowsT +
+    '<rect x="42" y="216" width="48" height="26" rx="5" fill="' + C.gold + '"/><text x="66" y="235" text-anchor="middle" font-size="17" font-weight="600" fill="' + C.bg2 + '">PDF</text></g>' +
+    '<g transform="translate(160,200)"><circle class="ripple" r="40" fill="none" stroke="' + C.goldL + '" stroke-width="2" opacity="0"/>' +
+    '<g class="stamp"><circle r="40" fill="' + C.gold + '" opacity=".95"/><circle r="33" fill="none" stroke="' + C.bg2 + '" stroke-width="2" stroke-dasharray="3 4" opacity=".7"/>' +
+    '<path d="M-14 1 L-4 11 L15 -10" fill="none" stroke="' + C.bg2 + '" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></g></g>' +
+    '<path d="M240 130 H372" fill="none" stroke="' + C.gold + '" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" data-draw="0.95,0.4"/>' +
+    '<path d="M360 120 L374 130 L360 140" fill="none" stroke="' + C.goldL + '" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-in="1.25"/>' +
+    '<g data-pop="0.3"><path d="M392 74 H446 L462 92 H570 V196 H392 Z" fill="' + SV.rgba(C.gold, .14) + '" stroke="' + C.gold + '" stroke-width="2.5" stroke-linejoin="round"/>' +
+    '<text x="481" y="150" text-anchor="middle" font-size="32" font-weight="600" fill="' + C.ink + '">Drive</text></g>' +
+    '<text x="481" y="240" text-anchor="middle" font-size="26" fill="' + C.mute + '" data-in="1.3">PDF archivado</text></svg>';
+
+  const artPrev = '<div class="cols">' +
+    '<div class="col" data-in="0.2"><h4>Se devuelve</h4><span class="bar" style="width:130px"></span><span class="bar" style="width:100px"></span><span class="bar" style="width:116px"></span></div>' +
+    '<div class="col" data-in="0.35"><h4>Se reasigna</h4><span class="bar" style="width:110px"></span><span class="bar" style="width:126px"></span></div>' +
+    '<div class="col" data-in="0.5"><h4>Sin itemizar</h4><span class="bar" style="width:96px"></span></div></div>' +
+    '<div class="confirm" data-in="0.75">Confirmar cierre</div>';
+
+  const artCierre = '<div class="rows">' +
+    '<div class="rr"><span class="bar" style="width:300px"></span><span class="mini act a0">ACTIVA</span></div>' +
+    '<div class="rr"><span class="bar" style="width:250px"></span><span class="mini act a1">ACTIVA</span></div>' +
+    '<div class="rr"><span class="bar" style="width:280px"></span><span class="mini act a2">ACTIVA</span></div>' +
+    '<div class="person" data-in="0.95"><div class="av"></div><span class="bar" style="width:170px"></span><span class="st">Funcionario inactivo</span></div></div>';
+
+  const artRes = '<div class="res-eyebrow" data-in="0.05">Resultado</div>' +
+    '<div class="res-title" data-in="0.15">Ciclo del funcionario cerrado</div>' +
+    '<div class="res-sub" data-in="0.4">La etapa final, que conecta con Talento Humano</div>' +
+    '<div class="res-chips" data-in="0.65"><span class="chip info">Desvinculaciones</span></div>' +
+    '<svg style="position:absolute;left:1290px;top:30px" width="260" height="260" viewBox="0 0 260 260">' +
+    '<circle cx="130" cy="130" r="104" fill="none" stroke="' + C.faint + '" stroke-width="6"/>' +
+    '<circle cx="130" cy="130" r="104" fill="none" stroke="' + C.goldL + '" stroke-width="6" stroke-linecap="round" transform="rotate(-90 130 130)" data-draw="0.2,1.1"/>' +
+    '<path d="M92 132 L118 158 L170 104" fill="none" stroke="' + C.goldL + '" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" data-draw="1.2,0.4"/></svg>';
+
+  SV.run({
+    tema: 'americana',
+    duration: 13.5,
+    eyebrow: 'Ejemplo · Flujo 2 de 2',
+    title: 'Paz y salvo',
+    subtitle: 'El cierre del ciclo del funcionario con sus activos',
+    ficha: {
+      kinds: ['doc'],
+      segs: (function () {
+        const st = [[T[0], X[0], 0.5], [T[1], X[1]], [T[2], X[2]], [T[3], X[3]], [T[4], X[4]], [TG, XG, 0.75]];
+        const s = []; let px = 110;
+        for (const a of st) { const tr = a[2] || 0.55; s.push({ t0: a[0] - tr, t1: a[0], x0: px, y0: Y, x1: a[1], y1: Y }); px = a[1]; }
+        return s;
+      })(),
+      alpha: t => ease.outCubic(prog(t, 1.45, 1.8)),
+      scale: t => 1 - 0.1 * prog(t, TG, TG + 0.4)
+    },
+    tracks: [{ x0: 110, x1: 1500, y: Y }, { x0: 1500, x1: XG - 40, y: Y, dashed: true, inAt: 1.6 }],
+    nodes: [
+      { x: X[0], y: Y, num: '01', name: 'Expediente', arr: T[0], next: T[1] },
+      { x: X[1], y: Y, num: '02', name: 'Acta creada', arr: T[1], next: T[2] },
+      { x: X[2], y: Y, num: '03', name: 'Firma<br>automática', arr: T[2], next: T[3] },
+      { x: X[3], y: Y, num: '04', name: 'Vista previa', arr: T[3], next: T[4] },
+      { x: X[4], y: Y, num: '05', name: 'Cierre', arr: T[4], next: TG },
+      { x: XG, y: Y, num: 'Desvinculaciones', name: 'Talento Humano', arr: TG, dashed: true, ghost: true, noCheck: true, appear: 1.75 }
+    ],
+    panel: { x: 140, y: 680, w: 1640, h: 320 },
+    pointer: [{ t: T[0], x: X[0] }, { t: T[1], x: X[1] }, { t: T[2], x: X[2] }, { t: T[3], x: X[3] }, { t: T[4], x: X[4] }, { t: TRES, x: XG }],
+    panels: [
+      { t0: T[0], t1: T[1], eyebrow: 'Etapa 01 de 05', phrase: 'Activos Fijos pulsa «Generar acta»',
+        chips: [{ t: 'ACTIVA', k: 'state', at: 0.7 }, { t: 'rechaza si ya hay un acta abierta', at: 0.9 }], html: artExp,
+        tick: (lt, el) => {
+          const p = prog(lt, 0.3, 0.45), q = prog(lt, 0.45, 0.75);
+          const k = p < 1 ? ease.outCubic(p) : 1 - ease.outCubic(q);
+          const b = el.querySelector('.btnG');
+          b.style.transform = 'scale(' + (1 - 0.06 * k).toFixed(3) + ')';
+          b.style.boxShadow = k > 0 ? '0 0 ' + (24 * k).toFixed(1) + 'px ' + SV.rgba(C.goldL, (0.7 * k).toFixed(2)) : 'none';
+          b.style.background = mix(C.gold, C.goldHi, k);
+        } },
+      { t0: T[1], t1: T[2], eyebrow: 'Etapa 02 de 05', phrase: 'Se crea el acta con foto fija de cada activo',
+        chips: [{ t: 'FIRMA_SOLICITADA', k: 'state' }], html: artActa,
+        tick: (lt, el) => {
+          el.querySelectorAll('.flash').forEach((f, i) => {
+            const a = 0.42 + i * 0.15, p = prog(lt, a, a + 0.35);
+            f.setAttribute('opacity', (p > 0 && p < 1 ? 0.85 * (1 - p) : 0).toFixed(3));
+          });
+        } },
+      { t0: T[2], t1: T[3], eyebrow: 'Etapa 03 de 05', phrase: 'Se firma, se exporta a PDF y se archiva',
+        chips: [{ t: 'FIRMADA', k: 'state', at: 0.75 }, { t: 'automático', at: 0.9 }], html: artFirma,
+        tick: (lt, el) => {
+          const p = prog(lt, 0.5, 0.75);
+          const st = el.querySelector('.stamp');
+          st.setAttribute('transform', 'scale(' + (lt < 0.5 ? 1.7 : 1.7 - 0.7 * ease.outCubic(p)).toFixed(3) + ') rotate(' + (-14 * (1 - ease.outCubic(p))).toFixed(2) + ')');
+          st.setAttribute('opacity', (lt < 0.5 ? 0 : clamp(p * 2)).toFixed(3));
+          const r = prog(lt, 0.75, 1.4), rp = el.querySelector('.ripple');
+          rp.setAttribute('r', (40 + 36 * ease.outCubic(r)).toFixed(2));
+          rp.setAttribute('opacity', (r > 0 && r < 1 ? 0.8 * (1 - r) : 0).toFixed(3));
+        } },
+      { t0: T[3], t1: T[4], eyebrow: 'Etapa 04 de 05', phrase: 'Una persona revisa y confirma el cierre',
+        chips: [{ t: 'vista previa' }, { t: 'el cierre es un acto humano' }], html: artPrev,
+        tick: (lt, el) => {
+          const p = prog(lt, 1.0, 1.15), q = prog(lt, 1.15, 1.45);
+          const k = p < 1 ? ease.outCubic(p) : 1 - ease.outCubic(q);
+          const b = el.querySelector('.confirm');
+          b.style.boxShadow = k > 0 ? '0 0 ' + (24 * k).toFixed(1) + 'px ' + SV.rgba(C.goldL, (0.7 * k).toFixed(2)) : 'none';
+          b.style.background = mix(C.gold, C.goldHi, k);
+        } },
+      { t0: T[4], t1: TRES, eyebrow: 'Etapa 05 de 05', phrase: 'Activos devueltos y funcionario inactivo',
+        chips: [{ t: 'COMPLETADA', k: 'state', at: 0.95 }], html: artCierre,
+        tick: (lt, el) => {
+          for (let i = 0; i < 3; i++) {
+            const m = el.querySelector('.a' + i), a = 0.35 + i * 0.17;
+            const on = lt >= a;
+            const txt = on ? 'DEVUELTA' : 'ACTIVA';
+            if (m.textContent !== txt) m.textContent = txt;
+            m.className = 'mini ' + (on ? 'dev' : 'act') + ' a' + i;
+            const p = prog(lt, a, a + 0.3);
+            m.style.transform = 'scale(' + (1 + 0.12 * Math.sin(Math.PI * p)).toFixed(3) + ')';
+          }
+        } },
+      { t0: TRES, t1: null, full: true, html: artRes }
+    ]
+  });
+})();
+</script>
+</body>
+</html>

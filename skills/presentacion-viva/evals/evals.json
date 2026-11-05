@@ -1,0 +1,78 @@
+{
+  "skill_name": "presentacion-viva",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Haz la presentación viva del sistema de mantenimiento para el comité de la próxima semana, como la que hicimos de SIGAF. El repo está en C:\\Users\\Leonardo Reales\\cua-mantenimiento. Que se entienda qué hace sin entrar en lo técnico.",
+      "expected_output": "Pregunta como mucho una cosa (audiencia/reacción si no queda clara) y deriva un arco (probablemente entrega de proyecto o transformación). Usa un agente explorador sobre el repo para sacar los flujos reales (disparador, pasos, resultado) sin inventar. Por escena propone tres conceptos del mundo del mantenimiento, descarta los genéricos con su porqué y elige uno; no repite metáforas de la bitácora de SIGAF tal cual. Construye desde assets/andamiaje con el perfil de la Americana, aplica sus reglas de lenguaje, pasa scripts/verificar.mjs con los vetados del perfil, revisa en navegador (consola, 375 px, escritorio, reduced-motion) escribe el guion de 1-3 flujos principales y los renderiza como videos de ~14 s integrados en la sala de flujos, y ofrece publicarla como Artifact; añade la entrada en la bitácora.",
+      "files": [],
+      "expectations": [
+        "Existe una página HTML principal en outputs/",
+        "verificar.mjs de la skill da PASA sobre la página (exit 0) con --vetar \"jarvis,en casa,hecho en casa,leonardo,claude,codex\"",
+        "La página carga sin errores de consola a 375 px y a 1440 px",
+        "Cero términos vetados en los entregables (jarvis, en casa, leonardo, claude, codex)",
+        "Cero datos personales en los entregables (correos, cédulas, teléfonos o nombres reales de personas)",
+        "notas.md declara un arco narrativo y justifica por qué ese y no otro",
+        "notas.md registra para cada escena tres conceptos, el elegido y el porqué de los descartados",
+        "Los flujos que muestra la página están respaldados por ficheros concretos de cua-mantenimiento citados en notas.md",
+        "Se registra como mucho una pregunta al usuario",
+        "La página no usa jerga técnica visible (endpoint, API, Hono, Cloudflare, Drizzle, TypeScript)",
+        "La página integra o propone videos de los flujos principales en un reproductor con pestañas (el pico de la presentación de SIGAF)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Solo necesito el video animado del flujo de desvinculación con paz y salvo de la plataforma de talento humano (C:\\Users\\Leonardo Reales\\plataforma-talentohumano). Nada de página, el video para ponerlo en la reunión.",
+      "expected_output": "Salta a la fase de video determinista: lee el flujo real en el repo (agente explorador), lo escribe paso a paso con disparador, estados y resultado, copia assets/motor-video sin node_modules, crea flujo-N-<slug>.html con datos ficticios donde haga falta, revisa con --stills antes del render, renderiza el MP4 y la hoja de contactos, comprueba que no aparezcan datos personales y entrega la ruta del MP4. Declara si faltan Playwright chromium o ffmpeg en vez de fingir el render. El video dura 10-20 s, usa una composición que encaje con la forma del flujo, colores por rol del tema americana y una maqueta distinta por etapa; verificar.mjs en modo flujo da PASA.",
+      "files": [],
+      "expectations": [
+        "Existe un MP4 en outputs/ o notas.md declara con su error qué herramienta faltó (sin fingir el render)",
+        "Existe una hoja de contactos o fotogramas revisados antes o después del render",
+        "No se produjo una página de presentación con scroll: el entregable es solo el video",
+        "notas.md describe el flujo de paz y salvo paso a paso citando fichero:línea de plataforma-talentohumano",
+        "Los datos que aparecen en el video son ficticios y notas.md lo declara",
+        "Cero términos vetados en los entregables (jarvis, en casa, leonardo, claude, codex)",
+        "No quedan node_modules dentro de outputs/",
+        "El video es 1920×1080 y dura entre 10 y 20 s, como los de referencia",
+        "El video sigue la gramática de referencia: vía de etapas con una ficha que viaja, un panel por etapa con la maqueta del artefacto y un cierre con el resultado",
+        "Las figuras son SVG con los colores institucionales: azul profundo de fondo y dorado de acento"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Te paso cómo funciona hoy el trámite de caja menor: el área pide el anticipo por correo, financiera lo aprueba, se compra, se legalizan las facturas en un Excel y contabilidad cierra el mes. Quiero una presentación animada que explique ese proceso a los coordinadores nuevos.",
+      "expected_output": "No hay repo: la fuente es el texto. No lanza un explorador de código. Deriva un arco de capacitación o explicación (para qué sirve → recorrido → errores comunes → a quién acudir), inventa escenas desde los objetos del tema (anticipo, factura, Excel, cierre de mes) con el protocolo de tres conceptos, no inventa cifras ni nombres, marca como pendiente lo que el texto no dice y construye la página desde el andamiaje. Como es un proceso, escribe su guion y lo convierte en un video de flujo (anticipo como ficha que viaja) integrado en la sala de flujos de la página.",
+      "files": [],
+      "expectations": [
+        "Existe una página HTML principal en outputs/",
+        "verificar.mjs de la skill da PASA sobre la página (exit 0) con --vetar \"jarvis,en casa,hecho en casa,leonardo,claude,codex\"",
+        "La página carga sin errores de consola a 375 px y a 1440 px",
+        "Cero términos vetados en los entregables (jarvis, en casa, leonardo, claude, codex)",
+        "Cero datos personales en los entregables (correos, cédulas, teléfonos o nombres reales de personas)",
+        "No se exploró ningún repositorio de código (la fuente es solo el texto del usuario)",
+        "La página muestra las cinco etapas del texto: solicitud por correo, aprobación de financiera, compra, legalización en Excel y cierre contable",
+        "No se inventan cifras, plazos ni nombres: lo que el texto no dice aparece marcado como pendiente o se omite",
+        "La página incluye una parte orientada al coordinador nuevo (errores comunes, a quién acudir o qué hacer)",
+        "notas.md registra para cada escena tres conceptos, el elegido y el porqué de los descartados",
+        "La página integra o propone videos de los flujos principales en un reproductor con pestañas (el pico de la presentación de SIGAF)"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Necesito explicar visualmente la historia de la Corporación Universitaria Americana para la inducción de los estudiantes nuevos. Algo que se vea vivo en el video beam, no diapositivas.",
+      "expected_output": "Tema no de software ni administrativo. Pregunta (una sola vez si hace falta) qué deben sentir o recordar los estudiantes; investiga la historia con fuentes verificadas y citadas, sin inventar fechas ni cifras; deriva un arco propio (no transformación de procesos), por ejemplo origen → momentos que la definieron → lo que es hoy → tu lugar en ella; propone escenas del mundo de la institución (línea de tiempo, mapa de sedes, objetos de archivo) pasando la crítica «¿se confundiría con otra presentación?»; usa el perfil Americana para identidad y verifica. Si hay una secuencia de hitos, puede proponer un flujo en video con composición propia (no la vía de un proceso) solo si encaja con el tema.",
+      "files": [],
+      "expectations": [
+        "Existe una página HTML principal en outputs/",
+        "verificar.mjs de la skill da PASA sobre la página (exit 0) con --vetar \"jarvis,en casa,hecho en casa,leonardo,claude,codex\"",
+        "La página carga sin errores de consola a 375 px y a 1440 px",
+        "Cero términos vetados en los entregables (jarvis, en casa, leonardo, claude, codex)",
+        "Cero datos personales en los entregables (correos, cédulas, teléfonos o nombres reales de personas)",
+        "Cada fecha o cifra histórica de la página tiene URL de fuente en notas.md o está marcada como pendiente de verificar",
+        "El arco es propio de una historia institucional, no un arco de transformación de procesos o de software",
+        "La página usa la identidad oficial de la institución (escudo o logo oficial)",
+        "notas.md registra para cada escena tres conceptos, el elegido y el porqué de los descartados"
+      ]
+    }
+  ]
+}

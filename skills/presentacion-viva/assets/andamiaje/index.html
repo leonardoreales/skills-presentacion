@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Título de la presentación</title>
+<!--
+  ANDAMIAJE TÉCNICO de la skill presentacion-viva. Neutral a propósito: no trae capítulos, textos ni metáforas.
+  Trae lo que toda presentación viva necesita y ya costó aprender:
+    · tokens de color/tipografía en :root (la identidad se deriva del tema o de un perfil),
+    · franja superior opaca con marca y capítulo actual + barra de progreso,
+    · modo presentador (Av Pág / Re Pág salta de <section> en <section>),
+    · movimiento reducido con gsap.matchMedia (sin JS o con reduce: cada escena queda en su estado final),
+    · librerías con versión fija,
+    · un sistema de escenas: PV.escena(id, construir) → construir() dibuja el estado FINAL y devuelve un timeline.
+  Tipografía: elige familias del mundo del tema (Google Fonts con <link>) y ponlas en --display / --body.
+-->
+<style>
+:root{
+  /* Neutros por defecto. Sustituye los VALORES, no los nombres: el resto del CSS y las escenas los leen. */
+  --bg:#16181C; --bg-2:#1E2127; --line:#353A44;
+  --ink:#F2F3F5; --mute:#A9AFBB;
+  --accent:#D9A441; --accent-hi:#EBC77E; --accent-rgb:217,164,65;
+  --display:Georgia, "Times New Roman", serif;
+  --body:"Segoe UI", system-ui, -apple-system, sans-serif;
+  --franja:46px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 19px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+p{margin:0}
+section{position:relative}
+/* Contenedor con aire lateral; en móvil 20 px. Las rejillas usan minmax(0,1fr) para que un SVG ancho no desborde. */
+.in{max-width:1180px;margin:0 auto;padding-left:max(56px,env(safe-area-inset-left,0px));padding-right:max(56px,env(safe-area-inset-right,0px))}
+@media (max-width:700px){.in{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}}
+.cap{min-height:100vh;padding-block:calc(var(--franja) + 8vh) 8vh;display:grid;align-items:center}
+
+/* Franja superior OPACA: un marco decorativo encima del contenido lo pisa. */
+.franja{position:fixed;inset:0 0 auto 0;z-index:20;pointer-events:none}
+.franja .top{height:calc(env(safe-area-inset-top,0px) + var(--franja));padding:env(safe-area-inset-top,0px) max(24px,env(safe-area-inset-right,0px)) 0 max(24px,env(safe-area-inset-left,0px));display:flex;justify-content:space-between;align-items:center;gap:16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.franja .marca{display:flex;align-items:center;gap:10px;font:600 14px/1 var(--body);color:var(--accent-hi);white-space:nowrap}
+.franja .marca img{width:22px;height:auto;display:block}
+.franja .chap{font:600 14px/1 var(--body);color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.franja .bar{height:2px;background:var(--accent);width:calc(var(--prog,0) * 100%)}
+@media (max-width:700px){.franja .chap{display:none}}
+
+/* Escena: el SVG primero y el pie como BLOQUE debajo (un pie superpuesto tapa la escena en móvil). */
+.escena{margin:0;width:100%;max-width:640px;justify-self:center}
+.escena svg.stage{display:block;width:100%;height:auto}
+.escena figcaption{padding-top:10px;color:var(--mute);font-size:15px}
+svg text{font-family:var(--body)}
+
+/* Sala de flujos: los videos de flujo en pestañas, una frase por flujo. Es el pico de la presentación: dale aire. */
+.sala{width:100%;max-width:1040px;justify-self:center}
+.sala [role="tablist"]{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.sala [role="tab"]{font:600 15px/1 var(--body);color:var(--mute);background:transparent;border:1px solid var(--line);padding:11px 18px;border-radius:999px;cursor:pointer;min-height:44px}
+.sala [role="tab"][aria-selected="true"]{color:var(--bg);background:var(--accent-hi);border-color:var(--accent-hi)}
+.sala [role="tab"]:focus-visible{outline:2px solid var(--accent-hi);outline-offset:3px}
+.sala .pantalla{border:1px solid var(--line);background:var(--bg-2);aspect-ratio:16/9}
+.sala video{display:block;width:100%;height:100%;object-fit:cover}
+.sala .frase{color:var(--mute);font-size:15px;padding-top:10px;min-height:2.6em}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+
+<div class="franja" aria-hidden="true">
+  <div class="top"><span class="marca"><!-- <img src="media/marca.png" alt=""> -->Marca</span><span class="chap" id="chap"></span></div>
+  <div class="bar"></div>
+</div>
+
+<main>
+  <!--
+    Cada capítulo es una <section data-ch="Nombre en la franja">. El orden y los nombres salen del ARCO derivado
+    (references/arcos-narrativos.md); las escenas, del protocolo creativo y del catálogo de mecanismos.
+    Esqueleto de una escena:
+      <section class="cap" data-ch="…"><div class="in">
+        <figure class="escena" id="escena-x" role="img" aria-label="Qué se ve y qué significa"></figure>
+      </div></section>
+    Sala de flujos (cuando ya existen los MP4 en media/; una por sistema o una para todos). El primer botón
+    seleccionado es el que carga; data-frase es la línea que se lee debajo, con el resultado del flujo:
+      <section class="cap" data-ch="…"><div class="in">
+        <div class="sala">
+          <div role="tablist" aria-label="Flujos de …">
+            <button role="tab" aria-selected="true" data-src="media/flujo-1-x.mp4" data-frase="Qué pasa, dicho por su resultado.">Nombre corto</button>
+            <button role="tab" aria-selected="false" data-src="media/flujo-2-y.mp4" data-frase="…">Otro</button>
+          </div>
+          <div class="pantalla" role="tabpanel"><video muted loop playsinline preload="metadata" aria-label="Video del flujo"></video></div>
+          <p class="frase"></p>
+        </div>
+      </div></section>
+  -->
+  <section class="cap" data-ch="Prueba de humo"><div class="in">
+    <figure class="escena" id="escena-humo" role="img" aria-label="Prueba técnica del andamiaje: un trazo y un ícono"></figure>
+  </div></section>
+</main>
+
+<!-- Versiones FIJAS: una URL sin versión puede cambiar la API el día de la presentación. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script>
+/* ── Núcleo del andamiaje: no lleva contenido. ── */
+window.PV=(function(){
+  var NS='http://www.w3.org/2000/svg', G=window.gsap, L=window.lucide, ST=window.ScrollTrigger;
+  if(G&&ST&&window.MotionPathPlugin)G.registerPlugin(ST,MotionPathPlugin);
+  var css=getComputedStyle(document.documentElement);
+  function token(n){return css.getPropertyValue('--'+n).trim()}
+  function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e}
+  function txt(x,y,s,attrs,parent){var t=el('text',Object.assign({x:x,y:y},attrs||{}),parent);t.textContent=s;return t}
+  // Ícono Lucide dentro de un SVG; avisa en consola si el nombre no existe (la verificación lo caza).
+  function ico(name,x,y,s,parent,color){
+    if(!L||!L.icons||!L.icons[name]){console.warn('Ícono Lucide no encontrado: '+name);return null}
+    var e=L.createElement(L.icons[name]);
+    e.setAttribute('x',x);e.setAttribute('y',y);e.setAttribute('width',s);e.setAttribute('height',s);
+    e.style.color=color||token('accent-hi');parent.appendChild(e);return e;
+  }
+  function stage(id,vb){var host=document.getElementById(id);var s=el('svg',{viewBox:vb||'0 0 640 480',class:'stage'});host.insertBefore(s,host.firstChild);return s}
+
+  // Escenas: se registran EN ORDEN DE PÁGINA. construir(svg, host) dibuja el estado final y devuelve un timeline
+  // en pausa (o nada). Movimiento reducido o sin GSAP → el timeline salta a su final y se queda quieto.
+  // vb === false: escena de FOTO, sin lienzo SVG; construir(null, host) anima el <picture> que ya está en el host
+  // (references/imagenes.md §4).
+  var mm=G&&G.matchMedia?G.matchMedia():null;
+  function escena(id,construir,vb){
+    var host=document.getElementById(id); if(!host){console.warn('Escena sin contenedor: '+id);return}
+    var svg=vb===false?null:stage(id,vb), tl=construir(svg,host);
+    if(!tl)return;
+    if(!mm||!ST){tl.progress(1).pause();return}
+    mm.add({reduce:'(prefers-reduced-motion: reduce)',normal:'(prefers-reduced-motion: no-preference)'},function(ctx){
+      if(ctx.conditions.reduce){tl.progress(1).pause();return}
+      // Un solo ScrollTrigger por timeline; onToggle reproduce dentro de pantalla y pausa fuera.
+      ST.create({trigger:host,start:'top 85%',end:'bottom 5%',onToggle:function(st){st.isActive?tl.play():tl.pause()}});
+      return function(){tl.progress(1).pause()};
+    });
+  }
+  function listo(){if(ST){ST.sort();ST.refresh()}}
+  return {G:G,L:L,el:el,txt:txt,ico:ico,stage:stage,token:token,escena:escena,listo:listo};
+})();
+
+/* ── Franja: progreso y capítulo actual. Modo presentador. ── */
+(function(){
+  var bar=document.querySelector('.franja .bar'), chap=document.getElementById('chap');
+  var caps=[].slice.call(document.querySelectorAll('[data-ch]')), ticking=false;
+  function clamp(v){return v<0?0:v>1?1:v}
+  function frame(){
+    ticking=false;
+    var vh=window.innerHeight, max=document.documentElement.scrollHeight-vh;
+    bar.style.setProperty('--prog',max>0?clamp(window.scrollY/max):0);
+    var cur=caps[0]; caps.forEach(function(s){if(s.getBoundingClientRect().top<vh*.5)cur=s});
+    if(cur&&chap.textContent!==cur.dataset.ch)chap.textContent=cur.dataset.ch;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});
+  window.addEventListener('resize',frame);
+  frame();
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var stops=[].slice.call(document.querySelectorAll('section'));
+  document.addEventListener('keydown',function(e){
+    if(e.target.closest&&e.target.closest('[role="tablist"],input,textarea,select'))return;
+    var fwd=e.key==='PageDown', back=e.key==='PageUp'; if(!fwd&&!back)return;
+    e.preventDefault();
+    var y=window.scrollY+4, t=null;
+    if(fwd){for(var i=0;i<stops.length;i++)if(stops[i].offsetTop>y+8){t=stops[i];break}}
+    else{for(var j=stops.length-1;j>=0;j--)if(stops[j].offsetTop<y-8){t=stops[j];break}}
+    if(t)window.scrollTo({top:t.offsetTop,behavior:reduce?'auto':'smooth'});
+  });
+
+  // Salas de flujos: pestañas con flechas, el video suena (en silencio) solo en pantalla, con movimiento reducido
+  // no arranca solo y muestra controles.
+  [].slice.call(document.querySelectorAll('.sala')).forEach(function(sala,n){
+    var tabs=[].slice.call(sala.querySelectorAll('[role="tab"]')), vid=sala.querySelector('video'),
+        panel=sala.querySelector('[role="tabpanel"]'), frase=sala.querySelector('.frase'), visible=false;
+    if(!tabs.length||!vid)return;
+    panel.id=panel.id||('sala'+n+'-panel');
+    function play(){if(!reduce&&visible){var p=vid.play();if(p&&p.catch)p.catch(function(){})}}
+    function select(b){
+      tabs.forEach(function(t){t.setAttribute('aria-selected',t===b?'true':'false');t.tabIndex=t===b?0:-1});
+      if(vid.getAttribute('src')!==b.dataset.src){vid.setAttribute('src',b.dataset.src);play()}
+      if(frase)frase.textContent=b.dataset.frase||'';panel.setAttribute('aria-labelledby',b.id);
+    }
+    tabs.forEach(function(t,i){
+      t.id=t.id||('sala'+n+'-t'+i);t.setAttribute('aria-controls',panel.id);
+      t.addEventListener('click',function(){select(t)});
+      t.addEventListener('keydown',function(e){if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;e.preventDefault();
+        var k=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];k.focus();select(k)});
+    });
+    if(reduce)vid.setAttribute('controls','');
+    select(tabs.filter(function(t){return t.getAttribute('aria-selected')==='true'})[0]||tabs[0]);
+    if('IntersectionObserver' in window)new IntersectionObserver(function(es){visible=es[0].isIntersecting;visible?play():vid.pause()},{threshold:.35}).observe(vid);
+    else{visible=true;play()}
+  });
+})();
+</script>
+
+<script>
+/* ── ESCENAS de esta presentación, en orden de página. La de humo solo prueba el andamiaje: bórrala. ── */
+PV.escena('escena-humo',function(s){
+  var acc=PV.token('accent');
+  var p=PV.el('path',{d:'M80 360 C200 120 440 120 560 360',fill:'none',stroke:acc,'stroke-width':3,'stroke-linecap':'round',pathLength:1,'stroke-dasharray':1,'stroke-dashoffset':0},s);
+  var g=PV.el('g',{transform:'translate(296,190)'},s); PV.ico('Sparkles',0,0,48,g);
+  if(!PV.G)return null;
+  return PV.G.timeline({paused:true,repeat:-1,repeatDelay:.8})
+    .fromTo(p,{attr:{'stroke-dashoffset':1}},{attr:{'stroke-dashoffset':0},duration:1.6,ease:'power2.inOut',immediateRender:false})
+    .fromTo(g,{opacity:0},{opacity:1,duration:.4,immediateRender:false});
+});
+
+PV.listo();
+</script>
+</body>
+</html>

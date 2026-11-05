@@ -1,0 +1,90 @@
+/* Motor de flujos — estilos comunes. Todo el movimiento lo pinta window.seek(t): aqui no hay transiciones ni animaciones CSS.
+   Los colores son variables del tema (motor.js las escribe en :root desde cfg.tema): --bg, --ink, --mute, --gold (acento)…
+   y su variante --x-rgb para usar con alfa. En los artefactos de cada flujo, usa las mismas variables, nunca un #hex. */
+html, body { margin: 0; padding: 0; background: var(--bg, #0E1F35); overflow: hidden; }
+#stage {
+  position: relative; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg);
+  font-family: 'Bahnschrift', 'Segoe UI', sans-serif; color: var(--ink);
+  font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased;
+}
+.mono { font-family: 'Consolas', monospace; }
+.bg { position: absolute; inset: 0;
+  background: radial-gradient(ellipse 72% 68% at 50% 47%, var(--bg3) 0%, var(--bg2) 38%, var(--bg) 80%); }
+.grid { position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(var(--mute-rgb),.040) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--mute-rgb),.040) 1px, transparent 1px),
+    linear-gradient(rgba(var(--mute-rgb),.065) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--mute-rgb),.065) 1px, transparent 1px);
+  background-size: 48px 48px, 48px 48px, 240px 240px, 240px 240px;
+  background-position: 0 12px, 0 0, 0 12px, 0 0;
+  -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, #000 35%, transparent 100%);
+          mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, #000 35%, transparent 100%); }
+.vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 58%, rgba(var(--shade-rgb),.55) 100%); }
+.root { position: absolute; inset: 0; }
+svg.main { position: absolute; left: 0; top: 0; overflow: visible; }
+.spot { position: absolute; left: 0; top: 0; width: 1000px; height: 1000px; margin: -500px 0 0 -500px;
+  background: radial-gradient(circle, rgba(var(--gold-rgb),.12) 0%, rgba(var(--gold-rgb),.045) 32%, rgba(var(--gold-rgb),0) 62%); }
+
+/* Cabecera */
+.header { position: absolute; left: 120px; top: 58px; transform-origin: 0 0; white-space: nowrap; }
+.header .eyebrow { font-family: 'Consolas', monospace; font-size: 22px; letter-spacing: .06em; color: var(--goldTxt); }
+.header .title { font-size: 60px; font-weight: 600; line-height: 1.1; margin-top: 8px; letter-spacing: -.005em; }
+.header .subtitle { font-size: 34px; color: var(--mute); margin-top: 6px; }
+
+/* Etiquetas de etapa */
+.nlabel { position: absolute; width: 270px; text-align: center; }
+.nlabel.right { text-align: left; width: 420px; }
+.nlabel .num { font-family: 'Consolas', monospace; font-size: 22px; letter-spacing: .06em; }
+.nlabel .name { font-size: 34px; font-weight: 600; line-height: 1.08; margin-top: 4px; }
+.nlabel .sub { font-size: 24px; color: var(--mute); margin-top: 4px; }
+.tramo { position: absolute; font-size: 26px; color: var(--mute); white-space: nowrap; }
+.tramo b { font-family: 'Consolas', monospace; font-weight: 400; font-size: 22px; color: var(--goldTxt); margin-right: 10px; letter-spacing: .04em; }
+
+/* Panel de la etapa encendida */
+.pbox { position: absolute; border-radius: 22px;
+  background: linear-gradient(180deg, rgba(var(--panel-rgb),.86), rgba(var(--panel2-rgb),.86));
+  border: 1px solid rgba(var(--gold-rgb),.24);
+  box-shadow: 0 30px 80px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.04); }
+.pptr { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; transform: rotate(45deg);
+  background: var(--panel); border-left: 1px solid rgba(var(--gold-rgb),.55); border-top: 1px solid rgba(var(--gold-rgb),.55); }
+.pedge { position: absolute; height: 2px; width: 260px; margin-left: -130px;
+  background: linear-gradient(90deg, rgba(var(--gold-rgb),0), rgba(var(--goldL-rgb),.85), rgba(var(--gold-rgb),0)) no-repeat;
+  background-size: 260px 2px; }
+.pc { position: absolute; inset: 0; }
+.pc-col { position: absolute; left: 56px; top: 30px; bottom: 30px; width: 900px; display: flex; flex-direction: column; justify-content: center; }
+.pc-eyebrow { font-family: 'Consolas', monospace; font-size: 22px; letter-spacing: .06em; color: var(--goldTxt); }
+.pc-phrase { width: 880px; font-size: 52px; font-weight: 600; line-height: 1.14; margin-top: 12px; text-wrap: balance; }
+.pc-chips { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 30px; }
+.pc-art { position: absolute; right: 44px; top: 24px; bottom: 24px; width: 600px; }
+.pc-full { position: absolute; inset: 0; }
+
+.chip { display: inline-flex; align-items: center; gap: 10px; font-family: 'Consolas', monospace; font-size: 24px;
+  padding: 9px 18px 8px; border-radius: 999px; border: 1.5px solid; white-space: nowrap; }
+.chip.state { color: var(--cream); border-color: rgba(var(--gold-rgb),.9); background: rgba(var(--gold-rgb),.15); }
+.chip.info { color: var(--info); border-color: rgba(var(--mute-rgb),.38); background: rgba(var(--mute-rgb),.06); }
+.chip .cdot { width: 9px; height: 9px; border-radius: 50%; background: var(--goldL); box-shadow: 0 0 10px rgba(var(--goldL-rgb),.8); }
+
+/* Piezas reutilizables de los artefactos */
+.card { position: absolute; border-radius: 16px; background: rgba(var(--bg-rgb),.72); border: 1.5px solid var(--faint); }
+.ck { display: flex; align-items: center; gap: 16px; height: 58px; font-size: 32px; color: var(--ink); }
+.ck svg { width: 40px; height: 40px; flex: none; }
+.ck.warn { color: var(--goldTxt); }
+.bar { display: inline-block; height: 12px; border-radius: 6px; background: rgba(var(--mute-rgb),.28); vertical-align: middle; }
+.res-eyebrow { position: absolute; left: 56px; top: 42px; font-family: 'Consolas', monospace; font-size: 22px; letter-spacing: .06em; color: var(--goldTxt); }
+.res-title { position: absolute; left: 56px; top: 82px; width: 900px; font-size: 58px; font-weight: 600; line-height: 1.12; }
+.res-sub { position: absolute; left: 56px; top: 160px; width: 900px; font-size: 34px; color: var(--mute); }
+
+/* Panel en columna (composiciones que ocupan el ancho: ciclo, arco). El puntero entra por el borde izquierdo. */
+.pbox.columna .pc-col { left: 44px; right: 44px; top: 36px; bottom: auto; width: auto; display: block; }
+.pbox.columna .pc-phrase { width: auto; font-size: 44px; }
+.pbox.columna .pc-art { left: 44px; right: 44px; top: auto; bottom: 30px; width: auto; }
+.pbox.columna .res-title, .pbox.columna .res-sub { width: auto; right: 56px; }
+.pptr.v { margin: -13px 0 0 -13px; transform: rotate(-45deg); }
+.pedge.v { width: 2px; height: 260px; margin: -130px 0 0 0;
+  background: linear-gradient(180deg, rgba(var(--gold-rgb),0), rgba(var(--goldL-rgb),.85), rgba(var(--gold-rgb),0)) no-repeat;
+  background-size: 2px 260px; }
+.nlabel.right[style*="text-align: right"] { text-align: right; }
+
+/* Composición limpia (cfg.limpio, gramática §5.bis): paneles a pantalla completa, sin caja. */
+.pbox.limpio { background: none; border: 0; box-shadow: none; border-radius: 0; }

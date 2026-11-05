@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Flujo 3 · Ciclo (ejemplo de composición)</title>
+<link rel="stylesheet" href="comun.css">
+<style>
+  /* Las maquetas usan variables del tema: el mismo flujo cambia de identidad cambiando una línea. */
+  .shelf { display: flex; gap: 12px; align-items: flex-end; height: 150px; }
+  .book { width: 46px; border-radius: 6px 6px 3px 3px; background: rgba(var(--mute-rgb),.25); border: 1.5px solid var(--faint); }
+  .book.on { background: var(--gold); border-color: var(--goldL); }
+  .slip { width: 520px; border-radius: 14px; background: rgba(var(--bg-rgb),.72); border: 1.5px solid var(--faint); padding: 18px 22px; box-sizing: border-box; }
+  .slip .row { display: flex; align-items: center; gap: 14px; height: 46px; }
+  .stamp { font-family: 'Consolas', monospace; font-size: 26px; color: var(--bg); background: var(--gold); border-radius: 999px; padding: 6px 18px; }
+  .days { display: flex; gap: 8px; margin-top: 10px; }
+  .day { width: 52px; height: 52px; border-radius: 10px; border: 1.5px solid var(--faint); }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script src="motor.js"></script>
+<script>
+(function () {
+  // Tema derivado de tres colores: el motor calcula fondos, tintas apagadas, vías y acentos claros.
+  const TEMA = { fondo: '#17130E', tinta: '#F3EDE4', acento: '#8FBF5A' };
+  const C = SV.tema(TEMA);
+  const { prog, ease, clamp } = SV;
+
+  // Composición en ciclo: el préstamo vuelve a empezar donde terminó.
+  const comp = SV.composicion('ciclo', 5, { cx: 540, cy: 650, r: 270 });
+  const P = comp.puntos;
+  const tm = SV.tiempos(5, { inicio: 2.0, paso: 1.7 });
+  const T = tm.T, TRES = tm.resultado;
+
+  const artShelf = '<div class="shelf">' + [120, 150, 104, 136, 92, 128].map((h, i) =>
+    '<div class="book' + (i === 2 ? ' sel' : '') + '" data-pop="' + (0.1 + i * 0.06) + '" style="height:' + h + 'px"></div>').join('') + '</div>';
+  const artSlip = '<div class="slip" data-pop="0.1"><div class="row"><span class="bar" style="width:220px"></span><span class="stamp" data-pop="0.7">PRESTADO</span></div>' +
+    '<div class="row" data-in="0.35"><span class="bar" style="width:300px"></span></div><div class="row" data-in="0.45"><span class="bar" style="width:180px"></span></div></div>';
+  let dias = ''; for (let i = 0; i < 7; i++) dias += '<div class="day d' + i + '"></div>';
+  const artUso = '<div class="days">' + dias + '</div>';
+  const artVuelve = '<svg width="560" height="200" viewBox="0 0 560 200"><path d="M40 150 C 180 150, 260 40, 420 60" fill="none" stroke="' + C.gold + '" stroke-width="4" stroke-linecap="round" data-draw="0.2,0.8"/>' +
+    '<path d="M404 44 L424 60 L402 74" fill="none" stroke="' + C.goldL + '" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" data-in="0.95"/>' +
+    '<rect x="440" y="30" width="90" height="120" rx="10" fill="' + SV.rgba(C.gold, .14) + '" stroke="' + C.gold + '" stroke-width="2.5" data-pop="0.3"/></svg>';
+  const artRevision = '<div class="slip"><div class="ck" data-in="0.2">' + SV.checkSvg(0.25) + 'Páginas completas</div>' +
+    '<div class="ck" data-in="0.5">' + SV.checkSvg(0.55) + 'Sin daños</div></div>';
+  const artRes = '<div class="res-eyebrow" data-in="0.05">Resultado</div>' +
+    '<div class="res-title" data-in="0.15">El libro vuelve a estar disponible</div>' +
+    '<div class="res-sub" data-in="0.4" style="top:220px">y el ciclo empieza para otra persona</div>';
+
+  SV.run({
+    tema: TEMA,
+    duration: tm.duracion,
+    eyebrow: 'Ejemplo · Composición en ciclo',
+    title: 'El préstamo de un libro',
+    subtitle: 'Un proceso que vuelve a empezar',
+    ficha: { kinds: ['doc'], trazo: comp.d, segs: SV.rutaFr(T.concat([T[4] + 1.7]), P.map(p => p.fr).concat([1])) },
+    tracks: [{ d: comp.d }],
+    nodes: P.map((p, i) => ({ x: p.x, y: p.y, labelPos: p.labelPos, num: '0' + (i + 1),
+      name: ['Reserva', 'Préstamo', 'En uso', 'Devolución', 'Revisión'][i], arr: T[i], next: i < 4 ? T[i + 1] : TRES })),
+    panel: { x: 1080, y: 330, w: 720, h: 560, forma: 'columna' },
+    pointer: P.map((p, i) => ({ t: T[i], y: p.y })).concat([{ t: TRES, y: P[0].y }]),
+    panels: [
+      { t0: T[0], t1: T[1], eyebrow: 'Paso 01 de 05', phrase: 'Alguien aparta el libro', chips: [{ t: 'RESERVADO', k: 'state' }], html: artShelf,
+        tick: (lt, el) => { const b = el.querySelector('.sel'); b.className = 'book sel' + (lt > 0.6 ? ' on' : ''); } },
+      { t0: T[1], t1: T[2], eyebrow: 'Paso 02 de 05', phrase: 'Se sella la ficha y sale', chips: [{ t: 'PRESTADO', k: 'state', at: 0.7 }], html: artSlip },
+      { t0: T[2], t1: T[3], eyebrow: 'Paso 03 de 05', phrase: 'Corre el plazo, día a día', chips: [{ t: '7 días', at: 0.5 }], html: artUso,
+        tick: (lt, el) => { for (let i = 0; i < 7; i++) { const d = el.querySelector('.d' + i), on = clamp((lt - 0.2 - i * 0.12) / 0.15); d.style.background = SV.rgba(C.gold, (0.85 * on).toFixed(3)); } } },
+      { t0: T[3], t1: T[4], eyebrow: 'Paso 04 de 05', phrase: 'Vuelve al mostrador', chips: [{ t: 'DEVUELTO', k: 'state', at: 0.9 }], html: artVuelve },
+      { t0: T[4], t1: TRES, eyebrow: 'Paso 05 de 05', phrase: 'Se revisa antes de guardarlo', chips: [{ t: 'DISPONIBLE', k: 'state', at: 1.1 }], html: artRevision },
+      { t0: TRES, t1: null, full: true, html: artRes }
+    ]
+  });
+})();
+</script>
+</body>
+</html>

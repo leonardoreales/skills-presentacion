@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taller de imagen</title>
+<!-- Nivel 0 de la escalera de references/imagenes.md: corre en cualquier navegador moderno (PC, tableta, móvil),
+     sin instalar nada, sin red y sin CDN. Las imágenes NO salen del dispositivo: se procesan en un <canvas>. -->
+<style>
+:root{
+  --bg:#16181C; --bg-2:#1E2127; --line:#353A44; --ink:#F2F3F5; --mute:#A9AFBB; --accent:#D9A441;
+  --body:"Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){ --bg:#F6F5F1; --bg-2:#FFFFFF; --line:#D9D6CE; --ink:#1B1D21; --mute:#5B606B; --accent:#9A6B12; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--body)}
+main{max-width:1180px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.6rem;margin:0 0 4px} h2{font-size:1.05rem;margin:0 0 10px}
+p.sub{color:var(--mute);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:20px}
+@media (max-width:860px){.grid{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--bg-2);border:1px solid var(--line);border-radius:10px;padding:16px}
+.drop{border:2px dashed var(--line);border-radius:10px;padding:28px 16px;text-align:center;color:var(--mute);cursor:pointer}
+.drop.sobre{border-color:var(--accent);color:var(--ink)}
+.drop:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,.lienzo:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.lienzo{position:relative;margin-top:14px;cursor:crosshair;touch-action:manipulation}
+.lienzo canvas{display:block;width:100%;height:auto;border-radius:6px;background:repeating-conic-gradient(var(--line) 0 25%,transparent 0 50%) 0 0/16px 16px}
+.foco{position:absolute;width:22px;height:22px;margin:-11px 0 0 -11px;border:2px solid var(--accent);border-radius:50%;
+  box-shadow:0 0 0 2px var(--bg);pointer-events:none}
+label{display:block;font-size:.88rem;color:var(--mute);margin:12px 0 4px}
+select,input[type=text],textarea{width:100%;padding:8px 10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+textarea{min-height:64px;resize:vertical}
+.fila{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input[type=color]{width:44px;height:36px;border:1px solid var(--line);border-radius:6px;background:none;padding:2px}
+button{font:inherit;padding:9px 14px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+button.prim{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:600}
+button:disabled{opacity:.45;cursor:not-allowed}
+.miniaturas{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.miniaturas button{padding:0;width:64px;height:64px;overflow:hidden}
+.miniaturas button[aria-pressed=true]{outline:3px solid var(--accent)}
+.miniaturas img{width:100%;height:100%;object-fit:cover;display:block}
+.aviso{font-size:.88rem;color:var(--mute);margin-top:8px}
+.aviso.mal{color:var(--accent)}
+pre{white-space:pre-wrap;word-break:break-all;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:10px;font-size:.8rem;max-height:220px;overflow:auto}
+.chk{display:flex;gap:8px;align-items:flex-start;margin-top:12px;font-size:.9rem}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Taller de imagen</h1>
+  <p class="sub">Adapta tus fotos e ilustraciones a la presentación: recorte, punto focal, color del tema y formatos
+    ligeros. Todo ocurre en este navegador; nada se sube a ningún sitio.</p>
+
+  <div class="grid">
+    <section class="panel" aria-labelledby="t-img">
+      <h2 id="t-img">1. Imágenes</h2>
+      <div class="drop" id="drop" tabindex="0" role="button" aria-describedby="drop-ayuda">
+        Arrastra aquí tus imágenes o pulsa para elegirlas
+        <div id="drop-ayuda" class="aviso">JPG, PNG, WebP o AVIF. Puedes elegir varias.</div>
+      </div>
+      <input type="file" id="archivo" accept="image/*" multiple class="sr" aria-label="Elegir imágenes">
+      <div class="miniaturas" id="miniaturas" aria-label="Imágenes cargadas"></div>
+      <div class="lienzo" id="lienzo" hidden tabindex="0" aria-label="Vista previa. Pulsa o toca para fijar el punto focal; con el teclado, flechas.">
+        <canvas id="vista"></canvas>
+        <div class="foco" id="foco"></div>
+      </div>
+      <p class="aviso" id="estado" role="status" aria-live="polite"></p>
+    </section>
+
+    <aside class="panel" aria-labelledby="t-ajustes">
+      <h2 id="t-ajustes">2. Ajustes</h2>
+      <label for="aspecto">Proporción</label>
+      <select id="aspecto">
+        <option value="0">Original</option><option value="1.7778" selected>16:9 (pantalla y proyector)</option>
+        <option value="1.3333">4:3</option><option value="1">1:1</option><option value="0.75">3:4 (vertical)</option>
+      </select>
+      <label for="trato">Tratamiento</label>
+      <select id="trato">
+        <option value="original">Original</option>
+        <option value="duotono" selected>Duotono con el tema</option>
+        <option value="gris">Escala de grises</option>
+        <option value="velo">Velo para texto encima</option>
+      </select>
+      <label>Colores del tema (por rol)</label>
+      <div class="fila">
+        <input type="color" id="c-fondo" value="#16181C" aria-label="Fondo (sombras del duotono)">
+        <input type="color" id="c-acento" value="#D9A441" aria-label="Acento (luces del duotono)">
+        <span class="aviso">fondo · acento</span>
+      </div>
+      <label for="css-tema">…o pega el <code>:root</code> de tu página</label>
+      <textarea id="css-tema" placeholder="--bg:#16181C; --accent:#D9A441;"></textarea>
+      <label for="formato">Formato</label>
+      <select id="formato"></select>
+
+      <h2 style="margin-top:20px">3. Datos obligatorios</h2>
+      <label for="alt">Texto alternativo (qué muestra y por qué importa)</label>
+      <input type="text" id="alt" maxlength="200" placeholder="Ej.: Bodega de activos con las etiquetas nuevas">
+      <div class="chk"><input type="checkbox" id="decorativa"><label for="decorativa" style="margin:0">Es decorativa (alt vacío)</label></div>
+      <label for="procedencia">Procedencia y licencia</label>
+      <input type="text" id="procedencia" placeholder="Ej.: foto propia del área, 2026 · Unsplash (licencia Unsplash)">
+      <div class="chk"><input type="checkbox" id="personas"><label for="personas" style="margin:0">Aparecen personas reconocibles (necesita su autorización, Ley 1581 de 2012)</label></div>
+      <div class="chk" id="chk-aut" hidden><input type="checkbox" id="autorizado"><label for="autorizado" style="margin:0">Tengo la autorización por escrito</label></div>
+
+      <div class="fila" style="margin-top:16px">
+        <button class="prim" id="exportar" disabled>Descargar variantes</button>
+        <button id="manifiesto" disabled>Descargar manifiesto</button>
+      </div>
+      <p class="aviso" id="faltan"></p>
+      <label>Fragmento para la página</label>
+      <pre id="html" aria-live="polite">Carga una imagen.</pre>
+    </aside>
+  </div>
+</main>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const ANCHOS = [640, 1280, 1920];
+  const imgs = [];          // {nombre, bmp, foco:[x,y], meta:{alt,decorativa,procedencia,personas,autorizado}}
+  let actual = -1;
+
+  // Formatos que ESTE navegador sabe codificar: se mide, no se supone (Safari no codifica WebP en todas las versiones).
+  const formatos = [];
+  const prueba = document.createElement('canvas'); prueba.width = prueba.height = 2;
+  for (const [tipo, ext, nombre] of [['image/avif','avif','AVIF'],['image/webp','webp','WebP'],['image/jpeg','jpg','JPEG'],['image/png','png','PNG']]) {
+    if (prueba.toDataURL(tipo).startsWith('data:' + tipo)) formatos.push({tipo, ext, nombre});
+  }
+  $('formato').innerHTML = formatos.map((f, i) => `<option value="${i}">${f.nombre}${i === 0 ? ' (el más ligero aquí)' : ''}</option>`).join('');
+  $('formato').insertAdjacentHTML('beforeend', '<option value="todos">Todos los disponibles (lo que pide el fragmento)</option>');
+  $('formato').value = 'todos';
+
+  const hexRgb = h => { h = h.replace('#',''); if (h.length === 3) h = [...h].map(c => c + c).join(''); return [0,2,4].map(i => parseInt(h.slice(i, i + 2), 16)); };
+  $('css-tema').addEventListener('input', e => {
+    const bg = e.target.value.match(/--bg\s*:\s*(#[0-9a-f]{3,6})/i), ac = e.target.value.match(/--accent\s*:\s*(#[0-9a-f]{3,6})/i);
+    const largo = h => h.length === 4 ? '#' + [...h.slice(1)].map(c => c + c).join('') : h;
+    if (bg) $('c-fondo').value = largo(bg[1]); if (ac) $('c-acento').value = largo(ac[1]);
+    pintar();
+  });
+
+  async function cargar(files) {
+    for (const f of files) {
+      if (!f.type.startsWith('image/')) continue;
+      try {
+        const bmp = await createImageBitmap(f, { imageOrientation: 'from-image' }); // respeta el giro EXIF del móvil
+        // Nombre seguro para una URL: sin tildes, ñ ni espacios («Bodega año 1.jpg» → «bodega-ano-1»).
+        const nombre = f.name.replace(/\.[^.]+$/, '').normalize('NFD').replace(/[̀-ͯ]/g, '')
+          .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'imagen';
+        imgs.push({ nombre, bmp, url: URL.createObjectURL(f), foco: [.5, .5],
+          meta: { alt: '', decorativa: false, procedencia: '', personas: false, autorizado: false } });
+      } catch { $('estado').textContent = `No pude abrir ${f.name}: el navegador no reconoce ese formato.`; }
+    }
+    if (actual < 0 && imgs.length) elegir(0); else miniaturas();
+  }
+  function miniaturas() {
+    $('miniaturas').innerHTML = imgs.map((m, i) =>
+      `<button aria-pressed="${i === actual}" aria-label="${m.nombre}" data-i="${i}"><img src="${m.url}" alt=""></button>`).join('');
+  }
+  $('miniaturas').addEventListener('click', e => { const b = e.target.closest('button'); if (b) elegir(+b.dataset.i); });
+  function elegir(i) {
+    guardarMeta(); actual = i; const m = imgs[i].meta;
+    $('alt').value = m.alt; $('decorativa').checked = m.decorativa; $('procedencia').value = m.procedencia;
+    $('personas').checked = m.personas; $('autorizado').checked = m.autorizado;
+    $('lienzo').hidden = false; miniaturas(); pintar();
+  }
+  function guardarMeta() {
+    if (actual < 0) return;
+    Object.assign(imgs[actual].meta, { alt: $('alt').value.trim(), decorativa: $('decorativa').checked,
+      procedencia: $('procedencia').value.trim(), personas: $('personas').checked, autorizado: $('autorizado').checked });
+  }
+
+  // Recorte por punto focal: el rectángulo de la proporción pedida, lo más grande posible, centrado en el foco.
+  function recorte(bmp, foco, prop) {
+    const W = bmp.width, H = bmp.height;
+    if (!prop || Math.abs(W / H - prop) < .01) return [0, 0, W, H];
+    const [w, h] = W / H > prop ? [Math.round(H * prop), H] : [W, Math.round(W / prop)];
+    const x = Math.min(Math.max(0, Math.round(foco[0] * W - w / 2)), W - w);
+    const y = Math.min(Math.max(0, Math.round(foco[1] * H - h / 2)), H - h);
+    return [x, y, w, h];
+  }
+  function render(m, ancho) {
+    const prop = +$('aspecto').value, [sx, sy, sw, sh] = recorte(m.bmp, m.foco, prop);
+    const w = Math.min(ancho, sw), h = Math.round(sh * w / sw);   // nunca amplía
+    const c = document.createElement('canvas'); c.width = w; c.height = h;
+    const g = c.getContext('2d', { willReadFrequently: true });
+    g.imageSmoothingQuality = 'high'; g.drawImage(m.bmp, sx, sy, sw, sh, 0, 0, w, h);
+    const t = $('trato').value;
+    if (t === 'duotono' || t === 'gris') {
+      const d = g.getImageData(0, 0, w, h), p = d.data, a = hexRgb($('c-fondo').value), b = hexRgb($('c-acento').value);
+      let lo = 255, hi = 0;                                         // autocontraste: el rango real de la foto
+      for (let i = 0; i < p.length; i += 16) { const l = .2126 * p[i] + .7152 * p[i + 1] + .0722 * p[i + 2]; if (l < lo) lo = l; if (l > hi) hi = l; }
+      const r = Math.max(1, hi - lo);
+      for (let i = 0; i < p.length; i += 4) {
+        const l = Math.min(1, Math.max(0, (.2126 * p[i] + .7152 * p[i + 1] + .0722 * p[i + 2] - lo) / r));
+        if (t === 'gris') { p[i] = p[i + 1] = p[i + 2] = l * 255; }
+        else { p[i] = a[0] + (b[0] - a[0]) * l; p[i + 1] = a[1] + (b[1] - a[1]) * l; p[i + 2] = a[2] + (b[2] - a[2]) * l; }
+      }
+      g.putImageData(d, 0, 0);
+    } else if (t === 'velo') {
+      const [r, gg, b] = hexRgb($('c-fondo').value), grad = g.createLinearGradient(0, 0, 0, h);
+      grad.addColorStop(0, `rgba(${r},${gg},${b},.15)`); grad.addColorStop(1, `rgba(${r},${gg},${b},.82)`);
+      g.fillStyle = grad; g.fillRect(0, 0, w, h);
+    }
+    return c;
+  }
+  function pintar() {
+    if (actual < 0) return;
+    const m = imgs[actual], c = render(m, 1280), v = $('vista');
+    v.width = c.width; v.height = c.height; v.getContext('2d').drawImage(c, 0, 0);
+    // El indicador del foco se dibuja sobre la imagen ORIGINAL proyectada en el recorte.
+    const prop = +$('aspecto').value, [sx, sy, sw, sh] = recorte(m.bmp, m.foco, prop);
+    const fx = (m.foco[0] * m.bmp.width - sx) / sw, fy = (m.foco[1] * m.bmp.height - sy) / sh;
+    Object.assign($('foco').style, { left: (fx * 100) + '%', top: (fy * 100) + '%' });
+    const ancho = Math.min(1920, sw);
+    $('estado').textContent = `${m.nombre}: ${m.bmp.width}×${m.bmp.height} px` +
+      (sw < 1920 ? ` · el recorte mide ${sw} px de ancho; en proyector de 1920 px se verá ampliada` : '');
+    validar(); fragmento(m, ancho, sh / sw);
+  }
+  // Clic o toque: el punto focal se mueve dentro de la imagen original, no del recorte.
+  $('lienzo').addEventListener('click', e => {
+    if (actual < 0) return;
+    const m = imgs[actual], r = $('vista').getBoundingClientRect(), prop = +$('aspecto').value;
+    const [sx, sy, sw, sh] = recorte(m.bmp, m.foco, prop);
+    const px = sx + (e.clientX - r.left) / r.width * sw, py = sy + (e.clientY - r.top) / r.height * sh;
+    m.foco = [px / m.bmp.width, py / m.bmp.height]; pintar();
+  });
+  $('lienzo').addEventListener('keydown', e => {
+    const d = { ArrowLeft: [-.02, 0], ArrowRight: [.02, 0], ArrowUp: [0, -.02], ArrowDown: [0, .02] }[e.key];
+    if (!d || actual < 0) return; e.preventDefault();
+    const m = imgs[actual]; m.foco = m.foco.map((v, i) => Math.min(1, Math.max(0, v + d[i]))); pintar();
+  });
+
+  function validar() {
+    guardarMeta();
+    const m = imgs[actual].meta, faltan = [];
+    if (!m.decorativa && !m.alt) faltan.push('texto alternativo');
+    if (!m.procedencia) faltan.push('procedencia y licencia');
+    if (m.personas && !m.autorizado) faltan.push('autorización de las personas');
+    $('chk-aut').hidden = !m.personas;
+    $('alt').disabled = m.decorativa;
+    $('exportar').disabled = $('manifiesto').disabled = faltan.length > 0;
+    $('faltan').textContent = faltan.length ? 'Falta: ' + faltan.join(', ') + '.' : 'Lista para descargar.';
+    $('faltan').className = 'aviso' + (faltan.length ? ' mal' : '');
+  }
+  function sufijo() { return $('trato').value === 'original' ? '' : '-' + $('trato').value; }
+  function fragmento(m, ancho, ratio) {
+    const alt = m.meta.decorativa ? '' : (m.meta.alt || 'PENDIENTE').replace(/"/g, '&quot;');
+    const usados = [...new Set(ANCHOS.map(a => Math.min(a, ancho)))];
+    const f = formatos[0], base = m.nombre + sufijo(), resp = formatos.find(x => x.ext === 'jpg') || f;
+    const src = (fm) => usados.map(a => `media/${base}-${a}.${fm.ext} ${a}w`).join(', ');
+    $('html').textContent = `<picture>\n` +
+      (f !== resp ? `  <source type="${f.tipo}" srcset="${src(f)}" sizes="(min-width: 900px) 60vw, 100vw">\n` : '') +
+      `  <img src="media/${base}-${usados.at(-1)}.${resp.ext}" srcset="${src(resp)}" sizes="(min-width: 900px) 60vw, 100vw"\n` +
+      `       width="${usados.at(-1)}" height="${Math.round(usados.at(-1) * ratio)}" loading="lazy" decoding="async" alt="${alt}">\n</picture>`;
+  }
+  function bajar(blob, nombre) {
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = nombre;
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  }
+  $('exportar').addEventListener('click', async () => {
+    const m = imgs[actual], sel = $('formato').value;
+    // «Todos» = cada formato que este navegador codifica; PNG solo si no hay JPEG (respaldo universal).
+    const fms = sel === 'todos' ? formatos.filter(f => f.ext !== 'png' || !formatos.some(x => x.ext === 'jpg')) : [formatos[+sel]];
+    let n = 0; const hechos = new Set();
+    for (const a of ANCHOS) {
+      const c = render(m, a);
+      if (hechos.has(c.width)) continue;   // una imagen pequeña no se amplía: 1280 y 1920 darían el mismo fichero
+      hechos.add(c.width);
+      for (const f of fms) {
+        const blob = await new Promise(r => c.toBlob(r, f.tipo, f.ext === 'avif' ? .6 : .82));
+        if (blob) { bajar(blob, `${m.nombre}${sufijo()}-${c.width}.${f.ext}`); n++; await new Promise(r => setTimeout(r, 250)); }
+      }
+    }
+    $('estado').textContent = `Descargados ${n} ficheros. Ponlos en la carpeta media/ de la presentación.`;
+  });
+  $('manifiesto').addEventListener('click', () => {
+    guardarMeta();
+    const datos = { generado_con: 'taller-imagen (nivel 0)', imagenes: imgs.map(m => ({ origen: m.nombre, operacion: $('trato').value,
+      foco: m.foco.map(v => +v.toFixed(3)), aspecto: $('aspecto').selectedOptions[0].textContent,
+      alt: m.meta.decorativa ? '' : (m.meta.alt || 'PENDIENTE'), procedencia: m.meta.procedencia || 'PENDIENTE',
+      personas: m.meta.personas ? (m.meta.autorizado ? 'sí, con autorización' : 'PENDIENTE') : 'no' })) };
+    bajar(new Blob([JSON.stringify(datos, null, 2)], { type: 'application/json' }), 'manifiesto.json');
+  });
+
+  const drop = $('drop');
+  drop.addEventListener('click', () => $('archivo').click());
+  drop.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $('archivo').click(); } });
+  $('archivo').addEventListener('change', e => cargar(e.target.files));
+  ['dragenter', 'dragover'].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.add('sobre'); }));
+  ['dragleave', 'drop'].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.remove('sobre'); }));
+  drop.addEventListener('drop', e => cargar(e.dataTransfer.files));
+  ['aspecto', 'trato', 'c-fondo', 'c-acento'].forEach(id => $(id).addEventListener('input', pintar));
+  ['alt', 'decorativa', 'procedencia', 'personas', 'autorizado'].forEach(id => $(id).addEventListener('input', () => actual >= 0 && pintar()));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "skills-presentacion",
+  "description": "presentacion-viva (páginas vivas con escenas GSAP y videos de flujo en MP4) y mochilero, su biblioteca técnica de consulta.",
+  "version": "0.6.0",
+  "author": {
+    "name": "Leonardo Reales"
+  }
+}
